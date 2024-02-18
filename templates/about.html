@@ -2,18 +2,23 @@
 {% extends "base.html" %}
 {% block body %}
 <div class="container horizontal margined">
-    <div class="item full_wide">
-      <h1>Leírás</h1>
-      <p>E webalkalmazás egy egyszerű átváltó történelmi mértékegységek számára. Az alkalmazás felülette jelenleg csak
-        magyar nyelven elérhető, és főképp Ausztriához és Magyarországhoz kapcsolódó mértékegység-rendszereket tartalmaz,
-        csakúgy, mint az ókori görög és római mértékeket; ugyanakkor bármely mértékegységrendszer bevezethető.
-        Minden modern metrikus és angolszász mértékegység szerepel viszonyítás végett. A mértékegységváltó a Flask
-        frameworköt használja Python backenddel és hagyományos HTML-CSS-JS frontenddel.
-        A mértékegység-adatbázis az SQLite adatbázismotorral készült.</p>        
+    <div class="item title">
+        <h1>Leírás</h1>
+    </div>
+    <div class="item text">
+        <p>E webalkalmazás egy egyszerű átváltó történelmi mértékegységek számára. Az alkalmazás felülette jelenleg csak
+            magyar nyelven elérhető, és főképp Ausztriához és Magyarországhoz kapcsolódó mértékegység-rendszereket tartalmaz,
+            csakúgy, mint az ókori görög és római mértékeket; ugyanakkor bármely mértékegységrendszer bevezethető.
+            Minden modern metrikus és angolszász mértékegység szerepel viszonyítás végett. A mértékegységváltó a Flask
+            frameworköt használja Python backenddel és hagyományos HTML-CSS-JS frontenddel.
+            A mértékegység-adatbázis az SQLite adatbázismotorral készült.</p>
+        <br>
         <p>Minden információ megbízható szakirodalmi forrásból származik, és eredetük az adatbázisban részletesen jelölve van.</p>
     </div>
-    <div class="item full_wide">
-      <h1>Felhasznált irodalom</h1>
+    <div class="item title">
+        <h2>Felhasznált irodalom</h2>
+    </div>
+    <div class="item text">
       <div class="csl-bib-body" style="line-height: 1.35; margin-left: 2em; text-indent:-2em;">
         <div class="csl-entry">Bogdán, István. <i>Magyarországi hossz- és földmértékek, 1601-1874</i>. A Magyar Országos Levéltár kiadványai. IV., Levéltártan és történeti forrástudományok. 6. Budapest: Akadémiai, 1990. <a href="https://library.hungaricana.hu/hu/view/MolDigiLib_MOLkiadv4_06/">https://library.hungaricana.hu/hu/view/MolDigiLib_MOLkiadv4_06/</a>.</div>
         <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-963-05-5286-8&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Magyarorsz%C3%A1gi%20hossz-%20%C3%A9s%20f%C3%B6ldm%C3%A9rt%C3%A9kek%2C%201601-1874&amp;rft.place=Budapest&amp;rft.publisher=Akad%C3%A9miai&amp;rft.series=A%20Magyar%20Orsz%C3%A1gos%20Lev%C3%A9lt%C3%A1r%20kiadv%C3%A1nyai.%20IV.%2C%20Lev%C3%A9lt%C3%A1rtan%20%C3%A9s%20t%C3%B6rt%C3%A9neti%20forr%C3%A1studom%C3%A1nyok.&amp;rft.aufirst=Istv%C3%A1n&amp;rft.aulast=Bogd%C3%A1n&amp;rft.au=Istv%C3%A1n%20Bogd%C3%A1n&amp;rft.date=1990&amp;rft.tpages=633&amp;rft.isbn=978-963-05-5286-8&amp;rft.language=Hungarian"></span>
@@ -44,7 +49,11 @@
       </div>
     </div>
     <div class="item full_wide">
-      <button class="normal" onclick="loadPage('/')">Vissza</button>
+        <button class="normal" onclick="loadPage('/')">Vissza</button>
     </div>
 </div>
 {% endblock body %}
+<!-- Main footer with copyright. -->
+{% block footer %}
+<p>&copy; OperaVaria,&#160;<span id="year_location"></span></p>
+{% endblock footer %}
