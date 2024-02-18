@@ -26,7 +26,7 @@ body {
 
 /* Header */
 
-#base_header {
+#base-header {
     align-content: center;
     align-items: center;
     background-color: #03254c;
@@ -43,7 +43,7 @@ body {
     z-index: 2;
 }
 
-#head_title {
+#head-title {
     width: 80vw;
 }
 
@@ -82,15 +82,15 @@ body {
     margin: 1.5vw;
 }
 
-.one_third {
+.one-third {
     flex-basis: 25%;
 }
 
-.half_wide {
+.half-wide {
     flex-basis: 35%;
 }
 
-.full_wide {
+.full-wide {
     flex-basis: 100%;
 }
 
@@ -211,7 +211,7 @@ span.link:hover {
 
 /* Footer */
 
-#base_footer {
+#base-footer {
     align-content: space-around;
     align-items: center;
     background-color: #03254c;

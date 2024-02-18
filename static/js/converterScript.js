@@ -1,17 +1,17 @@
 // Additional JavaScript for converter functionality.
 
 // Declare constant variables:
-const inputSystemMenu = document.getElementById("input_system_menu");
-const outputSystemMenu = document.getElementById("output_system_menu");
-const inputUnitMenu = document.getElementById("input_unit_menu");
-const outputUnitMenu = document.getElementById("output_unit_menu");
-const inputSystemInfo = document.getElementById("input_system_info");
-const outputSystemInfo = document.getElementById("output_system_info");
-const inputUnitInfo = document.getElementById("input_unit_info");
-const outputUnitInfo = document.getElementById("output_unit_info");
-const valueBox = document.getElementById("input_value_box");
-const resultField = document.getElementById("result_field");
-const symbolField = document.getElementById("symbol_field");
+const inputSystemMenu = document.getElementById("input-system-menu");
+const outputSystemMenu = document.getElementById("output-system-menu");
+const inputUnitMenu = document.getElementById("input-unit-menu");
+const outputUnitMenu = document.getElementById("output-unit-menu");
+const inputSystemInfo = document.getElementById("input-system-info");
+const outputSystemInfo = document.getElementById("output-system-info");
+const inputUnitInfo = document.getElementById("input-unit-info");
+const outputUnitInfo = document.getElementById("output-unit-info");
+const valueBox = document.getElementById("input-value-box");
+const resultField = document.getElementById("result-field");
+const symbolField = document.getElementById("symbol-field");
 
 // Tasks on load: corrects soft reloading imperfections.
 window.addEventListener("load", windowLoad);
@@ -33,15 +33,15 @@ function submitValue(id, value) {
 
     /* Request content setup.
        Different structure for converter button request. */
-    if (id === "convert_btn") {
-        var sub_data = {
+    if (id === "convert-btn") {
+        var subData = {
             sender: id,
-            input_value: valueBox.value,
-            input_unit: inputUnitMenu.value, 
-            output_unit: outputUnitMenu.value
+            inputValue: valueBox.value,
+            inputUnit: inputUnitMenu.value,
+            outputUnit: outputUnitMenu.value
         }
     } else {
-        var sub_data = {
+        var subData = {
             sender: id,
             value: value
         }
@@ -50,7 +50,7 @@ function submitValue(id, value) {
     // Create and send request json.
     fetch(`${window.origin}/fetch-traffic`, {
         method: "POST",
-        body: JSON.stringify(sub_data),
+        body: JSON.stringify(subData),
         cache: "no-cache",
         headers: new Headers({
             "content-type": "application/json"
@@ -60,8 +60,8 @@ function submitValue(id, value) {
     // Response handling based upon sender.
     .then(function (response) {
         response.json().then(function (data) {
-            switch(data.req_sender) {
-                case "input_system_menu":
+            switch(data.reqSender) {
+                case "input-system-menu":
                     // Set input system info box.
                     inputSystemInfo.textContent = data.info;
                     // Reset input unit menu.
@@ -73,10 +73,10 @@ function submitValue(id, value) {
                     });
                     // Set default option to placeholder.
                     inputUnitMenu.selectedIndex = 0;
-                    // Enable select menu if disabled.                    
+                    // Enable select menu if disabled.
                     inputUnitMenu.disabled = false;
                     break;
-                case "output_system_menu":
+                case "output-system-menu":
                     // Set output system info box.
                     outputSystemInfo.textContent = data.info;
                     // Reset output unit menu.
@@ -84,30 +84,30 @@ function submitValue(id, value) {
                     // Populate output unit menu.
                     Object.entries(data.list).forEach(([key, value]) => {
                         let newOption = new Option(value, key);
-                        outputUnitMenu.add(newOption);                    
+                        outputUnitMenu.add(newOption);
                     });
                     // Set default option to placeholder.
                     outputUnitMenu.selectedIndex = 0;
                     // Enable select menu if disabled.
                     outputUnitMenu.disabled = false;
                     break;
-                case "input_unit_menu":
+                case "input-unit-menu":
                     // Set input unit info box.
                     inputUnitInfo.textContent = data.info;
                     break;
-                case "output_unit_menu":
+                case "output-unit-menu":
                     // Set output unit info box.
                     outputUnitInfo.textContent = data.info;
                     break;
-                case "convert_btn":
+                case "convert-btn":
                     // Display result.
-                    resultField.textContent = data.result;                 
+                    resultField.textContent = data.result;
                     // Display output unit symbol.
                     symbolField.textContent = data.symbol;
                     break;
                 default:
                     console.log("Unknown response data!");
-                }            
+                }
             })
     })
 }

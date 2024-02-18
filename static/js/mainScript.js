@@ -1,10 +1,10 @@
 // Main JavasScript for functionality present on all pages.
 
 // Declare constant variables:
-const yearLocation = document.getElementById("year_location");
+const yearLocation = document.getElementById("year-location");
 
 // Insert current year into copyright info.
-if (document.body.contains(yearLocation)) { 
+if (document.body.contains(yearLocation)) {
     let currentYear = new Date().getFullYear();
     yearLocation.innerHTML = currentYear;
 }

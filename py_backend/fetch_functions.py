@@ -35,7 +35,7 @@ def fetch_dict(command, param):
     cur = con.cursor()
     # Fill unit system dict.
     for key, value in cur.execute(command, param):
-        value_dict[key] = value   
+        value_dict[key] = value
     # Close connection.
     con.close()
     return value_dict

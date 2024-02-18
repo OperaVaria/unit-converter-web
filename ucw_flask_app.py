@@ -70,24 +70,24 @@ def fetch_traffic():
     req = request.get_json()
     # Handle requests based upon sender.
     match req["sender"]:
-        case "input_system_menu" | "output_system_menu":
-            # System menus: send system info data and a dictionary to populate unit list. 
+        case "input-system-menu" | "output-system-menu":
+            # System menus: send system info data and a dictionary to populate unit list.
             info_dat = sys_info_setup(req["value"])
             menu_dat = unit_dict_setup(req["value"])
-            res = make_response(jsonify({"req_sender": req["sender"], "info": info_dat, "list": menu_dat}), 200)
-        case "input_unit_menu"| "output_unit_menu":
+            res = make_response(jsonify({"reqSender": req["sender"], "info": info_dat, "list": menu_dat}), 200)
+        case "input-unit-menu"| "output-unit-menu":
             # Unit menus: send unit info data.
             info_dat = unit_info_setup(req["value"])
-            res = make_response(jsonify({"req_sender": req["sender"], "info": info_dat}), 200)
-        case "convert_btn":
+            res = make_response(jsonify({"reqSender": req["sender"], "info": info_dat}), 200)
+        case "convert-btn":
             # Convert button: get unit intermediary values, get output unit symbol,
             # call calculation function, pass result and symbol.
-            input_inter, output_inter, symbol_dat = calculation_setup(req["input_unit"], req["output_unit"])
-            result_dat = calculate(req["input_value"], input_inter, output_inter)
-            res = make_response(jsonify({"req_sender": req["sender"], "result": result_dat, "symbol": symbol_dat}), 200)
+            input_inter, output_inter, symbol_dat = calculation_setup(req["inputUnit"], req["outputUnit"])
+            result_dat = calculate(req["inputValue"], input_inter, output_inter)
+            res = make_response(jsonify({"reqSender": req["sender"], "result": result_dat, "symbol": symbol_dat}), 200)
         case _ :
             # Any other option (should not happen): error response.
-            res = make_response(jsonify({"Error": "Unknown sender element."}), 400)
+            res = make_response(jsonify({"error": "Unknown sender element."}), 400)
     return res
 
 
