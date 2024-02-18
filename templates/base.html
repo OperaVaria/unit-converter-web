@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Contains base elements that are displayed on all pages. -->
+<html lang="hu">
+<head>
+  <title>Mértékegységváltó a történeti tudományok számára</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon/favicon.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- Fixed header with title -->
+  <header id="base_header">  
+    <span id="head_title" class="link" onclick="loadPage('/')">Mértékegységváltó a történeti tudományok számára</span>  
+  </header>  
+  <!-- Jinja2 nesting: main content -->
+  {% block body %}{% endblock body %}
+  <!-- Fixed footer. -->
+  <footer id="base_footer">
+    <!-- Jinja2 nesting: footer content -->
+    {% block footer %}{% endblock footer %}    
+  </footer>
+  <!-- Main JavaScript file. -->
+  <script src="{{ url_for('static', filename='js/mainScript.js') }}"></script>
+  <!-- Jinja2 nesting: additional Javascript. -->
+  {% block js %}{% endblock js %}
+</body>
+</html>

@@ -1,0 +1,7 @@
+cat_raw       ,cat_eng         ,cat_hun
+area          ,area            ,terület
+dimensionless ,dimensionless   ,darabmérték
+length        ,length          ,hosszúság
+dry_vol       ,volume (dry)    ,szárazmérték
+liq_vol       ,volume (liquid) ,folyadékmérték
+weight        ,weight          ,súly

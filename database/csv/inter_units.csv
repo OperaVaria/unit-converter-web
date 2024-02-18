@@ -1,0 +1,6 @@
+category      ,unit
+area          ,square metre (m²)
+dimensionless ,piece/unit
+length        ,metre (m)
+volume        ,"litre (l) Note: The SI base unit is m³, but most values are given in litre in the literature."
+weight        ,kilogram (kg)

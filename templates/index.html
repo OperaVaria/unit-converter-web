@@ -1,0 +1,36 @@
+<!-- Main Menu -->
+{% extends "base.html" %}
+{% block body %}
+<!-- Horizontal container for title and buttons.
+     Title, 3 buttons, 3 buttons, about button. -->
+<div class="container horizontal margined">
+  <div class="item title">
+    <h1>Metrikus, angolszász, hagyományos, történelmi</h1>
+  </div>
+  <div class="item one_third">
+    <button class="normal" onclick="loadPage('length')">Hosszúság</button>
+  </div>
+  <div class="item one_third">
+    <button class="normal" onclick="loadPage('area')">Terület</button>
+  </div>
+  <div class="item one_third">
+    <button class="normal" onclick="loadPage('weight')">Súly</button>
+  </div>
+  <div class="item one_third">
+    <button class="normal" onclick="loadPage('dimensionless')">Darabmérték</button>
+  </div>
+  <div class="item one_third">
+    <button class="normal" onclick="loadPage('dry_vol')">Szárazmérték</button>
+  </div>
+  <div class="item one_third">
+    <button class="normal" onclick="loadPage('liq_vol')">Folyadékmérték</button>
+  </div>
+  <div class="item full_wide">
+    <button class="normal" onclick="loadPage('/about')">Információ</button>
+  </div>
+</div>
+{% endblock body %}
+<!-- Main footer with copyright. -->
+{% block footer %}
+<p>&copy; OperaVaria,&#160;<span id="year_location"></span></p>
+{% endblock footer %}
