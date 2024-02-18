@@ -13,41 +13,41 @@
     <div class="item half_wide">
       <h2>Kimenet:</h2>
     </div>
-    <!-- Input system box. -->    
-    <div class="container vertical half_wide bordered">      
+    <!-- Input system box. -->
+    <div class="container vertical half_wide bordered">
       <div> <!-- Input system menu, populated by jinja2 on loading. -->
         <label for="input_system">Mértékegységrendszer:</label>
         <br>
         <select name="input_system" id="input_system_menu" onchange="submitValue(this.id, this.value)">
           <option value="" disabled selected>Kérem válasszon:</option>
-          {% for raw, gui in unit_sys_dict.items() %}      
-          <option value={{raw}}>{{gui}}</option>      
+          {% for raw, gui in unit_sys_dict.items() %}
+          <option value={{raw}}>{{gui}}</option>
           {% endfor %}
         </select>
-      </div>      
+      </div>
       <div> <!-- Input system information box. -->
         <label for="input_system_info">Információ:</label>
         <p id="input_system_info" class="info large bordered">---</p>
-      </div> 
+      </div>
     </div>
-    <!-- Output system box. --> 
+    <!-- Output system box. -->
     <div class="container vertical half_wide bordered">
       <div> <!-- Output system menu, populated by jinja2 on loading. -->
         <label for="output_system">Mértékegységrendszer:</label>
-        <br>      
+        <br>
         <select name="output_system" id="output_system_menu" onchange="submitValue(this.id, this.value)">
           <option value="" disabled selected>Kérem válasszon:</option>
-          {% for raw, gui in unit_sys_dict.items() %}      
-          <option value={{raw}}>{{gui}}</option>   
+          {% for raw, gui in unit_sys_dict.items() %}
+          <option value={{raw}}>{{gui}}</option>
           {% endfor %}
         </select>
       </div>
-      <div><!-- Output system information box. -->      
-        <label for="output_system_info" >Információ:</label>      
-        <p id="output_system_info" class="info large bordered">---</p>  
+      <div><!-- Output system information box. -->
+        <label for="output_system_info" >Információ:</label>
+        <p id="output_system_info" class="info large bordered">---</p>
       </div>
     </div>
-    <!-- Input unit box. -->     
+    <!-- Input unit box. -->
     <div class="container vertical half_wide bordered">
       <div> <!-- Input unit menu, populated by JavaScript. -->
         <label for="input_unit">Mértékegység:</label>
@@ -73,12 +73,12 @@
       <div> <!-- Output unit information box. -->
         <label for="output_unit_info">Információ:</label>
         <p id="output_unit_info" class="info small bordered">---</p>
-      </div>      
+      </div>
     </div>
     <!-- Calculation and result container. -->
     <div class="container vertical full_wide">
       <!-- Input value item. -->
-      <div class="item">           
+      <div class="item">
         <label for="input_value">Bemeneti érték:</label>
         <br>
         <input type="number" name="input_value" id="input_value_box" placeholder="Érték" min="0">
@@ -105,7 +105,6 @@
 {% endblock body %}
 <!-- Footer with buttons to different calculators. -->
 {% block footer %}
-<div class="container horizontal">
   <div class="item">
     <button class="small" onclick="loadPage('length')">Hosszúság</button>
   </div>
@@ -124,10 +123,6 @@
   <div class="item">
     <button class="small" onclick="loadPage('liq_vol')">Folyadékmérték</button>
   </div>
-  <div class="item">
-    <button class="small" onclick="loadPage('/about')">Információ</button>
-  </div>
-</div>
 {% endblock footer %}
 <!-- Additional JavaScript for converter page functionality. -->
 {% block js %}
