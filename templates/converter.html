@@ -16,7 +16,7 @@
   <!-- Input system box. -->
   <div class="container vertical half-wide bordered">
     <div> <!-- Input system menu, populated by jinja2 on loading. -->
-      <label for="input-system">Mértékegységrendszer:</label>
+      <label for="input-system-menu">Mértékegységrendszer:</label>
       <br>
       <select name="input-system" id="input-system-menu" onchange="submitValue(this.id, this.value)">
         <option value="" disabled selected>Kérem válasszon:</option>
@@ -33,7 +33,7 @@
   <!-- Output system box. -->
   <div class="container vertical half-wide bordered">
     <div> <!-- Output system menu, populated by jinja2 on loading. -->
-      <label for="output-system">Mértékegységrendszer:</label>
+      <label for="output-system-menu">Mértékegységrendszer:</label>
       <br>
       <select name="output-system" id="output-system-menu" onchange="submitValue(this.id, this.value)">
         <option value="" disabled selected>Kérem válasszon:</option>
@@ -50,7 +50,7 @@
   <!-- Input unit box. -->
   <div class="container vertical half-wide bordered">
     <div> <!-- Input unit menu, populated by JavaScript. -->
-      <label for="input-unit">Mértékegység:</label>
+      <label for="input-unit-menu">Mértékegység:</label>
       <br>
       <select name="input-unit" id="input-unit-menu" onchange="submitValue(this.id, this.value)">
         <option value="" disabled selected>Kérem válasszon:</option>
@@ -64,7 +64,7 @@
   <!-- Output unit box. -->
   <div class="container vertical half-wide bordered">
     <div> <!-- Output unit menu, populated by JavaScript. -->
-      <label for="output-unit">Mértékegység:</label>
+      <label for="output-unit-menu">Mértékegység:</label>
       <br>
       <select name="output-unit" id="output-unit-menu" onchange="submitValue(this.id, this.value)">
         <option value="" disabled selected>Kérem válasszon:</option>
@@ -79,7 +79,7 @@
   <div class="container vertical full-wide">
     <!-- Input value item. -->
     <div class="item">
-      <label for="input-value">Bemeneti érték:</label>
+      <label for="input-value-box">Bemeneti érték:</label>
       <br>
       <input type="number" name="input-value" id="input-value-box" placeholder="Érték" min="0">
     </div>
