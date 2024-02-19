@@ -3,7 +3,7 @@
 // Declare constant variables:
 const yearLocation = document.getElementById("year-location");
 
-// Insert current year into copyright info.
+// Insert current year into copyright info if element exists.
 if (document.body.contains(yearLocation)) {
     let currentYear = new Date().getFullYear();
     yearLocation.innerHTML = currentYear;
