@@ -100,7 +100,7 @@ def fetch_traffic():
             res = make_response(jsonify({"reqSender": req["sender"], "result": result_dat, "symbol": symbol_dat}), 200)
         case _ :
             # Any other option (should not happen): error response.
-            res = make_response(jsonify({"error": "Unknown sender element."}), 400)
+            res = make_response(jsonify({"error": "Unknown sender id!"}), 400)
     return res
 
 
