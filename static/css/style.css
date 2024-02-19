@@ -99,6 +99,12 @@ body {
     border-radius: 8px;
 }
 
+.text {
+    max-width: 70vw;
+    text-align: justify;
+    text-decoration: none;
+}
+
 .result {
     align-content: center;
     align-items: center;
@@ -137,6 +143,17 @@ input {
     width: 20vw;
 }
 
+dt {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+dd {    
+    margin-left: 6em;
+    margin-bottom: 1em;
+    text-indent: -3em;
+}
+
 p.info {
     align-content: center;
     align-items: center;
@@ -156,12 +173,6 @@ p.info.large {
 
 p.info.small {
     height: 5em;
-}
-
-.text {
-    max-width: 70vw;
-    text-align: justify;
-    text-decoration: none;
 }
 
 .bold {

@@ -7,24 +7,12 @@
   <div class="item title">
     <h1>Metrikus, angolszász, hagyományos, történelmi</h1>
   </div>
+  <!-- Button builder jinja2 loop (unit category selector buttons for main menu).-->
+  {% for raw, title in cat_dict.items() %}
   <div class="item one-third">
-    <button class="normal" onclick="loadPage('length')">Hosszúság</button>
+    <button class="normal" onclick="loadPage('{{raw}}')">{{title}}</button>
   </div>
-  <div class="item one-third">
-    <button class="normal" onclick="loadPage('area')">Terület</button>
-  </div>
-  <div class="item one-third">
-    <button class="normal" onclick="loadPage('weight')">Súly</button>
-  </div>
-  <div class="item one-third">
-    <button class="normal" onclick="loadPage('dimensionless')">Darabmérték</button>
-  </div>
-  <div class="item one-third">
-    <button class="normal" onclick="loadPage('dry_vol')">Szárazmérték</button>
-  </div>
-  <div class="item one-third">
-    <button class="normal" onclick="loadPage('liq_vol')">Folyadékmérték</button>
-  </div>
+  {% endfor %}
   <div class="item full-wide">
     <button class="normal" onclick="loadPage('/about')">Információ</button>
   </div>

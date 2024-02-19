@@ -105,24 +105,12 @@
 {% endblock body %}
 <!-- Footer with buttons to different calculators. -->
 {% block footer %}
+  <!-- Button builder jinja2 loop (small unit category selector buttons).-->
+  {% for raw, title in cat_dict.items() %}
   <div class="item">
-    <button class="small" onclick="loadPage('length')">Hosszúság</button>
+    <button class="small" onclick="loadPage('{{raw}}')">{{title}}</button>
   </div>
-  <div class="item">
-    <button class="small" onclick="loadPage('area')">Terület</button>
-  </div>
-  <div class="item">
-    <button class="small" onclick="loadPage('weight')">Súly</button>
-  </div>
-  <div class="item">
-    <button class="small" onclick="loadPage('dimensionless')">Darabmérték</button>
-  </div>
-  <div class="item">
-    <button class="small" onclick="loadPage('dry_vol')">Szárazmérték</button>
-  </div>
-  <div class="item">
-    <button class="small" onclick="loadPage('liq_vol')">Folyadékmérték</button>
-  </div>
+  {% endfor %}
 {% endblock footer %}
 <!-- Additional JavaScript for converter page functionality. -->
 {% block js %}

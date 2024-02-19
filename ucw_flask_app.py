@@ -36,7 +36,8 @@ from flask import Flask, jsonify, make_response, render_template, request
 
 # Local imports:
 from py_backend.setup_functions import (title_setup, sys_dict_setup, sys_info_setup,
-                                        unit_dict_setup, unit_info_setup, calculation_setup)
+                                        unit_dict_setup, unit_info_setup, calculation_setup,
+                                        button_dict_setup, source_dict_setup)
 from py_backend.calc_functions import calculate
 
 # Create Flask app:
@@ -47,7 +48,9 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     """Set up index page."""
-    return render_template("index.html")
+    # Create dictionary for button builder loop.
+    cat_dict = button_dict_setup()
+    return render_template("index.html", cat_dict=cat_dict)
 
 @app.route("/<unit_cat>")
 def converter(unit_cat):
@@ -56,13 +59,19 @@ def converter(unit_cat):
     conv_title = title_setup(unit_cat)
     # Create dictionary to populate system lists.
     unit_sys_dict = sys_dict_setup(unit_cat)
+    # Create dictionary for button builder loop.
+    cat_dict = button_dict_setup()
     # Render.
-    return render_template("converter.html", conv_title=conv_title, unit_sys_dict=unit_sys_dict)
+    return render_template("converter.html", conv_title=conv_title,
+                           unit_sys_dict=unit_sys_dict, cat_dict=cat_dict)
 
 @app.route("/about")
 def about():
     """Set up about page."""
-    return render_template("about.html")
+    # Create dictionary to populate sources lists.
+    source_dict = source_dict_setup()
+    # Render.
+    return render_template("about.html", source_dict=source_dict)
 
 @app.route("/fetch-traffic", methods=["POST"])
 def fetch_traffic():

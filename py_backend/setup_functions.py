@@ -70,8 +70,8 @@ def unit_info_setup(selected_unit):
 
 
 def calculation_setup(input_unit, output_unit):
-    """ Retrieve intermediary values for calculation,
-        and unit symbol to display with result."""
+    """Retrieve intermediary values for calculation,
+       and unit symbol to display with result."""
     # SQLite commands.
     inter_command = "SELECT inter_val FROM unit_list WHERE name_raw = ?"
     symbol_command = "SELECT symbol FROM unit_list WHERE name_raw = ?"
@@ -84,6 +84,31 @@ def calculation_setup(input_unit, output_unit):
     unit_symbol = fetch_one(symbol_command, param_output)
     # Fetch output unit intermediary value:
     return input_inter, output_inter, unit_symbol
+
+
+def button_dict_setup():
+    """Build a dictionary from unit category information
+       for the jinja2 button builder loops."""
+    # SQLite command.
+    command = "SELECT cat_raw, cat_hun FROM cat_list"
+    # Search parameter.
+    param = ()
+    # Call fetch function.
+    cat_dict = fetch_dict(command, param)
+    # Capitalize button tiles
+    cat_dict = {key: str.capitalize(cat_dict[key]) for key in cat_dict }
+    return cat_dict
+
+
+def source_dict_setup():
+    """Build a dictionary of sources from the database (author date + html formatted entry)."""
+    # SQLite command.
+    command = "SELECT author_date, html FROM source_list"
+    # Search parameter.
+    param = ()
+    # Call fetch function.
+    source_dict = fetch_dict(command, param)
+    return source_dict
 
 
 # Display message when accidentally run:
