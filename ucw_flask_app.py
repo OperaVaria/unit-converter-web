@@ -43,6 +43,9 @@ from py_backend.calc_functions import calculate
 # Create Flask app:
 app = Flask(__name__)
 
+# Do not sort json keys alphabetically:
+app.json.sort_keys = False
+
 
 # Page building decorators:
 @app.route("/")
