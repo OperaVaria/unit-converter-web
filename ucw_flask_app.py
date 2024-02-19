@@ -93,14 +93,10 @@ def fetch_traffic():
             info_dat = unit_info_setup(req["value"])
             res = make_response(jsonify({"reqSender": req["sender"], "info": info_dat}), 200)
         case "convert-btn"| "swap-btn":
-            # Convert button: get unit intermediary values, get output unit symbol,
+            # Convert buttons: get unit intermediary values, get output unit symbol,
             # call calculation function, pass result and symbol.
-            # Swap button: same but with switched units.
-            if req["sender"] == "convert-btn":
-                input_inter, output_inter, symbol_dat = calculation_setup(req["inputUnit"], req["outputUnit"])
-            elif req["sender"] == "swap-btn":
-                input_inter, output_inter, symbol_dat = calculation_setup(req["outputUnit"], req["inputUnit"])
-            result_dat = calculate(req["inputValue"], input_inter, output_inter)            
+            input_inter, output_inter, symbol_dat = calculation_setup(req["inputUnit"], req["outputUnit"])
+            result_dat = calculate(req["inputValue"], input_inter, output_inter)
             res = make_response(jsonify({"reqSender": req["sender"], "result": result_dat, "symbol": symbol_dat}), 200)
         case _ :
             # Any other option (should not happen): error response.
