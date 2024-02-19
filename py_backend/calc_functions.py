@@ -19,9 +19,14 @@ def calculate(input_value, input_inter, output_inter):
         solution = (Decimal(input_value)
                     * Decimal(input_inter)
                     / Decimal(output_inter))
-        # Final result rounded to 10 decimals and normalized to the simplest form.
+        # Rounded to maximum 10 decimals.
         getcontext().prec = 10
-        solution = solution.normalize()
+        # Normalize and if between 1E-5 and 1E+5: no scientific notation,
+        # smaller or larger numbers: yes.              
+        if 0.00001 <= float(solution) <= 100000:
+            solution = "{:f}".format(solution.normalize())
+        else:
+            solution = solution.normalize()
     # Zero division, overflow, invalid operator displays an error.
     except (ZeroDivisionError, Overflow, InvalidOperation):
         solution = "Hiba!"
