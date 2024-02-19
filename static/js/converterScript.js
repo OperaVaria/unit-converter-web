@@ -28,12 +28,13 @@ function windowLoad() {
     valueBox.value = "";
 }
 
-// Fetch function:
+// Long fetch function:
 function submitValue(id, value) {
 
     /* Request content setup.
-       Different structure for converter button request. */
-    if (id === "convert-btn") {
+       Different structure for converter and swap
+       button request. */
+    if (id === "convert-btn" || id === "swap-btn") {
         var subData = {
             sender: id,
             inputValue: valueBox.value,
@@ -99,7 +100,9 @@ function submitValue(id, value) {
                     // Set output unit info box.
                     outputUnitInfo.textContent = data.info;
                     break;
+                // Sender = convert or swap button: same action.
                 case "convert-btn":
+                case "swap-btn":
                     // Display result.
                     resultField.textContent = data.result;
                     // Display output unit symbol.
@@ -119,7 +122,25 @@ function removeAll(selectMenu) {
     }
 }
 
-/* Validate calculation button:
+/* function menuSetup(menuObj) {
+    console.log(menuObj)
+    // Set input system info box.
+    inputSystemInfo.textContent = data.info;
+    // Reset input unit menu.
+    removeAll(inputUnitMenu);
+    // Populate input unit menu.
+    Object.entries(data.list).forEach(([key, value]) => {
+        let newOption = new Option(value, key)
+        inputUnitMenu.add(newOption)
+    });
+    // Set default option to placeholder.
+    inputUnitMenu.selectedIndex = 0;
+    // Enable select menu if disabled.
+    inputUnitMenu.disabled = false;
+} */
+
+
+/* Validate calculation buttons:
    Display error if unit selection is incomplete
    or unit value is invalid. */
 function validateConvBtn(id, value) {

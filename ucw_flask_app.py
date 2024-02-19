@@ -32,12 +32,12 @@ see <https://www.gnu.org/licenses/>
 """
 
 # Flask imports:
-from flask import Flask, jsonify, make_response, render_template, request
+from flask import Flask, abort, jsonify, make_response, render_template, request
 
 # Local imports:
 from py_backend.setup_functions import (title_setup, sys_dict_setup, sys_info_setup,
                                         unit_dict_setup, unit_info_setup, calculation_setup,
-                                        button_dict_setup, source_dict_setup)
+                                        cat_dict_setup, source_dict_setup)
 from py_backend.calc_functions import calculate
 
 # Create Flask app:
@@ -49,18 +49,22 @@ app = Flask(__name__)
 def index():
     """Set up index page."""
     # Create dictionary for button builder loop.
-    cat_dict = button_dict_setup()
+    cat_dict = cat_dict_setup()
     return render_template("index.html", cat_dict=cat_dict)
 
 @app.route("/<unit_cat>")
 def converter(unit_cat):
-    """Set up converter page."""
+    """Set up converter page."""    
+    # Create dictionary for button builder loop
+    # and request error handling.
+    cat_dict = cat_dict_setup()
+    # Send error if invalid unit category URL is passed.
+    if unit_cat not in cat_dict.keys():
+        abort(404)    
     # Get correct title from database.
     conv_title = title_setup(unit_cat)
     # Create dictionary to populate system lists.
     unit_sys_dict = sys_dict_setup(unit_cat)
-    # Create dictionary for button builder loop.
-    cat_dict = button_dict_setup()
     # Render.
     return render_template("converter.html", conv_title=conv_title,
                            unit_sys_dict=unit_sys_dict, cat_dict=cat_dict)
@@ -88,11 +92,15 @@ def fetch_traffic():
             # Unit menus: send unit info data.
             info_dat = unit_info_setup(req["value"])
             res = make_response(jsonify({"reqSender": req["sender"], "info": info_dat}), 200)
-        case "convert-btn":
+        case "convert-btn"| "swap-btn":
             # Convert button: get unit intermediary values, get output unit symbol,
             # call calculation function, pass result and symbol.
-            input_inter, output_inter, symbol_dat = calculation_setup(req["inputUnit"], req["outputUnit"])
-            result_dat = calculate(req["inputValue"], input_inter, output_inter)
+            # Swap button: same but with switched units.
+            if req["sender"] == "convert-btn":
+                input_inter, output_inter, symbol_dat = calculation_setup(req["inputUnit"], req["outputUnit"])
+            elif req["sender"] == "swap-btn":
+                input_inter, output_inter, symbol_dat = calculation_setup(req["outputUnit"], req["inputUnit"])
+            result_dat = calculate(req["inputValue"], input_inter, output_inter)            
             res = make_response(jsonify({"reqSender": req["sender"], "result": result_dat, "symbol": symbol_dat}), 200)
         case _ :
             # Any other option (should not happen): error response.

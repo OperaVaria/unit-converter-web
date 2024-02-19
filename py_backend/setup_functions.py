@@ -86,9 +86,9 @@ def calculation_setup(input_unit, output_unit):
     return input_inter, output_inter, unit_symbol
 
 
-def button_dict_setup():
+def cat_dict_setup():
     """Build a dictionary from unit category information
-       for the jinja2 button builder loops."""
+       for error handling and jinja2 button builder loops."""
     # SQLite command.
     command = "SELECT cat_raw, cat_hun FROM cat_list"
     # Search parameter.
