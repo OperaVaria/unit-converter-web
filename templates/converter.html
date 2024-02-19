@@ -1,6 +1,5 @@
 <!-- Converter page -->
-{% extends "base.html" %}
-{% block body %}
+{% extends "base.html" %} {% block body %}
 <div class="container horizontal margined">
   <!-- Title. -->
   <div class="item title">
@@ -15,62 +14,86 @@
   </div>
   <!-- Input system box. -->
   <div class="container vertical half-wide bordered">
-    <div> <!-- Input system menu, populated by jinja2 on loading. -->
+    <div>
+      <!-- Input system menu, populated by jinja2 on loading. -->
       <label for="input-system-menu">Mértékegységrendszer:</label>
-      <br>
-      <select name="input-system" id="input-system-menu" onchange="submitValue(this.id, this.value)">
+      <br />
+      <select
+        name="input-system"
+        id="input-system-menu"
+        onchange="submitValue(this.id, this.value)"
+      >
         <option value="" disabled selected>Kérem válasszon:</option>
         {% for raw, gui in unit_sys_dict.items() %}
-        <option value={{raw}}>{{gui}}</option>
+        <option value="{{raw}}">{{gui}}</option>
         {% endfor %}
       </select>
     </div>
-    <div> <!-- Input system information box. -->
+    <div>
+      <!-- Input system information box. -->
       <label for="input-system-info">Információ:</label>
       <p id="input-system-info" class="info large bordered">---</p>
     </div>
   </div>
   <!-- Output system box. -->
   <div class="container vertical half-wide bordered">
-    <div> <!-- Output system menu, populated by jinja2 on loading. -->
+    <div>
+      <!-- Output system menu, populated by jinja2 on loading. -->
       <label for="output-system-menu">Mértékegységrendszer:</label>
-      <br>
-      <select name="output-system" id="output-system-menu" onchange="submitValue(this.id, this.value)">
+      <br />
+      <select
+        name="output-system"
+        id="output-system-menu"
+        onchange="submitValue(this.id, this.value)"
+      >
         <option value="" disabled selected>Kérem válasszon:</option>
         {% for raw, gui in unit_sys_dict.items() %}
-        <option value={{raw}}>{{gui}}</option>
+        <option value="{{raw}}">{{gui}}</option>
         {% endfor %}
       </select>
     </div>
-    <div><!-- Output system information box. -->
-      <label for="output-system-info" >Információ:</label>
+    <div>
+      <!-- Output system information box. -->
+      <label for="output-system-info">Információ:</label>
       <p id="output-system-info" class="info large bordered">---</p>
     </div>
   </div>
   <!-- Input unit box. -->
   <div class="container vertical half-wide bordered">
-    <div> <!-- Input unit menu, populated by JavaScript. -->
+    <div>
+      <!-- Input unit menu, populated by JavaScript. -->
       <label for="input-unit-menu">Mértékegység:</label>
-      <br>
-      <select name="input-unit" id="input-unit-menu" onchange="submitValue(this.id, this.value)">
+      <br />
+      <select
+        name="input-unit"
+        id="input-unit-menu"
+        onchange="submitValue(this.id, this.value)"
+      >
         <option value="" disabled selected>Kérem válasszon:</option>
       </select>
     </div>
-    <div> <!-- Input unit information box. -->
+    <div>
+      <!-- Input unit information box. -->
       <label for="input-unit-info">Információ:</label>
       <p id="input-unit-info" class="info small bordered">---</p>
     </div>
   </div>
   <!-- Output unit box. -->
   <div class="container vertical half-wide bordered">
-    <div> <!-- Output unit menu, populated by JavaScript. -->
+    <div>
+      <!-- Output unit menu, populated by JavaScript. -->
       <label for="output-unit-menu">Mértékegység:</label>
-      <br>
-      <select name="output-unit" id="output-unit-menu" onchange="submitValue(this.id, this.value)">
+      <br />
+      <select
+        name="output-unit"
+        id="output-unit-menu"
+        onchange="submitValue(this.id, this.value)"
+      >
         <option value="" disabled selected>Kérem válasszon:</option>
       </select>
     </div>
-    <div> <!-- Output unit information box. -->
+    <div>
+      <!-- Output unit information box. -->
       <label for="output-unit-info">Információ:</label>
       <p id="output-unit-info" class="info small bordered">---</p>
     </div>
@@ -80,12 +103,24 @@
     <!-- Input value item. -->
     <div class="item">
       <label for="input-value-box">Bemeneti érték:</label>
-      <br>
-      <input type="number" name="input-value" id="input-value-box" placeholder="Érték" min="0">
+      <br />
+      <input
+        type="number"
+        name="input-value"
+        id="input-value-box"
+        placeholder="Érték"
+        min="0"
+      />
     </div>
     <!-- Convert button. -->
     <div class="item">
-      <button class="normal" id="convert-btn" onclick="validateConvBtn(this.id, this.value)">Konvertálás</button>
+      <button
+        class="normal"
+        id="convert-btn"
+        onclick="validateConvBtn(this.id, this.value)"
+      >
+        Konvertálás
+      </button>
     </div>
     <!-- Result box. -->
     <div class="item result bordered">
@@ -96,7 +131,13 @@
   </div>
   <!-- Reset and back buttons. -->
   <div class="item one-third">
-    <button class="normal" id="swap-btn" onclick="validateConvBtn(this.id, this.value)">Fordított</button>
+    <button
+      class="normal"
+      id="swap-btn"
+      onclick="validateConvBtn(this.id, this.value)"
+    >
+      Fordított
+    </button>
   </div>
   <div class="item one-third">
     <button class="normal" onclick="window.location.reload(true)">Reset</button>
@@ -108,13 +149,12 @@
 {% endblock body %}
 <!-- Footer with buttons to different calculators. -->
 {% block footer %}
-  <!-- Button builder jinja2 loop (small unit category selector buttons).-->
-  {% for raw, title in cat_dict.items() %}
-  <div class="item">
-    <button class="small" onclick="loadPage('{{raw}}')">{{title}}</button>
-  </div>
-  {% endfor %}
-{% endblock footer %}
+<!-- Button builder jinja2 loop (small unit category selector buttons).-->
+{% for raw, title in cat_dict.items() %}
+<div class="item">
+  <button class="small" onclick="loadPage('{{raw}}')">{{title}}</button>
+</div>
+{% endfor %} {% endblock footer %}
 <!-- Additional JavaScript for converter page functionality. -->
 {% block js %}
 <script src="{{ url_for('static', filename='js/converterScript.js') }}"></script>

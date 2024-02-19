@@ -3,28 +3,35 @@
 {% block body %}
 <div class="container horizontal margined">
   <div class="item title">
-      <h1>Leírás</h1>
+    <h1>Leírás</h1>
   </div>
   <div class="item text">
-    <p>E webalkalmazás egy egyszerű átváltó történelmi mértékegységek számára. Az alkalmazás felülette jelenleg csak
-      magyar nyelven elérhető, és főképp Ausztriához és Magyarországhoz kapcsolódó mértékegység-rendszereket tartalmaz,
-      csakúgy, mint az ókori görög és római mértékeket; ugyanakkor bármely mértékegységrendszer bevezethető.
-      Minden modern metrikus és angolszász mértékegység szerepel viszonyítás végett. A mértékegységváltó a Flask
-      frameworköt használja Python backenddel és hagyományos HTML-CSS-JS frontenddel.
-      A mértékegység-adatbázis az SQLite adatbázismotorral készült.</p>
-    <br>
-    <p>Minden információ megbízható szakirodalmi forrásból származik, és eredetük az adatbázisban részletesen jelölve van.</p>
+    <p>
+      E webalkalmazás egy egyszerű átváltó történelmi mértékegységek számára. Az
+      alkalmazás felülette jelenleg csak magyar nyelven elérhető, és főképp
+      Ausztriához és Magyarországhoz kapcsolódó mértékegység-rendszereket
+      tartalmaz, csakúgy, mint az ókori görög és római mértékeket; ugyanakkor
+      bármely mértékegységrendszer bevezethető. Minden modern metrikus és
+      angolszász mértékegység szerepel viszonyítás végett. A mértékegységváltó a
+      Flask frameworköt használja Python backenddel és hagyományos HTML-CSS-JS
+      frontenddel. A mértékegység-adatbázis az SQLite adatbázismotorral készült.
+    </p>
+    <br />
+    <p>
+      Minden információ megbízható szakirodalmi forrásból származik, és eredetük
+      az adatbázisban részletesen jelölve van.
+    </p>
   </div>
   <div class="item title">
     <h2>Felhasznált irodalom</h2>
   </div>
   <div class="item text">
     <dl>
-      {% for author_date, entry in source_dict.items() %}      
+      {% for author_date, entry in source_dict.items() %}
       <dt>{{author_date}}</dt>
       <dd>{{entry|safe}}</dd>
       {% endfor %}
-    </dl>     
+    </dl>
   </div>
   <div class="item full-wide">
     <button class="normal" onclick="loadPage('/')">Vissza</button>
