@@ -10,11 +10,11 @@
   <!-- Button builder jinja2 loop (unit category selector buttons for main menu).-->
   {% for raw, title in cat_dict.items() %}
   <div class="item one-third">
-    <button class="normal" onclick="loadPage('{{raw}}')">{{title}}</button>
+    <button class="normal" onclick="loadPage('{{raw}}');">{{title}}</button>
   </div>
   {% endfor %}
   <div class="item full-wide">
-    <button class="normal" onclick="loadPage('/about')">Információ</button>
+    <button class="normal" onclick="loadPage('/about');">Információ</button>
   </div>
 </div>
 {% endblock body %}

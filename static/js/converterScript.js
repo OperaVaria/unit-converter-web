@@ -81,18 +81,18 @@ function submitValue(id, value) {
               break;
             case "input-unit-menu":
               // Set input unit info box with animation.
-              animatedFade(inputUnitInfo, data.info)
+              animatedFade(inputUnitInfo, data.info);
               break;
             case "output-unit-menu":
               // Set output unit info box with animation.
-              animatedFade(outputUnitInfo, data.info)
+              animatedFade(outputUnitInfo, data.info);
               break;
             // Sender = convert or swap button: same action.
             case "convert-btn":
             case "swap-btn":
               // Set result and symbol filed with animation.
-              animatedFade(resultField, data.result)
-              animatedFade(symbolField, data.symbol)
+              animatedFade(resultField, data.result);
+              animatedFade(symbolField, data.symbol);
               break;
             default:
               /* Any other sender id (should not happen):
@@ -131,11 +131,11 @@ function setElements(infoElement, MenuElement, data) {
 /* Rudimentary fade-out fade-in animation
    with text change. Coupled with CSS. */
 function animatedFade(element, newText) {
-  element.style.opacity = '0';
+  element.style.opacity = "0";
   setTimeout(() => {
     element.textContent = newText;
-    element.style.opacity = '1';
-     }, 600);
+    element.style.opacity = "1";
+  }, 600);
 }
 
 /* Validate calculation buttons:
@@ -144,14 +144,14 @@ function animatedFade(element, newText) {
    or unit value is invalid. */
 function validateConvBtn(id, value) {
   if (valueBox.value == "") {
-    animatedFade(resultField, "Hiba!")
-    animatedFade(symbolField, "Hiányzó vagy rossz érték!")
+    animatedFade(resultField, "Hiba!");
+    animatedFade(symbolField, "Hiányzó vagy rossz érték!");
   } else if (inputUnitMenu.value == "") {
-    animatedFade(resultField, "Hiba!")
-    animatedFade(symbolField, "Hiányzó bemeneti mértékegység!")
+    animatedFade(resultField, "Hiba!");
+    animatedFade(symbolField, "Hiányzó bemeneti mértékegység!");
   } else if (outputUnitMenu.value == "") {
-    animatedFade(resultField, "Hiba!")
-    animatedFade(symbolField, "Hiányzó kimeneti mértékegység!")
+    animatedFade(resultField, "Hiba!");
+    animatedFade(symbolField, "Hiányzó kimeneti mértékegység!");
   } else {
     submitValue(id, value);
   }
