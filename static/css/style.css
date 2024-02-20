@@ -23,27 +23,26 @@ body {
   padding: 0;
 }
 
-/* Header */
+/* Header and footer */
 
-#base-header {
-  align-content: center;
-  align-items: center;
+.header {
   background-color: #03254c;
   color: #f5f5f5;
-  display: flex;
-  font-size: 3rem;
-  font-weight: bold;
-  justify-content: center;
   overflow: hidden;
-  padding: 2vh 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
 }
 
-#head-title {
-  width: 80vw;
+.footer {
+  background-color: #03254c;
+  bottom: 0;
+  color: #f5f5f5;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 /* Containers */
@@ -52,17 +51,18 @@ body {
   align-content: space-around;
   align-items: center;
   display: flex;
-  justify-content: center;
-  gap: 1vw;
+  justify-content: center;  
 }
 
 .horizontal {
   flex-flow: row wrap;
+  gap: 1vh 1vw;
 }
 
 .vertical {
   flex-flow: column wrap;
-  padding: 1em;
+  gap: 4vh 1vw;
+  padding: 1.5em;
 }
 
 .margined {
@@ -79,6 +79,7 @@ body {
 .title {
   flex-basis: 100%;
   margin: 1.5vw;
+  max-width: 80vw
 }
 
 .one-third {
@@ -104,7 +105,12 @@ body {
   text-decoration: none;
 }
 
-.result {
+.info-box {  
+  background-color: #1167b1;
+  color: #f5f5f5;
+}
+
+.result-box {
   align-content: center;
   align-items: center;
   background-color: #1167b1;
@@ -112,35 +118,41 @@ body {
   display: flex;
   flex-flow: column wrap;
   gap: 0.5em;
-  height: 10em;
+  height: 12em;
   justify-content: center;
   margin: 1em;
   padding: 1em;
-  width: 20vw;
+  width: 20em;
 }
 
-/* Text */
+/* Input elements */
 
-label {
+.label {
   font-size: 1.2em;
+  margin: 0.3em;
+  font-weight: normal;
 }
 
 select {
   /* background-color: #bcdaec; */
   font-size: 0.8em;
-  padding: 0.2em;
   margin: 0.5em;
+  max-width: 60vw;
+  padding: 0.2em;
   text-align: center;
-  width: 20vw;
+  width: 20em;
 }
 
 input {
   font-size: 0.8em;
-  padding: 0.2em;
   margin: 0.5em;
+  max-width: 60vw;
+  padding: 0.2em;
   text-align: center;
-  width: 20vw;
+  width: 20em;
 }
+
+/* Lists */
 
 dt {
   font-weight: bold;
@@ -153,29 +165,45 @@ dd {
   text-indent: -3em;
 }
 
-p.info {
+/* Text */
+
+.info-text {
   align-content: center;
   align-items: center;
-  background-color: #1167b1;
-  color: #f5f5f5;
   display: flex;
   justify-content: center;
   margin: 0.5em;
+  max-width: 70vw;
+  opacity: 1;
   padding: 0 2em;
   text-decoration: none;
-  width: 25vw;
+  transition: opacity 0.5s; 
+  width: 20em;
 }
 
-p.info.large {
+.info-text.large {
   height: 10em;
 }
 
-p.info.small {
+.info-text.small {
   height: 5em;
 }
 
-.bold {
-  font-weight: bold;
+.result-text {
+  opacity: 1;
+  transition: opacity 0.5s; 
+}
+
+.header-text {  
+  font-size: 3em;
+  max-width: 80vw;
+  padding: 0.25em;
+}
+
+.footer-text {  
+  font-size: 1rem;
+  max-width: 80vw;
+  padding: 0.75em;
 }
 
 /* Clickable */
@@ -209,51 +237,49 @@ button:hover {
   transition: 0.4s;
 }
 
-span.link {
+.anim-link {
   cursor: pointer;
   transition: 0.4s;
 }
 
-span.link:hover {
+.anim-link:hover {
   color: #9f9f9f;
   transition: 0.4s;
 }
 
-/* Footer */
-
-#base-footer {
-  align-content: space-around;
-  align-items: center;
-  background-color: #03254c;
-  bottom: 0;
-  color: #f5f5f5;
-  display: flex;
-  font-size: 1rem;
-  font-weight: normal;
-  gap: 0.5em 1em;
-  justify-content: center;
-  overflow: hidden;
-  padding: 1.5vh;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
-
-/* On smaller screens: downscale header.
+/* Resizes for smaller screens: */
 @media only screen and (max-width: 1024px) {
-    #myHeader {
-        font-size: 1.75rem
-    }
+  .half-wide {
+    flex-basis: 60%;
+  }
+
+  .header-text {  
+    font-size: 2.5em;
+  }
+
+  .margined {
+    margin-bottom: 16vh;
+    margin-top: 20vh;
+  }
+
+  .item {
+    padding: 1.25vh 1vw;
+  }
+
+  .footer {
+    gap: 0;
+    padding: 1vh 1vw;
+  }
+
 }
 
-On mobile screens: downscale some fonts, increase container margin.
+/* On mobile screens: */
 @media only screen and (max-width: 480px) {
-    #myHeader {
-        font-size: 1.3rem
-    }
+  .header-text {  
+    font-size: 1.75em;
+  }
 
-    .container {
-        margin-bottom: 16vh;
-        margin-top: 16vh;
-    }
-} */
+  .margined {
+    margin-bottom: 26vh;
+  }
+} 

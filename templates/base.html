@@ -17,15 +17,14 @@
   </head>
   <body>
     <!-- Fixed header with title -->
-    <header id="base-header">
-      <span id="head-title" class="link" onclick="loadPage('/')"
-        >Mértékegységváltó a történeti tudományok számára</span
-      >
+    <header class="header container horizontal">
+      <h1 class="header-text anim-link" onclick="loadPage('/')"
+        >Mértékegységváltó a történeti tudományok számára</h1>
     </header>
     <!-- Jinja2 nesting: main content -->
     {% block body %}{% endblock body %}
     <!-- Fixed footer. -->
-    <footer id="base-footer">
+    <footer class="footer container horizontal">
       <!-- Jinja2 nesting: footer content -->
       {% block footer %}{% endblock footer %}
     </footer>

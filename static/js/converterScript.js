@@ -32,8 +32,8 @@ function windowLoad() {
 function submitValue(id, value) {
   /* Request content setup.
      Different structure for converter and swap
-     button request. Swap button request has units
-     swapped */
+     button request.
+     Swap button request has units swapped */
   if (id === "convert-btn") {
     var subData = {
       sender: id,
@@ -79,20 +79,19 @@ function submitValue(id, value) {
               setElements(outputSystemInfo, outputUnitMenu, data);
               break;
             case "input-unit-menu":
-              // Set input unit info box.
-              inputUnitInfo.textContent = data.info;
+              // Set input unit info box with animation.
+              animatedFade(inputUnitInfo, data.info)
               break;
             case "output-unit-menu":
-              // Set output unit info box.
-              outputUnitInfo.textContent = data.info;
+              // Set output unit info box with animation.
+              animatedFade(outputUnitInfo, data.info)
               break;
             // Sender = convert or swap button: same action.
             case "convert-btn":
             case "swap-btn":
-              // Display result.
-              resultField.textContent = data.result;
-              // Display output unit symbol.
-              symbolField.textContent = data.symbol;
+              // Set result and symbol filed with animation.
+              animatedFade(resultField, data.result)
+              animatedFade(symbolField, data.symbol)
               break;
             default:
               /* Any other sender id (should not happen):
@@ -100,6 +99,7 @@ function submitValue(id, value) {
               throw new Error("Unknown response data!");
           }
         })
+        // Error catching.
         .catch((error) => {
           console.log(error);
         });
@@ -109,10 +109,10 @@ function submitValue(id, value) {
 /* Steps to do with HTML elements after unit system
    selection response */
 function setElements(infoElement, MenuElement, data) {
-  // Set system info box.
-  infoElement.textContent = data.info;
+  // Refresh system info box with animation.
+  animatedFade(infoElement, data.info);
   /* Reset unit menu (remove all elements
-     besides placeholder) */
+     besides placeholder). */
   while (MenuElement.options.length > 1) {
     MenuElement.remove(1);
   }
@@ -127,19 +127,30 @@ function setElements(infoElement, MenuElement, data) {
   MenuElement.disabled = false;
 }
 
+/* Rudimentary fade-out fade-in animation
+   with text change. Coupled with CSS. */
+function animatedFade(element, newText) {
+  element.style.opacity = '0';
+  setTimeout(() => {
+    element.textContent = newText;
+    element.style.opacity = '1';
+     }, 600);
+}
+
 /* Validate calculation buttons:
-   Display error if unit selection is incomplete
+   Display error with animation
+   if unit selection is incomplete
    or unit value is invalid. */
 function validateConvBtn(id, value) {
   if (valueBox.value == "") {
-    resultField.textContent = "Hiba!";
-    symbolField.textContent = "Hiányzó vagy rossz érték!";
+    animatedFade(resultField, "Hiba!")
+    animatedFade(symbolField, "Hiányzó vagy rossz érték!")
   } else if (inputUnitMenu.value == "") {
-    resultField.textContent = "Hiba!";
-    symbolField.textContent = "Hiányzó bemeneti mértékegység!";
+    animatedFade(resultField, "Hiba!")
+    animatedFade(symbolField, "Hiányzó bemeneti mértékegység!")
   } else if (outputUnitMenu.value == "") {
-    resultField.textContent = "Hiba!";
-    symbolField.textContent = "Hiányzó kimeneti mértékegység!";
+    animatedFade(resultField, "Hiba!")
+    animatedFade(symbolField, "Hiányzó kimeneti mértékegység!")
   } else {
     submitValue(id, value);
   }

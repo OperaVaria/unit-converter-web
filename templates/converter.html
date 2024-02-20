@@ -1,155 +1,156 @@
 <!-- Converter page -->
-{% extends "base.html" %} {% block body %}
+{% extends "base.html" %}
+{% block body %}
+<!-- Main container. -->
 <div class="container horizontal margined">
   <!-- Title. -->
   <div class="item title">
     <h1>{{conv_title}}</h1>
   </div>
-  <!-- Subtitles. -->
-  <div class="item half-wide">
-    <h2>Bemenet:</h2>
-  </div>
-  <div class="item half-wide">
-    <h2>Kimenet:</h2>
-  </div>
-  <!-- Input system box. -->
-  <div class="container vertical half-wide bordered">
-    <div>
-      <!-- Input system menu, populated by jinja2 on loading. -->
-      <label for="input-system-menu">Mértékegységrendszer:</label>
-      <br />
-      <select
-        name="input-system"
-        id="input-system-menu"
-        onchange="submitValue(this.id, this.value)"
-      >
-        <option value="" disabled selected>Kérem válasszon:</option>
-        {% for raw, gui in unit_sys_dict.items() %}
-        <option value="{{raw}}">{{gui}}</option>
-        {% endfor %}
-      </select>
+  <!-- Input side container. -->
+  <div class="container vertical half-wide">
+    <!-- Input subtitle. -->
+    <div class="item">
+      <h2>Bemenet:</h2>
     </div>
-    <div>
+    <!-- Input system box, bordered. -->
+    <div class="container vertical bordered">
+      <!-- Input system menu -->
+      <div class="item">
+        <label class="label" for="input-system-menu">
+          Mértékegységrendszer:</label>
+        <select name="input-system" id="input-system-menu"
+          onchange="submitValue(this.id, this.value)">
+          <option value="" disabled selected>Kérem válasszon:</option>
+          <!-- Populated by jinja2 on loading. -->
+          {% for raw, gui in unit_sys_dict.items() %}
+          <option value="{{raw}}">{{gui}}</option>
+          {% endfor %}
+        </select>
+      </div>        
       <!-- Input system information box. -->
-      <label for="input-system-info">Információ:</label>
-      <p id="input-system-info" class="info large bordered">---</p>
+      <div class="item">
+        <h3 class="label">Információ:</h3>
+        <div class="info-box bordered">
+          <p id="input-system-info" class="info-text large">---</p>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- Output system box. -->
-  <div class="container vertical half-wide bordered">
-    <div>
-      <!-- Output system menu, populated by jinja2 on loading. -->
-      <label for="output-system-menu">Mértékegységrendszer:</label>
-      <br />
-      <select
-        name="output-system"
-        id="output-system-menu"
-        onchange="submitValue(this.id, this.value)"
-      >
-        <option value="" disabled selected>Kérem válasszon:</option>
-        {% for raw, gui in unit_sys_dict.items() %}
-        <option value="{{raw}}">{{gui}}</option>
-        {% endfor %}
-      </select>
-    </div>
-    <div>
-      <!-- Output system information box. -->
-      <label for="output-system-info">Információ:</label>
-      <p id="output-system-info" class="info large bordered">---</p>
-    </div>
-  </div>
-  <!-- Input unit box. -->
-  <div class="container vertical half-wide bordered">
-    <div>
-      <!-- Input unit menu, populated by JavaScript. -->
-      <label for="input-unit-menu">Mértékegység:</label>
-      <br />
-      <select
-        name="input-unit"
-        id="input-unit-menu"
-        onchange="submitValue(this.id, this.value)"
-      >
-        <option value="" disabled selected>Kérem válasszon:</option>
-      </select>
-    </div>
-    <div>
+    <!-- Input unit box, bordered -->
+    <div class="container vertical bordered">
+      <!-- Input unit menu. -->
+      <div class="item">
+        <label class="label" for="input-unit-menu">Mértékegység:</label>
+        <select name="input-unit" id="input-unit-menu"
+          onchange="submitValue(this.id, this.value)">
+          <option value="" disabled selected>Kérem válasszon:</option>
+          <!-- Populated by JavaScript after unit system selection. -->
+        </select>
+      </div>
       <!-- Input unit information box. -->
-      <label for="input-unit-info">Információ:</label>
-      <p id="input-unit-info" class="info small bordered">---</p>
-    </div>
+      <div class="item">
+        <h3 class="label">Információ:</h3>
+        <div class="info-box bordered">        
+          <p id="input-unit-info" class="info-text small">---</p>
+        </div>
+      </div>
+    </div>    
   </div>
-  <!-- Output unit box. -->
-  <div class="container vertical half-wide bordered">
-    <div>
-      <!-- Output unit menu, populated by JavaScript. -->
-      <label for="output-unit-menu">Mértékegység:</label>
-      <br />
-      <select
-        name="output-unit"
-        id="output-unit-menu"
-        onchange="submitValue(this.id, this.value)"
-      >
-        <option value="" disabled selected>Kérem válasszon:</option>
-      </select>
+  <!-- Output side container. -->  
+  <div class="container vertical half-wide">
+    <!-- Output subtitle. -->
+    <div class="item">
+      <h2>Kimenet:</h2>
     </div>
-    <div>
+    <!-- Output system box, bordered. -->
+    <div class="container vertical bordered">
+      <!-- Output system menu. -->
+      <div class="item">
+        <label class="label" for="output-system-menu">Mértékegységrendszer:</label>
+        <select name="output-system" id="output-system-menu"
+          onchange="submitValue(this.id, this.value)">
+          <option value="" disabled selected>Kérem válasszon:</option>
+          <!-- populated by jinja2 on loading. -->
+          {% for raw, gui in unit_sys_dict.items() %}
+          <option value="{{raw}}">{{gui}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <!-- Output system information box. -->
+      <div class="item">
+        <h3 class="label">Információ:</h3>
+        <div class="info-box bordered">      
+          <p id="output-system-info" class="info-text large">---</p>
+        </div>
+      </div>
+    </div>  
+    <!-- Output unit box, bordered -->
+    <div class="container vertical bordered">
+      <!-- Output unit menu. -->
+      <div class="item">
+        <label class="label" for="output-unit-menu">Mértékegység:</label>
+        <select name="output-unit" id="output-unit-menu"
+          onchange="submitValue(this.id, this.value)">
+          <option value="" disabled selected>Kérem válasszon:</option>
+          <!-- Populated by JavaScript after unit system selection. -->
+        </select>
+      </div>    
       <!-- Output unit information box. -->
-      <label for="output-unit-info">Információ:</label>
-      <p id="output-unit-info" class="info small bordered">---</p>
+      <div class="item">
+        <h3 class="label">Információ:</h3>
+        <div class="info-box bordered">
+          <p id="output-unit-info" class="info-text small">---</p>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Calculation and result container. -->
   <div class="container vertical full-wide">
-    <!-- Input value item. -->
+    <!-- Input value box. -->
     <div class="item">
-      <label for="input-value-box">Bemeneti érték:</label>
+      <label class="label" for="input-value-box">Bemeneti érték:</label>
       <br />
-      <input
-        type="number"
-        name="input-value"
-        id="input-value-box"
-        placeholder="Érték"
-        min="0"
-      />
+      <input type="number" name="input-value" id="input-value-box"
+        placeholder="Érték" min="0" />
     </div>
     <!-- Convert button. -->
     <div class="item">
-      <button
-        class="normal"
-        id="convert-btn"
+      <button class="normal" id="convert-btn"
         onclick="validateConvBtn(this.id, this.value)"
-      >
-        Konvertálás
-      </button>
+        >Konvertálás</button>
     </div>
     <!-- Result box. -->
-    <div class="item result bordered">
-      <label for="result-field" class="bold">Eredmény:</label>
-      <p id="result-field">---</p>
-      <p id="symbol-field">n/a</p>
+    <div class="item result-box bordered">
+      <h3>Eredmény:</h3>
+      <div>
+        <p id="result-field" class="result-text">---</p>
+        <p id="symbol-field" class="result-text">n/a</p>
+      </div>
     </div>
   </div>
-  <!-- Reset and back buttons. -->
-  <div class="item one-third">
-    <button
-      class="normal"
-      id="swap-btn"
-      onclick="validateConvBtn(this.id, this.value)"
-    >
-      Fordított
-    </button>
-  </div>
-  <div class="item one-third">
-    <button class="normal" onclick="window.location.reload(true)">Reset</button>
-  </div>
-  <div class="item one-third">
-    <button class="normal" onclick="loadPage('/')">Vissza</button>
+  <!-- Button container. -->
+  <div class="container horizontal full-wide">
+    <!-- Swap button. -->
+    <div class="item">
+      <button
+        class="normal" id="swap-btn"
+        onclick="validateConvBtn(this.id, this.value)"
+        >Fordított</button>
+    </div>
+    <!-- Reset button. -->
+    <div class="item">
+      <button class="normal" onclick="window.location.reload(true)">Reset</button>
+    </div>
+    <!-- Back button. -->
+    <div class="item">
+      <button class="normal" onclick="loadPage('/')">Vissza</button>
+    </div>
   </div>
 </div>
 {% endblock body %}
 <!-- Footer with buttons to different calculators. -->
 {% block footer %}
-<!-- Button builder jinja2 loop (small unit category selector buttons).-->
+<!-- Button builder jinja2 loop.-->
 {% for raw, title in cat_dict.items() %}
 <div class="item">
   <button class="small" onclick="loadPage('{{raw}}')">{{title}}</button>
