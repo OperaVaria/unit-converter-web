@@ -19,7 +19,7 @@ def calculate(input_value, input_inter, output_inter):
         solution = (Decimal(input_value)
                     * Decimal(input_inter)
                     / Decimal(output_inter))
-        # Rounded to maximum 10 decimals.
+        # Rounded precision 10.
         getcontext().prec = 10
         # Normalize and if between 1E-5 and 1E+5: no scientific notation,
         # smaller or larger numbers: yes.              
