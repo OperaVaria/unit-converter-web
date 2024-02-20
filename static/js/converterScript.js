@@ -10,6 +10,7 @@ const outputSystemInfo = document.getElementById("output-system-info");
 const inputUnitInfo = document.getElementById("input-unit-info");
 const outputUnitInfo = document.getElementById("output-unit-info");
 const valueBox = document.getElementById("input-value-box");
+const convertButton = document.getElementById("convert-btn");
 const resultField = document.getElementById("result-field");
 const symbolField = document.getElementById("symbol-field");
 
@@ -107,7 +108,7 @@ function submitValue(id, value) {
 }
 
 /* Steps to do with HTML elements after unit system
-   selection response */
+   selection response. */
 function setElements(infoElement, MenuElement, data) {
   // Refresh system info box with animation.
   animatedFade(infoElement, data.info);
@@ -155,3 +156,11 @@ function validateConvBtn(id, value) {
     submitValue(id, value);
   }
 }
+
+// Input value field: submit if enter pressed.
+valueBox.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    convertButton.click();
+  }
+});

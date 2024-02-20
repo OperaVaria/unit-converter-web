@@ -20,7 +20,7 @@
         <label class="label" for="input-system-menu">
           Mértékegységrendszer:</label>
         <select name="input-system" id="input-system-menu"
-          onchange="submitValue(this.id, this.value)">
+          onchange="submitValue(this.id, this.value);">
           <option value="" disabled selected>Kérem válasszon:</option>
           <!-- Populated by jinja2 on loading. -->
           {% for raw, gui in unit_sys_dict.items() %}
@@ -42,7 +42,7 @@
       <div class="item">
         <label class="label" for="input-unit-menu">Mértékegység:</label>
         <select name="input-unit" id="input-unit-menu"
-          onchange="submitValue(this.id, this.value)">
+          onchange="submitValue(this.id, this.value);">
           <option value="" disabled selected>Kérem válasszon:</option>
           <!-- Populated by JavaScript after unit system selection. -->
         </select>
@@ -68,7 +68,7 @@
       <div class="item">
         <label class="label" for="output-system-menu">Mértékegységrendszer:</label>
         <select name="output-system" id="output-system-menu"
-          onchange="submitValue(this.id, this.value)">
+          onchange="submitValue(this.id, this.value);">
           <option value="" disabled selected>Kérem válasszon:</option>
           <!-- populated by jinja2 on loading. -->
           {% for raw, gui in unit_sys_dict.items() %}
@@ -90,7 +90,7 @@
       <div class="item">
         <label class="label" for="output-unit-menu">Mértékegység:</label>
         <select name="output-unit" id="output-unit-menu"
-          onchange="submitValue(this.id, this.value)">
+          onchange="submitValue(this.id, this.value);">
           <option value="" disabled selected>Kérem válasszon:</option>
           <!-- Populated by JavaScript after unit system selection. -->
         </select>
@@ -110,13 +110,14 @@
     <div class="item">
       <label class="label" for="input-value-box">Bemeneti érték:</label>
       <br>
-      <input type="number" name="input-value" id="input-value-box"
-        placeholder="Érték" min="0">
+      <input type="number" name="input-value"
+        id="input-value-box" placeholder="Érték" min="0"
+        onfocus="this.value='';">
     </div>
     <!-- Convert button. -->
     <div class="item">
       <button class="normal" id="convert-btn"
-        onclick="validateConvBtn(this.id, this.value)"
+        onclick="validateConvBtn(this.id, this.value);"
         >Konvertálás</button>
     </div>
     <!-- Result box. -->
@@ -134,16 +135,16 @@
     <div class="item">
       <button
         class="normal" id="swap-btn"
-        onclick="validateConvBtn(this.id, this.value)"
+        onclick="validateConvBtn(this.id, this.value);"
         >Fordított</button>
     </div>
     <!-- Reset button. -->
     <div class="item">
-      <button class="normal" onclick="window.location.reload(true)">Reset</button>
+      <button class="normal" onclick="window.location.reload(true);">Reset</button>
     </div>
     <!-- Back button. -->
     <div class="item">
-      <button class="normal" onclick="loadPage('/')">Vissza</button>
+      <button class="normal" onclick="loadPage('/');">Vissza</button>
     </div>
   </div>
 </div>
@@ -153,7 +154,7 @@
 <!-- Button builder jinja2 loop.-->
 {% for raw, title in cat_dict.items() %}
 <div class="item">
-  <button class="small" onclick="loadPage('{{raw}}')">{{title}}</button>
+  <button class="small" onclick="loadPage('{{raw}}');">{{title}}</button>
 </div>
 {% endfor %} {% endblock footer %}
 <!-- Additional JavaScript for converter page functionality. -->
