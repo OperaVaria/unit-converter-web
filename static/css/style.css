@@ -51,7 +51,7 @@ body {
   align-content: center;
   align-items: center;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .horizontal {
@@ -79,7 +79,7 @@ body {
 .title {
   flex-basis: 100%;
   margin: 1.5vw;
-  max-width: 80vw
+  max-width: 80vw;
 }
 
 .one-third {
@@ -100,7 +100,7 @@ body {
 }
 
 .padded {
-  padding: 2vw
+  padding: 2em;
 }
 
 .text {
@@ -109,7 +109,7 @@ body {
   text-decoration: none;
 }
 
-.info-box {  
+.info-box {
   background-color: #1167b1;
   color: #f5f5f5;
 }
@@ -181,7 +181,7 @@ dd {
   opacity: 1;
   padding: 0 2em;
   text-decoration: none;
-  transition: opacity 0.5s; 
+  transition: opacity 0.5s;
   width: 20em;
 }
 
@@ -195,15 +195,15 @@ dd {
 
 .result-text {
   opacity: 1;
-  transition: opacity 0.5s; 
+  transition: opacity 0.5s;
 }
 
-.header-text {  
+.header-text {
   font-size: 3em;
   padding: 0.5em;
 }
 
-.footer-text {  
+.footer-text {
   font-size: 1em;
   max-width: 80vw;
   padding: 0.75em;
@@ -252,7 +252,7 @@ button:hover {
 
 /* Resizes for smaller screens: */
 @media only screen and (max-width: 1024px) {
-  .header-text {  
+  .header-text {
     font-size: 2.5em;
   }
 
@@ -269,7 +269,7 @@ button:hover {
 
 /* Resizes for mobile screens: */
 @media only screen and (max-width: 480px) {
-  .header-text {  
+  .header-text {
     font-size: 1.75em;
   }
 
@@ -277,4 +277,4 @@ button:hover {
     margin-bottom: 28vh;
     margin-top: 18vh;
   }
-} 
+}

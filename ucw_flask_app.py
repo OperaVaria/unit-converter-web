@@ -99,13 +99,13 @@ def index():
 def converter(unit_cat):
     """Set up converter page."""
     # Get current locale:
-    locale = get_locale()    
+    locale = get_locale()
     # Create dictionary for button builder loop
     # and request error handling.
     cat_dict = cat_dict_setup(locale)
     # Send error if invalid unit category URL is passed.
     if unit_cat not in cat_dict.keys():
-        abort(404)    
+        abort(404)
     # Get correct title from database.
     conv_title = title_setup(unit_cat, locale)
     # Create dictionary to populate system lists.
@@ -121,7 +121,7 @@ def about():
 
 @app.route("/about/sources")
 def sources():
-    """Set up sources page."""    
+    """Set up sources page."""
     # Create dictionary to populate sources lists.
     source_dict = source_dict_setup()
     # Render.
@@ -131,7 +131,7 @@ def sources():
 def fetch_traffic():
     """URL for fetch request json data transfer."""
     # Get current locale:
-    locale = get_locale()  
+    locale = get_locale()
     # Get request json:
     req = request.get_json()
     # Handle requests based on sender.
@@ -159,7 +159,7 @@ def fetch_traffic():
 @app.route("/receive-post", methods=["POST"])
 def receive_post():
     """URL for receiving locale post requests."""
-    if request.method == 'POST': 
+    if request.method == 'POST':
         session["locale"] = request.form["locale-btn"]
     return redirect(url_for("index"))
 
