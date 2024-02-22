@@ -12,10 +12,13 @@ By OperaVaria, 2024.
 from py_backend.fetch_functions import fetch_one, fetch_dict
 
 
-def title_setup(unit_cat):
+def title_setup(unit_cat, locale):
     """Retrieve calculator page title from the database."""
-    # SQLite command.
-    command = "SELECT cat_hun FROM cat_list WHERE cat_raw = ?"
+    # SQLite command based on current locale.
+    if locale == "hu":
+        command = "SELECT cat_hun FROM cat_list WHERE cat_raw = ?"
+    elif locale == "en":
+        command = "SELECT cat_eng FROM cat_list WHERE cat_raw = ?"
     # Search parameter.
     param = (unit_cat,)
     # Call fetch function.
@@ -25,10 +28,13 @@ def title_setup(unit_cat):
     return conv_title
 
 
-def sys_dict_setup(unit_cat):
+def sys_dict_setup(unit_cat, locale):
     """Build selected unit system dictionary from the database."""
-    # SQLite command.
-    command = "SELECT name_raw, name_hun FROM system_list WHERE cat_raw LIKE ?"
+    # SQLite command based on current locale.
+    if locale == "hu":
+        command = "SELECT name_raw, name_hun FROM system_list WHERE cat_raw LIKE ?"
+    elif locale == "en":
+        command = "SELECT name_raw, name_eng FROM system_list WHERE cat_raw LIKE ?"
     # Search parameter.
     param = (f"%{unit_cat}%",)
     # Call fetch function.
@@ -36,10 +42,13 @@ def sys_dict_setup(unit_cat):
     return unit_sys_dict
 
 
-def unit_dict_setup(unit_system):
+def unit_dict_setup(unit_system, locale):
     """Build selected unit dictionary from the database."""
-    # SQLite command.
-    command = "SELECT name_raw, name_gui FROM unit_list WHERE sys_raw = ?"
+    # SQLite command based on current locale.
+    if locale == "hu":
+        command = "SELECT name_raw, name_hun FROM unit_list WHERE sys_raw = ?"
+    elif locale == "en":
+        command = "SELECT name_raw, name_eng FROM unit_list WHERE sys_raw = ?"
     # Search parameter.
     param = (unit_system,)
     # Call fetch function.
@@ -47,10 +56,13 @@ def unit_dict_setup(unit_system):
     return unit_dict
 
 
-def sys_info_setup(unit_system):
+def sys_info_setup(unit_system, locale):
     """Retrieve system info from the database based on unit system selection."""
-    # SQLite command.
-    command = "SELECT info FROM system_list WHERE name_raw = ?"
+    # SQLite command based on current locale.
+    if locale == "hu":
+        command = "SELECT info_hun FROM system_list WHERE name_raw = ?"
+    elif locale == "en":
+        command = "SELECT info_eng FROM system_list WHERE name_raw = ?"
     # Search parameter.
     param = (unit_system,)
     # Call fetch function.
@@ -58,10 +70,13 @@ def sys_info_setup(unit_system):
     return unit_sys_info
 
 
-def unit_info_setup(selected_unit):
+def unit_info_setup(selected_unit, locale):
     """Retrieve unit info from the database based on unit selection."""
-    # SQLite command.
-    command = "SELECT info FROM unit_list WHERE name_raw = ?"
+    # SQLite command based on current locale.
+    if locale == "hu":
+        command = "SELECT info_hun FROM unit_list WHERE name_raw = ?"
+    if locale == "en":
+        command = "SELECT info_eng FROM unit_list WHERE name_raw = ?"
     # Search parameter.
     param = (selected_unit,)
     # Call fetch function.
@@ -86,11 +101,14 @@ def calculation_setup(input_unit, output_unit):
     return input_inter, output_inter, unit_symbol
 
 
-def cat_dict_setup():
+def cat_dict_setup(locale):
     """Build a dictionary from unit category information
        for error handling and jinja2 button builder loops."""
-    # SQLite command.
-    command = "SELECT cat_raw, cat_hun FROM cat_list"
+    # SQLite command based on current locale.
+    if locale == "hu":
+        command = "SELECT cat_raw, cat_hun FROM cat_list"
+    elif locale == "en":
+        command = "SELECT cat_raw, cat_eng FROM cat_list"
     # Search parameter.
     param = ()
     # Call fetch function.

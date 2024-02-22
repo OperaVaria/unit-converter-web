@@ -32,7 +32,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .footer {
@@ -42,13 +42,13 @@ body {
   overflow: hidden;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Containers */
 
 .container {
-  align-content: space-around;
+  align-content: center;
   align-items: center;
   display: flex;
   justify-content: center;  
@@ -66,8 +66,8 @@ body {
 }
 
 .margined {
-  margin-bottom: 12vh;
-  margin-top: 24vh;
+  margin-bottom: 16vh;
+  margin-top: 16vh;
 }
 
 /* Container items */
@@ -97,6 +97,10 @@ body {
 .bordered {
   border: 2px solid #1167b1;
   border-radius: 8px;
+}
+
+.padded {
+  padding: 2vw
 }
 
 .text {
@@ -196,12 +200,11 @@ dd {
 
 .header-text {  
   font-size: 3em;
-  max-width: 80vw;
-  padding: 0.25em;
+  padding: 0.5em;
 }
 
 .footer-text {  
-  font-size: 1rem;
+  font-size: 1em;
   max-width: 80vw;
   padding: 0.75em;
 }
@@ -249,17 +252,8 @@ button:hover {
 
 /* Resizes for smaller screens: */
 @media only screen and (max-width: 1024px) {
-  .half-wide {
-    flex-basis: 60%;
-  }
-
   .header-text {  
     font-size: 2.5em;
-  }
-
-  .margined {
-    margin-bottom: 16vh;
-    margin-top: 20vh;
   }
 
   .item {
@@ -273,13 +267,14 @@ button:hover {
 
 }
 
-/* On mobile screens: */
+/* Resizes for mobile screens: */
 @media only screen and (max-width: 480px) {
   .header-text {  
     font-size: 1.75em;
   }
 
   .margined {
-    margin-bottom: 26vh;
+    margin-bottom: 28vh;
+    margin-top: 18vh;
   }
 } 

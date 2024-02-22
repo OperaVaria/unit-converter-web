@@ -34,7 +34,7 @@ function submitValue(id, value) {
   /* Request content setup.
      Different structure for converter and swap
      button request.
-     Swap button request has units swapped */
+     (Swap button request has units swapped) */
   if (id === "convert-btn") {
     var subData = {
       sender: id,
@@ -90,7 +90,7 @@ function submitValue(id, value) {
             // Sender = convert or swap button: same action.
             case "convert-btn":
             case "swap-btn":
-              // Set result and symbol filed with animation.
+              // Set result and symbol field with animation.
               animatedFade(resultField, data.result);
               animatedFade(symbolField, data.symbol);
               break;
@@ -129,7 +129,8 @@ function setElements(infoElement, MenuElement, data) {
 }
 
 /* Rudimentary fade-out fade-in animation
-   with text change. Coupled with CSS. */
+   with text change. Coupled with CSS
+   opacity transition. */
 function animatedFade(element, newText) {
   element.style.opacity = "0";
   setTimeout(() => {
@@ -141,17 +142,19 @@ function animatedFade(element, newText) {
 /* Validate calculation buttons:
    Display error with animation
    if unit selection is incomplete
-   or unit value is invalid. */
+   or unit value is invalid.
+   String variables in HTML file so jinja2
+   can insert proper translation. */
 function validateConvBtn(id, value) {
   if (valueBox.value == "") {
-    animatedFade(resultField, "Hiba!");
-    animatedFade(symbolField, "Hiányzó vagy rossz érték!");
+    animatedFade(resultField, errorText);
+    animatedFade(symbolField, missingValue);
   } else if (inputUnitMenu.value == "") {
-    animatedFade(resultField, "Hiba!");
-    animatedFade(symbolField, "Hiányzó bemeneti mértékegység!");
+    animatedFade(resultField, errorText);
+    animatedFade(symbolField, missingInput);
   } else if (outputUnitMenu.value == "") {
-    animatedFade(resultField, "Hiba!");
-    animatedFade(symbolField, "Hiányzó kimeneti mértékegység!");
+    animatedFade(resultField, errorText);
+    animatedFade(symbolField, missingOutput);
   } else {
     submitValue(id, value);
   }

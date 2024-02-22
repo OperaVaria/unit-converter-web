@@ -1,0 +1,29 @@
+<!-- Sources page -->
+{% extends "base.html" %}
+{% block body %}
+<div class="container horizontal margined">
+  <!-- Title. -->
+  <div class="item title">
+    <h1>{{ _("Felhasznált irodalom") }}</h1>
+  </div>
+  <!-- List of consulted works, populated by jinja2 loop from dictionary. -->
+  <div class="item text">
+    <dl>
+      {% for author_date, entry in source_dict.items() %}
+      <dt>{{author_date}}</dt>
+        <dd>{{entry|safe}}</dd>
+      {% endfor %}
+    </dl>
+  </div>
+  <!-- Back button. -->
+  <div class="item full-wide">
+    <button class="normal" onclick="loadPage('/about');">{{ _("Vissza") }}</button>
+  </div>
+</div>
+{% endblock body %}
+<!-- Main footer with copyright. -->
+{% block footer %}
+<p class="footer-text">
+  &copy; OperaVaria,&#160;<span id="year-location"></span>
+</p>
+{% endblock footer %}

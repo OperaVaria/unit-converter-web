@@ -1,0 +1,131 @@
+# English translations for Unit Converter for Historical Studies project.
+# Copyright (C) 2024 OperaVaria
+# This file is distributed under the same license as the project.
+# Csaba Latosinszky <lcs_it@proton.me>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  v1.0.0\n"
+"Report-Msgid-Bugs-To: lcs_it@proton.me\n"
+"POT-Creation-Date: 2024-02-22 13:28+0100\n"
+"PO-Revision-Date: 2024-02-22 13:31+0100\n"
+"Last-Translator: Csaba Latosinszky <lcs_it@proton.me>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: py_backend/calc_functions.py:33 templates/converter.html:169
+msgid "Hiba!"
+msgstr "Error!"
+
+#: templates/about.html:7
+msgid "Leírás"
+msgstr "About"
+
+#: templates/about.html:11 templates/index.html:26
+msgid "Magyar"
+msgstr "Hungarian"
+
+#: templates/about.html:48 templates/index.html:27
+msgid "Angol"
+msgstr "English"
+
+#: templates/about.html:89
+msgid "Irodalom"
+msgstr "Sources"
+
+#: templates/about.html:95
+msgid "Forráskód"
+msgstr "Source code"
+
+#: templates/about.html:100 templates/converter.html:152
+#: templates/sources.html:20
+msgid "Vissza"
+msgstr "Back"
+
+#: templates/base.html:5 templates/base.html:20
+msgid "Mértékegységváltó a történeti tudományok számára"
+msgstr "Unit Converter for Historical Studies"
+
+#: templates/converter.html:14
+msgid "Bemenet"
+msgstr "Input"
+
+#: templates/converter.html:21 templates/converter.html:72
+msgid "Mértékegységrendszer"
+msgstr "Unit system"
+
+#: templates/converter.html:25 templates/converter.html:48
+#: templates/converter.html:76 templates/converter.html:99
+msgid "Kérem válasszon"
+msgstr "Please select"
+
+#: templates/converter.html:34 templates/converter.html:54
+#: templates/converter.html:85 templates/converter.html:105
+#: templates/index.html:17
+msgid "Információ"
+msgstr "Information"
+
+#: templates/converter.html:44 templates/converter.html:95
+msgid "Mértékegység"
+msgstr "Unit"
+
+#: templates/converter.html:65
+msgid "Kimenet"
+msgstr "Output"
+
+#: templates/converter.html:116
+msgid "Bemeneti érték"
+msgstr "Input value"
+
+#: templates/converter.html:119
+msgid "Érték"
+msgstr "Value"
+
+#: templates/converter.html:126
+msgid "Konvertálás"
+msgstr "Convert"
+
+#: templates/converter.html:130
+msgid "Eredmény"
+msgstr "Result"
+
+#: templates/converter.html:144
+msgid "Fordított"
+msgstr "Swap"
+
+#: templates/converter.html:148
+msgid "Reset"
+msgstr "Reset"
+
+#: templates/converter.html:170
+msgid "Hiányzó vagy rossz érték!"
+msgstr "Missing or invalid value!"
+
+#: templates/converter.html:171
+msgid "Hiányzó bemeneti mértékegység!"
+msgstr "Missing input unit!"
+
+#: templates/converter.html:172
+msgid "Hiányzó kimeneti mértékegység!"
+msgstr "Missing output unit!"
+
+#: templates/index.html:7
+msgid "Metrikus, angolszász, hagyományos, történelmi"
+msgstr "Metric, Imperial, Traditional, Historical"
+
+#: templates/index.html:23
+msgid "Nyelv"
+msgstr "Language"
+
+#: templates/index.html:33
+msgid "Verzió"
+msgstr "Version"
+
+#: templates/sources.html:7
+msgid "Felhasznált irodalom"
+msgstr "Sources consulted"
+

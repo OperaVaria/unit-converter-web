@@ -10,6 +10,7 @@ By OperaVaria, 2024.
 
 # Built-in module imports:
 from decimal import Decimal, getcontext, Overflow, InvalidOperation
+from flask_babel import gettext
 
 
 def calculate(input_value, input_inter, output_inter):
@@ -19,17 +20,17 @@ def calculate(input_value, input_inter, output_inter):
         solution = (Decimal(input_value)
                     * Decimal(input_inter)
                     / Decimal(output_inter))
-        # Rounded precision 10.
+        # Rounded with precision 10.
         getcontext().prec = 10
-        # Normalize and if between 1E-5 and 1E+5: no scientific notation,
-        # smaller or larger numbers: yes.              
+        # Normalize, if between 1E-5 and 1E+5: no scientific notation.
+        # Smaller or larger numbers: yes.              
         if 0.00001 <= float(solution) <= 100000:
             solution = "{:f}".format(solution.normalize())
         else:
             solution = solution.normalize()
     # Zero division, overflow, invalid operator displays an error.
     except (ZeroDivisionError, Overflow, InvalidOperation):
-        solution = "Hiba!"
+        solution = gettext("Hiba!")
     return solution
 
 

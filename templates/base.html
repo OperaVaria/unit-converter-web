@@ -2,7 +2,7 @@
 <!-- Contains base elements that are displayed on all pages. -->
 <html lang="hu">
   <head>
-    <title>Mértékegységváltó a történeti tudományok számára</title>
+    <title>{{ _("Mértékegységváltó a történeti tudományok számára") }}</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
     <!-- Fixed header with title -->
     <header class="header container horizontal">
       <h1 class="header-text anim-link" onclick="loadPage('/');"
-        >Mértékegységváltó a történeti tudományok számára</h1>
+        >{{ _("Mértékegységváltó a történeti tudományok számára") }}</h1>
     </header>
     <!-- Jinja2 nesting: main content -->
     {% block body %}{% endblock body %}

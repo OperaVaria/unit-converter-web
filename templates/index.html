@@ -1,20 +1,36 @@
 <!-- Main Menu -->
 {% extends "base.html" %}
 {% block body %}
-<!-- Horizontal container for title and buttons.
-     Title, 3 buttons, 3 buttons, about button. -->
 <div class="container horizontal margined">
+  <!-- Title -->
   <div class="item title">
-    <h1>Metrikus, angolszász, hagyományos, történelmi</h1>
+    <h1>{{ _("Metrikus, angolszász, hagyományos, történelmi") }}</h1>
   </div>
   <!-- Button builder jinja2 loop (unit category selector buttons for main menu).-->
-  {% for raw, title in cat_dict.items() %}
+  {% for raw, gui in cat_dict.items() %}
   <div class="item one-third">
-    <button class="normal" onclick="loadPage('{{raw}}');">{{title}}</button>
+    <button class="normal" onclick="loadPage('{{raw}}');">{{gui}}</button>
   </div>
   {% endfor %}
+  <!-- About page button. -->
   <div class="item full-wide">
-    <button class="normal" onclick="loadPage('/about');">Információ</button>
+    <button class="normal" onclick="loadPage('/about');">{{ _("Információ") }}</button>
+  </div>
+  <!-- Language selection buttons. -->
+  <div class="item full-wide">  
+    <form action="{{ url_for('receive_post') }}" method="post">
+      <div class="item">
+        <h3 class="label">{{ _("Nyelv") }}:</h3>
+      </div>
+      <div class="container horizontal">
+        <button class="small" name="locale-btn" type="submit" value="hu">{{ _("Magyar") }}</button>
+        <button class="small" name="locale-btn" type="submit" value="en">{{ _("Angol") }}</button>
+      </div>
+    </form>    
+  </div>
+  <!-- Version number. -->
+  <div class="item full-wide padded">
+    <h4> {{ _("Verzió") }} - 1.0.0</h4>
   </div>
 </div>
 {% endblock body %}

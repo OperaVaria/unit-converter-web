@@ -11,17 +11,18 @@
   <div class="container vertical half-wide">
     <!-- Input subtitle. -->
     <div class="item">
-      <h2>Bemenet:</h2>
+      <h2>{{ _("Bemenet") }}:</h2>
     </div>
     <!-- Input system box, bordered. -->
     <div class="container vertical bordered">
       <!-- Input system menu -->
       <div class="item">
         <label class="label" for="input-system-menu">
-          Mértékegységrendszer:</label>
+          {{ _("Mértékegységrendszer") }}:</label>
+        <br>
         <select name="input-system" id="input-system-menu"
           onchange="submitValue(this.id, this.value);">
-          <option value="" disabled selected>Kérem válasszon:</option>
+          <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
           <!-- Populated by jinja2 on loading. -->
           {% for raw, gui in unit_sys_dict.items() %}
           <option value="{{raw}}">{{gui}}</option>
@@ -30,7 +31,7 @@
       </div>
       <!-- Input system information box. -->
       <div class="item">
-        <h3 class="label">Információ:</h3>
+        <h3 class="label">{{ _("Információ") }}:</h3>
         <div class="info-box bordered">
           <p id="input-system-info" class="info-text large">---</p>
         </div>
@@ -40,16 +41,17 @@
     <div class="container vertical bordered">
       <!-- Input unit menu. -->
       <div class="item">
-        <label class="label" for="input-unit-menu">Mértékegység:</label>
+        <label class="label" for="input-unit-menu">{{ _("Mértékegység") }}:</label>
+        <br>
         <select name="input-unit" id="input-unit-menu"
           onchange="submitValue(this.id, this.value);">
-          <option value="" disabled selected>Kérem válasszon:</option>
+          <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
           <!-- Populated by JavaScript after unit system selection. -->
         </select>
       </div>
       <!-- Input unit information box. -->
       <div class="item">
-        <h3 class="label">Információ:</h3>
+        <h3 class="label">{{ _("Információ") }}:</h3>
         <div class="info-box bordered">
           <p id="input-unit-info" class="info-text small">---</p>
         </div>
@@ -60,16 +62,18 @@
   <div class="container vertical half-wide">
     <!-- Output subtitle. -->
     <div class="item">
-      <h2>Kimenet:</h2>
+      <h2>{{ _("Kimenet") }}:</h2>
     </div>
     <!-- Output system box, bordered. -->
     <div class="container vertical bordered">
       <!-- Output system menu. -->
       <div class="item">
-        <label class="label" for="output-system-menu">Mértékegységrendszer:</label>
+        <label class="label" for="output-system-menu">
+          {{ _("Mértékegységrendszer") }}:</label>
+        <br>
         <select name="output-system" id="output-system-menu"
           onchange="submitValue(this.id, this.value);">
-          <option value="" disabled selected>Kérem válasszon:</option>
+          <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
           <!-- populated by jinja2 on loading. -->
           {% for raw, gui in unit_sys_dict.items() %}
           <option value="{{raw}}">{{gui}}</option>
@@ -78,7 +82,7 @@
       </div>
       <!-- Output system information box. -->
       <div class="item">
-        <h3 class="label">Információ:</h3>
+        <h3 class="label">{{ _("Információ") }}:</h3>
         <div class="info-box bordered">
           <p id="output-system-info" class="info-text large">---</p>
         </div>
@@ -88,16 +92,17 @@
     <div class="container vertical bordered">
       <!-- Output unit menu. -->
       <div class="item">
-        <label class="label" for="output-unit-menu">Mértékegység:</label>
+        <label class="label" for="output-unit-menu">{{ _("Mértékegység") }}:</label>
+        <br>
         <select name="output-unit" id="output-unit-menu"
           onchange="submitValue(this.id, this.value);">
-          <option value="" disabled selected>Kérem válasszon:</option>
+          <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
           <!-- Populated by JavaScript after unit system selection. -->
         </select>
       </div>
       <!-- Output unit information box. -->
       <div class="item">
-        <h3 class="label">Információ:</h3>
+        <h3 class="label">{{ _("Információ") }}:</h3>
         <div class="info-box bordered">
           <p id="output-unit-info" class="info-text small">---</p>
         </div>
@@ -108,21 +113,21 @@
   <div class="container vertical full-wide">
     <!-- Input value box. -->
     <div class="item">
-      <label class="label" for="input-value-box">Bemeneti érték:</label>
+      <label class="label" for="input-value-box">{{ _("Bemeneti érték") }}:</label>
       <br>
       <input type="number" name="input-value"
-        id="input-value-box" placeholder="Érték" min="0"
+        id="input-value-box" placeholder="{{ _('Érték') }}" min="0"
         onfocus="this.value='';">
     </div>
     <!-- Convert button. -->
     <div class="item">
       <button class="normal" id="convert-btn"
         onclick="validateConvBtn(this.id, this.value);"
-        >Konvertálás</button>
+        >{{ _("Konvertálás") }}</button>
     </div>
     <!-- Result box. -->
     <div class="item result-box bordered">
-      <h3>Eredmény:</h3>
+      <h3>{{ _("Eredmény") }}:</h3>
       <div>
         <p id="result-field" class="result-text">---</p>
         <p id="symbol-field" class="result-text">n/a</p>
@@ -136,15 +141,15 @@
       <button
         class="normal" id="swap-btn"
         onclick="validateConvBtn(this.id, this.value);"
-        >Fordított</button>
+        >{{ _("Fordított") }}</button>
     </div>
     <!-- Reset button. -->
     <div class="item">
-      <button class="normal" onclick="window.location.reload(true);">Reset</button>
+      <button class="normal" onclick="window.location.reload(true);">{{ _("Reset") }}</button>
     </div>
     <!-- Back button. -->
     <div class="item">
-      <button class="normal" onclick="loadPage('/');">Vissza</button>
+      <button class="normal" onclick="loadPage('/');">{{ _("Vissza") }}</button>
     </div>
   </div>
 </div>
@@ -159,5 +164,13 @@
 {% endfor %} {% endblock footer %}
 <!-- Additional JavaScript for converter page functionality. -->
 {% block js %}
+<!-- Text strings that need gettext handling. -->
+<script>
+  const errorText = "{{ _('Hiba!') }}";
+  const missingValue = "{{ _('Hiányzó vagy rossz érték!') }}";
+  const missingInput = "{{ _('Hiányzó bemeneti mértékegység!') }}";
+  const missingOutput = "{{ _('Hiányzó kimeneti mértékegység!') }}";
+</script>
+<!-- Script file for converter page. -->
 <script src="{{ url_for('static', filename='js/converterScript.js') }}"></script>
 {% endblock js %}
