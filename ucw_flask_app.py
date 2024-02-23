@@ -27,7 +27,7 @@ TODO: 1. Testing.
 __author__ = "OperaVaria"
 __contact__ = "lcs_it@proton.me"
 __version__ = "1.0.0"
-__date__ = "2024.02.23"
+__date__ = "2024.02.24"
 
 
 # Licence:
