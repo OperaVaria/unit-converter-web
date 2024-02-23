@@ -1,0 +1,32 @@
+[
+    {
+        "cat_eng": "area",
+        "cat_hun": "terület",
+        "cat_raw": "area"
+    },
+    {
+        "cat_eng": "dimensionless",
+        "cat_hun": "darabmérték",
+        "cat_raw": "dimensionless"
+    },
+    {
+        "cat_eng": "length",
+        "cat_hun": "hosszúság",
+        "cat_raw": "length"
+    },
+    {
+        "cat_eng": "volume (dry)",
+        "cat_hun": "szárazmérték",
+        "cat_raw": "dry_vol"
+    },
+    {
+        "cat_eng": "volume (liquid)",
+        "cat_hun": "folyadékmérték",
+        "cat_raw": "liq_vol"
+    },
+    {
+        "cat_eng": "weight",
+        "cat_hun": "súly",
+        "cat_raw": "weight"
+    }
+]

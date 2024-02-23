@@ -1,0 +1,22 @@
+[
+    {
+        "category": "area",
+        "unit": "square metre (m²)"
+    },
+    {
+        "category": "dimensionless",
+        "unit": "piece/unit"
+    },
+    {
+        "category": "length",
+        "unit": "metre (m)"
+    },
+    {
+        "category": "volume",
+        "unit": "litre (l) Note: The SI base unit is m³, but most values are given in litre in the literature."
+    },
+    {
+        "category": "weight",
+        "unit": "kilogram (kg)"
+    }
+]
