@@ -111,7 +111,7 @@ def converter(unit_cat):
     # Create dictionary to populate system lists.
     unit_sys_dict = sys_dict_setup(unit_cat, locale)
     # Render.
-    return render_template("converter.html", conv_title=conv_title,
+    return render_template("converter.html", locale=locale, conv_title=conv_title,
                            unit_sys_dict=unit_sys_dict, cat_dict=cat_dict)
 
 @app.route("/about")

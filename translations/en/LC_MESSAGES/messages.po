@@ -50,10 +50,6 @@ msgstr "Back"
 msgid "Mértékegységváltó a történeti tudományok számára"
 msgstr "Unit Converter for Historical Studies"
 
-#: templates/converter.html:14
-msgid "Bemenet"
-msgstr "Input"
-
 #: templates/converter.html:21 templates/converter.html:72
 msgid "Mértékegységrendszer"
 msgstr "Unit system"

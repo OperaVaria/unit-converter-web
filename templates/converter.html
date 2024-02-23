@@ -7,108 +7,67 @@
   <div class="item title">
     <h1>{{conv_title}}</h1>
   </div>
-  <!-- Input side container. -->
+  <!-- Side container(s). With a for loop, jinja2 creates two identical containers,
+       one with input and one with output attributes -->
+  {% set sides = ["input", "output"] %}
+  {% for side in sides %}
   <div class="container vertical half-wide">
-    <!-- Input subtitle. -->
+    <!-- Subtitle, filled by a jinja2 if statement. -->
     <div class="item">
-      <h2>{{ _("Bemenet") }}:</h2>
+      {% if locale == "en" %}
+        <h2>{{side|capitalize}}:</h2>
+      {% elif locale == "hu" and side == "input" %}
+        <h2>Bemenet:</h2>
+      {% elif locale == "hu" and side == "output" %}
+        <h2>Kimenet:</h2>
+      {% endif %}
     </div>
-    <!-- Input system box, bordered. -->
+    <!-- Unit system box, bordered. -->
     <div class="container vertical bordered">
-      <!-- Input system menu -->
+      <!-- Unit system selection menu. -->
       <div class="item">
-        <label class="label" for="input-system-menu">
+        <label class="label" for="{{side ~ '-system-menu'}}">
           {{ _("Mértékegységrendszer") }}:</label>
         <br>
-        <select name="input-system" id="input-system-menu"
+        <select name="{{side ~ '-system'}}" id="{{side ~ '-system-menu'}}"
           onchange="submitValue(this.id, this.value);">
           <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
-          <!-- Populated by jinja2 on loading. -->
+          <!-- Menu populated by jinja2 on loading. -->
           {% for raw, gui in unit_sys_dict.items() %}
           <option value="{{raw}}">{{gui}}</option>
           {% endfor %}
         </select>
       </div>
-      <!-- Input system information box. -->
+      <!-- System information box. -->
       <div class="item">
         <h3 class="label">{{ _("Információ") }}:</h3>
         <div class="info-box bordered">
-          <p id="input-system-info" class="info-text large">---</p>
+          <p id="{{side ~ '-system-info'}}" class="info-text large">---</p>
         </div>
       </div>
     </div>
-    <!-- Input unit box, bordered -->
+    <!-- Unit box, bordered. -->
     <div class="container vertical bordered">
-      <!-- Input unit menu. -->
+      <!-- Unit selection menu. -->
       <div class="item">
-        <label class="label" for="input-unit-menu">{{ _("Mértékegység") }}:</label>
+        <label class="label" for="{{side ~ '-unit-menu'}}">{{ _("Mértékegység") }}:</label>
         <br>
-        <select name="input-unit" id="input-unit-menu"
+        <select name="{{side ~ '-unit'}}" id="{{side ~ '-unit-menu'}}"
           onchange="submitValue(this.id, this.value);">
           <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
-          <!-- Populated by JavaScript after unit system selection. -->
+          <!-- Menu populated by JavaScript after unit system selection. -->
         </select>
       </div>
-      <!-- Input unit information box. -->
+      <!-- Unit information box. -->
       <div class="item">
         <h3 class="label">{{ _("Információ") }}:</h3>
         <div class="info-box bordered">
-          <p id="input-unit-info" class="info-text small">---</p>
+          <p id="{{side ~ '-unit-info'}}" class="info-text small">---</p>
         </div>
       </div>
     </div>
   </div>
-  <!-- Output side container. -->
-  <div class="container vertical half-wide">
-    <!-- Output subtitle. -->
-    <div class="item">
-      <h2>{{ _("Kimenet") }}:</h2>
-    </div>
-    <!-- Output system box, bordered. -->
-    <div class="container vertical bordered">
-      <!-- Output system menu. -->
-      <div class="item">
-        <label class="label" for="output-system-menu">
-          {{ _("Mértékegységrendszer") }}:</label>
-        <br>
-        <select name="output-system" id="output-system-menu"
-          onchange="submitValue(this.id, this.value);">
-          <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
-          <!-- populated by jinja2 on loading. -->
-          {% for raw, gui in unit_sys_dict.items() %}
-          <option value="{{raw}}">{{gui}}</option>
-          {% endfor %}
-        </select>
-      </div>
-      <!-- Output system information box. -->
-      <div class="item">
-        <h3 class="label">{{ _("Információ") }}:</h3>
-        <div class="info-box bordered">
-          <p id="output-system-info" class="info-text large">---</p>
-        </div>
-      </div>
-    </div>
-    <!-- Output unit box, bordered -->
-    <div class="container vertical bordered">
-      <!-- Output unit menu. -->
-      <div class="item">
-        <label class="label" for="output-unit-menu">{{ _("Mértékegység") }}:</label>
-        <br>
-        <select name="output-unit" id="output-unit-menu"
-          onchange="submitValue(this.id, this.value);">
-          <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
-          <!-- Populated by JavaScript after unit system selection. -->
-        </select>
-      </div>
-      <!-- Output unit information box. -->
-      <div class="item">
-        <h3 class="label">{{ _("Információ") }}:</h3>
-        <div class="info-box bordered">
-          <p id="output-unit-info" class="info-text small">---</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% endfor %}  
   <!-- Calculation and result container. -->
   <div class="container vertical full-wide">
     <!-- Input value box. -->
