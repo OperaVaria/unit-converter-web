@@ -26,8 +26,8 @@ TODO: 1. Testing.
 # Metadata variables:
 __author__ = "OperaVaria"
 __contact__ = "lcs_it@proton.me"
-__version__ = "1.0.0"
-__date__ = "2024.02.24"
+__version__ = "1.0.1"
+__date__ = "2024.02.25"
 
 
 # Licence:
@@ -102,7 +102,7 @@ def index():
     locale = get_locale()
     # Create dictionary for button builder loop.
     cat_dict = cat_dict_setup(locale)
-    return render_template("index.html", cat_dict=cat_dict)
+    return render_template("index.html", cat_dict=cat_dict, version=__version__)
 
 @app.route("/<unit_cat>")
 def converter(unit_cat):
