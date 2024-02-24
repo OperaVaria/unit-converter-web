@@ -8,12 +8,18 @@ a mértékegység-adatbázisban részletesen jelölve van és ellenőrizhető. A
 megjelenő rövid információk ellátják a felhasználót a kiválasztott mértékegységek
 és mértékegységrendszerek alapvető kontextusával.
 
+A mértékegységváltó elérhető magyar és angol felülettel egyaránt.
+
+## Adatbázis
+
 Az adatbázis pillanatnyilag főképp a történelmi Ausztriához és Magyarországhoz kapcsolódó
 mértékegységrendszereket tartalmaz, csakúgy, mint az ókori görög és római mértékeket;
 ugyanakkor bármely mértékegységrendszer bevezethető, és ezek hozzáadása folyamatos.
 Minden modern metrikus és lényegi angolszász mértékegység szerepel viszonyítás végett.
 
-Az alkalmazás elérhető magyar és angol felülettel egyaránt.
+Az adatbázis tartalma külön hozzáférhető a "database" mappában sqlite, csv és json formátumban egyaránt.
+
+## Technikai háttér
 
 Projektünk a Flask web frameworkre épül, Python backenddel és hagyományos HTML-CSS-JS
 frontenddel. Külső weboldal sablon nem került felhasználásra. Az alkalmazás a HTML oldalak generálásában
@@ -31,11 +37,17 @@ other converters available on the internet, in the present project all informati
 literature, their source is duly noted and verifiable in the unit database. The short information
 notices on the interface provide the user with the basic context of the selected unit or unit system.
 
+The unit converter is available with both English and Hungarian interfaces.
+
+## Database
+
 Currently the database features mostly unit systems connected to the historical Austria and Hungary,
 as well as the Ancient Greek and Roman measurements; however any unit system can be implemented,
 and their addition is continuous. All modern metric and relevant Anglo-American units are present for reference.
 
-The application is available with both English and Hungarian interfaces.
+The contents of the database is accessible separately in the "database" folder in either sqlite, csv, or json formats.
+
+## Technical background
 
 Our project is built on the Flask web framework, with a Python backend and a conventional HTML-CSS-JS frontend.
 No external website templates were utilized. The application relies greatly on the Jinja template engine in
