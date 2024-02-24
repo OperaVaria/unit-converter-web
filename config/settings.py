@@ -17,3 +17,7 @@ PERMANENT_SESSION_LIFETIME = timedelta(days=30)
 SESSION_COOKIE_SECURE = True
 SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SAMESITE = "Strict"
+
+# Display message when accidentally run:
+if __name__ == "__main__":
+    print("This is a config file for Flask. Not meant to be run!")
