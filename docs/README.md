@@ -19,6 +19,8 @@ Minden modern metrikus és lényegi angolszász mértékegység szerepel viszony
 
 Az adatbázis tartalma külön hozzáférhető a "database" mappában sqlite, csv és json formátumban egyaránt.
 
+Az ógörög szavak átírásakor az úgynevezett "tudományos" átírást alkalmaztuk.
+
 ## Technikai háttér
 
 Projektünk a Flask web frameworkre épül, Python backenddel és hagyományos HTML-CSS-JS
@@ -46,6 +48,8 @@ as well as the Ancient Greek and Roman measurements; however any unit system can
 and their addition is continuous. All modern metric and relevant Anglo-American units are present for reference.
 
 The contents of the database is accessible separately in the "database" folder in either sqlite, csv, or json formats.
+
+The Ancient Greek words were transliterated following the ALA-LC romanization standard.
 
 ## Technical background
 
