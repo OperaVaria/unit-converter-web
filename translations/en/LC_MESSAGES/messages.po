@@ -29,19 +29,19 @@ msgstr "About"
 msgid "Magyar"
 msgstr "Hungarian"
 
-#: templates/about.html:48 templates/index.html:27
+#: templates/about.html:65 templates/index.html:27
 msgid "Angol"
 msgstr "English"
 
-#: templates/about.html:89
+#: templates/about.html:120
 msgid "Irodalom"
 msgstr "Sources"
 
-#: templates/about.html:95
+#: templates/about.html:126
 msgid "Forráskód"
 msgstr "Source code"
 
-#: templates/about.html:100 templates/converter.html:152
+#: templates/about.html:131 templates/converter.html:152
 #: templates/sources.html:20
 msgid "Vissza"
 msgstr "Back"
