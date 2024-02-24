@@ -9,18 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Safeguard if "request.accept_languages.best_match()" fails.
+- Html lang changes with locale.
 - Warning at the end of "settings.py" if file run by accident.
 
 ### Changed
 
-- Extended about page.
+- Revamped about page and source list.
 - Amended README.md.
 - Version number updates automatically on the index page.
 
 ### Fixed
 
 - Small adjustments to the database.
+- Safeguard if "request.accept_languages.best_match()" fails.
 - CSV files formatted to properly display on GitHub.
 - Minor aesthetic tweaks in HTML and CSS files.
 

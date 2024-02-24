@@ -98,16 +98,18 @@ babel = Babel(app, locale_selector=get_locale)
 @app.route("/")
 def index():
     """Set up index page."""
-    # Get current locale:
+    # Get current locale.
     locale = get_locale()
     # Create dictionary for button builder loop.
     cat_dict = cat_dict_setup(locale)
-    return render_template("index.html", cat_dict=cat_dict, version=__version__)
+    # Render.
+    return render_template("index.html", locale=locale,
+                           cat_dict=cat_dict, version=__version__)
 
 @app.route("/<unit_cat>")
 def converter(unit_cat):
     """Set up converter page."""
-    # Get current locale:
+    # Get current locale.
     locale = get_locale()
     # Create dictionary for button builder loop
     # and request error handling.
@@ -126,15 +128,21 @@ def converter(unit_cat):
 @app.route("/about")
 def about():
     """Set up about page."""
-    return render_template("about.html")
+    # Get current locale.
+    locale = get_locale()
+    # Render
+    return render_template("about.html", locale=locale)
 
 @app.route("/about/sources")
 def sources():
     """Set up sources page."""
+    # Get current locale.
+    locale = get_locale()
     # Create dictionary to populate sources lists.
     source_dict = source_dict_setup()
     # Render.
-    return render_template("sources.html", source_dict=source_dict)
+    return render_template("sources.html", locale=locale,
+                           source_dict=source_dict)
 
 @app.route("/fetch-traffic", methods=["POST"])
 def fetch_traffic():

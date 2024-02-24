@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  v1.0.0\n"
+"Project-Id-Version:  v1.0.1\n"
 "Report-Msgid-Bugs-To: lcs_it@proton.me\n"
-"POT-Creation-Date: 2024-02-22 13:28+0100\n"
-"PO-Revision-Date: 2024-02-22 13:31+0100\n"
+"POT-Creation-Date: 2024-02-24 19:00+0100\n"
+"PO-Revision-Date: 2024-02-22 19:00+0100\n"
 "Last-Translator: Csaba Latosinszky <lcs_it@proton.me>\n"
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -25,24 +25,24 @@ msgstr "Error!"
 msgid "Leírás"
 msgstr "About"
 
-#: templates/about.html:11 templates/index.html:26
+#: templates/about.html:12 templates/index.html:26
 msgid "Magyar"
 msgstr "Hungarian"
 
-#: templates/about.html:65 templates/index.html:27
+#: templates/about.html:68 templates/index.html:27
 msgid "Angol"
 msgstr "English"
 
-#: templates/about.html:120
+#: templates/about.html:125
 msgid "Irodalom"
 msgstr "Sources"
 
-#: templates/about.html:126
+#: templates/about.html:131
 msgid "Forráskód"
 msgstr "Source code"
 
-#: templates/about.html:131 templates/converter.html:152
-#: templates/sources.html:20
+#: templates/about.html:136 templates/converter.html:152
+#: templates/sources.html:22
 msgid "Vissza"
 msgstr "Back"
 
@@ -117,7 +117,7 @@ msgstr "Metric, Imperial, Traditional, Historical"
 msgid "Nyelv"
 msgstr "Language"
 
-#: templates/index.html:33
+#: templates/index.html:34
 msgid "Verzió"
 msgstr "Version"
 

@@ -6,12 +6,13 @@
   <div class="item title">
     <h1>{{ _("Leírás") }}</h1>
   </div>
+  <span class="spacer"></span>
   <!-- Hungarian -->
   <div class="item title">
     <h2>{{ _("Magyar") }}</h2>
   </div>
-  <div class="item text">
-    <p>
+  <div class="item">
+    <p class="body-text">
       E webalkalmazás egy könnyen használható átváltó történelmi mértékegységek
       számára. Célja, hogy segítse mind a kutatókat, mind az eligazodni vágyókat
       a történelmi mértékegységek konvertálásában. Szemben az interneten
@@ -19,53 +20,55 @@
       szakirodalmi forrásból származik, eredetük a mértékegység-adatbázisban
       részletesen jelölve van és ellenőrizhető. A felületen megjelenő rövid
       információk ellátják a felhasználót a kiválasztott mértékegységek és
-      mértékegységrendszerek alapvető kontextusával.
+      mértékegység&shy;<wbr>rendszerek alapvető kontextusával.
     </p>
-    <br>
-    <p>Az mértékegységváltó elérhető magyar és angol felülettel egyaránt.</p>
+    <p class="body-text">
+      A mértékegység&shy;<wbr>váltó elérhető magyar és angol felülettel egyaránt.
+    </p>
   </div>
   <div class="item title">
     <h3>Adatbázis</h3>
   </div>
-  <div class="item text">
-    <p>
+  <div class="item">
+    <p class="body-text">
       Az adatbázis pillanatnyilag főképp a történelmi Ausztriához és
-      Magyarországhoz kapcsolódó mértékegységrendszereket tartalmaz, csakúgy,
+      Magyarországhoz kapcsolódó mértékegység&shy;<wbr>rendszereket tartalmaz, csakúgy,
       mint az ókori görög és római mértékeket; ugyanakkor bármely
-      mértékegységrendszer bevezethető, és ezek hozzáadása folyamatos. Minden
+      mértékegység&shy;<wbr>rendszer bevezethető, és ezek hozzáadása folyamatos. Minden
       modern metrikus és lényegi angolszász mértékegység szerepel viszonyítás
       végett.
     </p>
-    <br>
-    <p>
+    <p class="body-text">
       Az adatbázis tartalma
       <a href="https://github.com/OperaVaria/unit-converter-web/tree/main/database"
       target="_blank">külön hozzáférhető</a>
       sqlite, csv és json formátumban egyaránt.
     </p>
-    <br>
-    <p>Az ógörög szavak átírásakor az úgynevezett "tudományos" átírást alkalmaztuk.</p>
+    <p class="body-text">
+      Az ógörög szavak átírásakor az úgynevezett "tudományos" átírást alkalmaztuk.
+    </p>
   </div>
   <div class="item title">
     <h3>Műszaki háttér</h3>
   </div>
-  <div class="item text">
-    <p>
+  <div class="item">
+    <p class="body-text">
       Projektünk a Flask web frameworkre épül, Python backenddel és hagyományos
       HTML-CSS-JS frontenddel. Külső weboldal sablon nem került felhasználásra.
       Az alkalmazás a HTML oldalak generálásában nagyban támaszkodik a Jinja
       sablon motorra a lehető legoptimálisabb weboldal-kódolás elérése
-      érdekében. A mértékegység-adatbázis az SQLite adatbázismotorral készült. A
+      érdekében. A mértékegység-<wbr>adatbázis az SQLite adatbázis&shy;<wbr>motorral készült. A
       lokalizáció a Flask-Babel kiegészítő segítségével történik, a
       nyelvválasztást az alkalmazás szerver oldali munkamenetekkel rögzíti.
     </p>
   </div>
+  <span class="spacer"></span>
   <!-- English -->
   <div class="item title">
     <h2>{{ _("Angol") }}</h2>
   </div>
-  <div class="item text">
-    <p>
+  <div class="item">
+    <p class="body-text">
       This web application is an easy-to-use converter for historical
       measurement units. Its aim is to assist both researchers and regular users
       with the conversion of historical units. Contrary to other converters
@@ -75,35 +78,36 @@
       interface provide the user with the basic context of the selected unit or
       unit system.
     </p>
-    <br>
-    <p>The application is available with both English and Hungarian interfaces.</p>
+    <p class="body-text">
+      The application is available with both English and Hungarian interfaces.
+    </p>
   </div>
   <div class="item title">
     <h3>Database</h3>
   </div>
-  <div class="item text">
-    <p>
+  <div class="item">
+    <p class="body-text">
       Currently the database features mostly unit systems connected to the
       historical Austria and Hungary, as well as the Ancient Greek and Roman
       measurements; however any unit system can be implemented, and their
       addition is continuous. All modern metric and relevant Anglo-American
       units are present for reference.
     </p>
-    <br>
-    <p>
+    <p class="body-text">
       The contents of the database
       <a href="https://github.com/OperaVaria/unit-converter-web/tree/main/database"
       target="_blank">is accessible separately</a>
       in either sqlite, csv, or json formats.
     </p>
-    <br>
-    <p>The Ancient Greek words were transliterated following the ALA-LC romanization standard.</p>
+    <p class="body-text">
+      The Ancient Greek words were transliterated following the ALA-LC romanization standard.
+    </p>
   </div>
   <div class="item title">
     <h3>Technical background</h3>
   </div>
-  <div class="item text">
-    <p>
+  <div class="item">
+    <p class="body-text">
       Our project is built on the Flask web framework, with a Python backend and
       a conventional HTML-CSS-JS frontend. No external website templates were
       utilized. The application relies greatly on the Jinja template engine in
@@ -112,8 +116,9 @@
       language selection is stored in server-side sessions.
     </p>
   </div>
+  <span class="spacer"></span>
   <!-- Buttons -->
-  <div class="container horizontal padded">
+  <div class="container horizontal">
     <div class="item">
       <button class="normal"
         onclick="loadPage('/about/sources');">
