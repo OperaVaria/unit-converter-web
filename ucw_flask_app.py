@@ -67,7 +67,7 @@ app = Flask(__name__)
 
 # Flask app configuration:
 app.config.from_file("./config/secretKey.json", load=json.load) # Load secret key.
-app.config.from_pyfile("./config/settings.py") # Other settings.
+app.config.from_pyfile("./config/settings.py") # Load other settings.
 app.json.sort_keys = False # Do not sort json content alphabetically.
 
 # Set up Session.
@@ -75,10 +75,19 @@ sess = Session(app)
 
 # Babel get_locale function.
 def get_locale():
+    # If locale information in session: set it as locale.
     if "locale" in session:
-        return session["locale"]
+        locale = session["locale"]
     else:
-        return request.accept_languages.best_match(app.config['LANGUAGES'].keys())
+        # If not, attempt best match.
+        loc_best = request.accept_languages.best_match(app.config['LANGUAGES'].keys())
+        # if unsuccessful: set default locale.
+        if loc_best is None:
+            locale = app.config.get("BABEL_DEFAULT_LOCALE")
+        # If successful: set best match.
+        else:
+            locale = loc_best
+    return locale
 
 # Set up Babel.
 babel = Babel(app, locale_selector=get_locale)
