@@ -17,7 +17,7 @@
     <button class="normal" onclick="loadPage('/about');">{{ _("Információ") }}</button>
   </div>
   <!-- Language selection buttons. -->
-  <div class="item full-wide">  
+  <div class="item full-wide">
     <form action="{{ url_for('receive_post') }}" method="post">
       <div class="item">
         <h2 class="label">{{ _("Nyelv") }}:</h2>
@@ -26,7 +26,7 @@
         <button class="small" name="locale-btn" type="submit" value="hu">{{ _("Magyar") }}</button>
         <button class="small" name="locale-btn" type="submit" value="en">{{ _("Angol") }}</button>
       </div>
-    </form>    
+    </form>
   </div>
   <!-- Version number. -->
   <div class="item full-wide padded">
