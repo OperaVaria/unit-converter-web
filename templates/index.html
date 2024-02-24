@@ -20,7 +20,7 @@
   <div class="item full-wide">  
     <form action="{{ url_for('receive_post') }}" method="post">
       <div class="item">
-        <h3 class="label">{{ _("Nyelv") }}:</h3>
+        <h2 class="label">{{ _("Nyelv") }}:</h2>
       </div>
       <div class="container horizontal">
         <button class="small" name="locale-btn" type="submit" value="hu">{{ _("Magyar") }}</button>
@@ -30,7 +30,7 @@
   </div>
   <!-- Version number. -->
   <div class="item full-wide padded">
-    <h4> {{ _("Verzió") }} - 1.0.0</h4>
+    <h3> {{ _("Verzió") }} - {{version}}</h3>
   </div>
 </div>
 {% endblock body %}
