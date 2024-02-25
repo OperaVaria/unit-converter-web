@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version:  v1.0.1\n"
 "Report-Msgid-Bugs-To: lcs_it@proton.me\n"
 "POT-Creation-Date: 2024-02-24 19:00+0100\n"
-"PO-Revision-Date: 2024-02-22 19:00+0100\n"
+"PO-Revision-Date: 2024-02-24 19:00+0100\n"
 "Last-Translator: Csaba Latosinszky <lcs_it@proton.me>\n"
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -29,19 +29,19 @@ msgstr "About"
 msgid "Magyar"
 msgstr "Hungarian"
 
-#: templates/about.html:68 templates/index.html:27
+#: templates/about.html:63 templates/index.html:27
 msgid "Angol"
 msgstr "English"
 
-#: templates/about.html:125
+#: templates/about.html:114
 msgid "Irodalom"
 msgstr "Sources"
 
-#: templates/about.html:131
+#: templates/about.html:120
 msgid "Forráskód"
 msgstr "Source code"
 
-#: templates/about.html:136 templates/converter.html:152
+#: templates/about.html:125 templates/converter.html:152
 #: templates/sources.html:22
 msgid "Vissza"
 msgstr "Back"
