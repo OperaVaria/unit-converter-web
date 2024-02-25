@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Safeguard if "request.accept_languages.best_match()" fails.
 - CSV files formatted to properly display on GitHub.
 - Minor aesthetic tweaks in HTML and CSS files.
+- Better look on smaller mobile screens.
 
 ## [1.0.0] - 2024.02.24
 

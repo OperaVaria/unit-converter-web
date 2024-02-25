@@ -8,7 +8,7 @@ a mértékegység-adatbázisban részletesen jelölve van és ellenőrizhető. A
 megjelenő rövid információk ellátják a felhasználót a kiválasztott mértékegységek
 és mértékegységrendszerek alapvető kontextusával.
 
-A mértékegységváltó elérhető magyar és angol felülettel egyaránt.
+Az alkalmazás elérhető magyar és angol felülettel egyaránt.
 
 ## Adatbázis
 
@@ -39,7 +39,7 @@ other converters available on the internet, in the present project all informati
 literature, their source is duly noted and verifiable in the unit database. The short information
 notices on the interface provide the user with the basic context of the selected unit or unit system.
 
-The unit converter is available with both English and Hungarian interfaces.
+The application is available with both English and Hungarian interfaces.
 
 ## Database
 
@@ -61,6 +61,8 @@ the Flask-Babel extension, the language selection is stored in server-side sessi
 This project is the improved version and online implementation of our previous, [Python desktop application](https://github.com/OperaVaria/unit-converter).
 
 ## Egyéb információk - Other Information
+
+Tesztelve/Tested on: Firefox 123.0, Google Chrome 122.0 (Windows 11 and Android versions)
 
 **[Elérhetőség/Contact](mailto:lcs_it@proton.me)**
 
