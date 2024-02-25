@@ -64,6 +64,7 @@ body {
 .vertical {
   flex-flow: column wrap;
   gap: 4vh 1vw;
+  max-width: 95vw;
   padding: 1.5em;
 }
 
@@ -104,6 +105,7 @@ body {
 .info-box {
   background-color: #1167b1;
   color: #f5f5f5;
+
 }
 
 .result-box {
@@ -130,11 +132,10 @@ body {
 }
 
 select {
-  /* background-color: #bcdaec; */
+  cursor: pointer;
   font-size: 0.8em;
   margin: 0.5em;
-  max-width: 60vw;
-  padding: 0.2em;
+  padding: 0.3em;
   text-align: center;
   width: 20em;
 }
@@ -142,7 +143,6 @@ select {
 input {
   font-size: 0.8em;
   margin: 0.5em;
-  max-width: 60vw;
   padding: 0.2em;
   text-align: center;
   width: 20em;
@@ -183,7 +183,7 @@ dd {
   display: flex;
   justify-content: center;
   margin: 0.5em;
-  max-width: 70vw;
+  max-width: 80vw;
   opacity: 1;
   padding: 0 2em;
   text-decoration: none;
@@ -263,7 +263,7 @@ button:hover {
   height: 2em;
 }
 
-/* Resizes for smaller screens: */
+/* Resizes for tablet screens: */
 @media only screen and (max-width: 1024px) {
   .header-text {
     font-size: 2.5em;
@@ -280,7 +280,7 @@ button:hover {
 
 }
 
-/* Resizes for mobile screens: */
+/* Resizes for larger mobile screens: */
 @media only screen and (max-width: 480px) {
   .header-text {
     font-size: 1.75em;
@@ -289,5 +289,14 @@ button:hover {
   .margined {
     margin-bottom: 28vh;
     margin-top: 18vh;
+  }
+}
+
+/* Resizes for smaller mobile screens: */
+@media only screen and (max-width: 360px) {
+
+  .margined {
+    margin-bottom: 30vh;
+    margin-top: 22vh;
   }
 }
