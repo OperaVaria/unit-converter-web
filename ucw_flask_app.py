@@ -130,7 +130,7 @@ def about():
     """Set up about page."""
     # Get current locale.
     locale = get_locale()
-    # Render
+    # Render.
     return render_template("about.html", locale=locale)
 
 @app.route("/about/sources")
@@ -147,9 +147,9 @@ def sources():
 @app.route("/fetch-traffic", methods=["POST"])
 def fetch_traffic():
     """URL for fetch request json data transfer."""
-    # Get current locale:
+    # Get current locale.
     locale = get_locale()
-    # Get request json:
+    # Get request json.
     req = request.get_json()
     # Handle requests based on sender.
     match req["sender"]:
