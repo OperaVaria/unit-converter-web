@@ -2,7 +2,7 @@
 {% extends "base.html" %}
 {% block body %}
 <!-- Main container. -->
-<div class="container horizontal margined">
+<div class="container horizontal">
   <!-- Title. -->
   <div class="item title">
     <h1>{{conv_title}}</h1>
@@ -28,9 +28,8 @@
       <div class="item">
         <label class="label" for="{{side ~ '-system-menu'}}">
           {{ _("Mértékegységrendszer") }}:</label>
-        <br>
         <select name="{{side ~ '-system'}}" id="{{side ~ '-system-menu'}}"
-          class="bordered" onchange="submitValue(this.id, this.value);">
+          class="custom-select" onchange="submitValue(this.id, this.value);">
           <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
           <!-- Menu populated by jinja2 on loading. -->
           {% for raw, gui in unit_sys_dict.items() %}
@@ -51,9 +50,8 @@
       <!-- Unit selection menu. -->
       <div class="item">
         <label class="label" for="{{side ~ '-unit-menu'}}">{{ _("Mértékegység") }}:</label>
-        <br>
         <select name="{{side ~ '-unit'}}" id="{{side ~ '-unit-menu'}}"
-          class="bordered" onchange="submitValue(this.id, this.value);">
+          class="custom-select" onchange="submitValue(this.id, this.value);">
           <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
           <!-- Menu populated by JavaScript after unit system selection. -->
         </select>
@@ -110,6 +108,7 @@
     <div class="item">
       <button class="normal" onclick="loadPage('/');">{{ _("Vissza") }}</button>
     </div>
+    <span class="spacer"></span>
   </div>
 </div>
 {% endblock body %}
@@ -125,10 +124,16 @@
 {% block js %}
 <!-- Text strings that need gettext handling. -->
 <script>
+  const searchPlaceholder = "{{ _('Keresés') }}";
+  const noResult = "{{ _('Nincs találat') }}";
   const errorText = "{{ _('Hiba!') }}";
   const missingValue = "{{ _('Hiányzó vagy rossz érték!') }}";
   const missingInput = "{{ _('Hiányzó bemeneti mértékegység!') }}";
   const missingOutput = "{{ _('Hiányzó kimeneti mértékegység!') }}";
+</script>
+<!-- Script file for Choices.js. -->
+<script
+  src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js">
 </script>
 <!-- Script file for converter page. -->
 <script src="{{ url_for('static', filename='js/converterScript.js') }}"></script>

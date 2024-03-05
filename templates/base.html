@@ -6,25 +6,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon. -->
     <link
       rel="shortcut icon"
       href="{{ url_for('static', filename='favicon/favicon.svg') }}">
+    <!-- Choices.js stylesheet. -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <!-- Local stylesheet. -->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Jinja2 nesting: additional CSS. -->
+    {% block css %}{% endblock css %}
   </head>
   <body>
     <!-- Fixed header with title -->
     <header class="header container horizontal">
       <h1 class="header-text anim-link" onclick="loadPage('/');"
-        >{{ _("Mértékegységváltó a történeti tudományok számára") }}</h1>
+        >{{ _("Mértékegység&shy;váltó a történeti tudományok számára") }}</h1>
     </header>
     <!-- Jinja2 nesting: main content -->
     {% block body %}{% endblock body %}
     <!-- Fixed footer. -->
     <footer class="footer container horizontal">
-      <!-- Jinja2 nesting: footer content -->
-      {% block footer %}{% endblock footer %}
+    <!-- Jinja2 nesting: footer content -->
+    {% block footer %}{% endblock footer %}
     </footer>
     <!-- Main JavaScript file. -->
     <script src="{{ url_for('static', filename='js/mainScript.js') }}"></script>

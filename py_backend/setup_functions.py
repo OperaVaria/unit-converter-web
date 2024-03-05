@@ -42,8 +42,8 @@ def sys_dict_setup(unit_cat, locale):
     return unit_sys_dict
 
 
-def unit_dict_setup(unit_system, locale):
-    """Build selected unit dictionary from the database."""
+def unit_list_setup(unit_system, locale):
+    """Build selected unit list from the database."""
     # SQLite command based on current locale.
     if locale == "hu":
         command = "SELECT name_raw, name_hun FROM unit_list WHERE sys_raw = ?"
@@ -53,7 +53,9 @@ def unit_dict_setup(unit_system, locale):
     param = (unit_system,)
     # Call fetch function.
     unit_dict = fetch_dict(command, param)
-    return unit_dict
+    # Convert to proper Py list/JS array format for Choices.js.
+    unit_list = [{"value": i, "label": j} for i, j in unit_dict.items()]
+    return unit_list
 
 
 def sys_info_setup(unit_system, locale):

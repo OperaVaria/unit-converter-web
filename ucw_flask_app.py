@@ -26,8 +26,8 @@ TODO: 1. Testing.
 # Metadata variables:
 __author__ = "OperaVaria"
 __contact__ = "lcs_it@proton.me"
-__version__ = "1.0.1"
-__date__ = "2024.02.25"
+__version__ = "1.1.0"
+__date__ = "2024.03.06"
 
 
 # Licence:
@@ -58,7 +58,7 @@ import json
 
 # Local imports:
 from py_backend.setup_functions import (title_setup, sys_dict_setup, sys_info_setup,
-                                        unit_dict_setup, unit_info_setup, calculation_setup,
+                                        unit_list_setup, unit_info_setup, calculation_setup,
                                         cat_dict_setup, source_dict_setup)
 from py_backend.calc_functions import calculate
 
@@ -154,9 +154,9 @@ def fetch_traffic():
     # Handle requests based on sender.
     match req["sender"]:
         case "input-system-menu" | "output-system-menu":
-            # System menus: send system info data and a dictionary to populate unit list.
+            # System menus: send system info data and unit list to populate unit menu.
             info_dat = sys_info_setup(req["value"], locale)
-            menu_dat = unit_dict_setup(req["value"], locale)
+            menu_dat = unit_list_setup(req["value"], locale)
             res = make_response(jsonify({"reqSender": req["sender"], "info": info_dat, "list": menu_dat}), 200)
         case "input-unit-menu"| "output-unit-menu":
             # Unit menus: send unit info data.

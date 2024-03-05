@@ -1,10 +1,6 @@
 // Additional JavaScript for converter functionality.
 
 // Declare constant variables:
-const inputSystemMenu = document.getElementById("input-system-menu");
-const outputSystemMenu = document.getElementById("output-system-menu");
-const inputUnitMenu = document.getElementById("input-unit-menu");
-const outputUnitMenu = document.getElementById("output-unit-menu");
 const inputSystemInfo = document.getElementById("input-system-info");
 const outputSystemInfo = document.getElementById("output-system-info");
 const inputUnitInfo = document.getElementById("input-unit-info");
@@ -14,17 +10,46 @@ const convertButton = document.getElementById("convert-btn");
 const resultField = document.getElementById("result-field");
 const symbolField = document.getElementById("symbol-field");
 
+// Choices.js setup.
+
+// Global settings for Choices objects.
+let choicesGlobSet = {
+  allowHTML: false,
+  noResultsText: noResult,
+  position: "bottom",
+  searchFields: ["label"],
+  searchPlaceholderValue: searchPlaceholder,
+  shouldSort: false,
+};
+// Create Choices objects.
+const inputSystemMenu = new Choices(
+  document.getElementById("input-system-menu"),
+  choicesGlobSet
+);
+const outputSystemMenu = new Choices(
+  document.getElementById("output-system-menu"),
+  choicesGlobSet
+);
+const inputUnitMenu = new Choices(
+  document.getElementById("input-unit-menu"),
+  choicesGlobSet
+);
+const outputUnitMenu = new Choices(
+  document.getElementById("output-unit-menu"),
+  choicesGlobSet
+);
+
 // Tasks on load: corrects soft reloading imperfections.
 window.addEventListener("load", windowLoad);
 function windowLoad() {
   // Disable unit menus.
-  inputUnitMenu.disabled = true;
-  outputUnitMenu.disabled = true;
+  inputUnitMenu.disable();
+  outputUnitMenu.disable();
   // (Re)select placeholder items.
-  inputSystemMenu.selectedIndex = "0";
-  outputSystemMenu.selectedIndex = "0";
-  inputUnitMenu.selectedIndex = "0";
-  outputUnitMenu.selectedIndex = "0";
+  inputSystemMenu.setChoiceByValue("");
+  outputSystemMenu.setChoiceByValue("");
+  inputUnitMenu.setChoiceByValue("");
+  outputUnitMenu.setChoiceByValue("");
   // Reset input value box to placeholder.
   valueBox.value = "";
 }
@@ -39,15 +64,15 @@ function submitValue(id, value) {
     var subData = {
       sender: id,
       inputValue: valueBox.value,
-      inputUnit: inputUnitMenu.value,
-      outputUnit: outputUnitMenu.value,
+      inputUnit: inputUnitMenu.getValue(true),
+      outputUnit: outputUnitMenu.getValue(true),
     };
   } else if (id === "swap-btn") {
     var subData = {
       sender: id,
       inputValue: valueBox.value,
-      inputUnit: outputUnitMenu.value,
-      outputUnit: inputUnitMenu.value,
+      inputUnit: outputUnitMenu.getValue(true),
+      outputUnit: inputUnitMenu.getValue(true),
     };
   } else {
     var subData = {
@@ -109,23 +134,16 @@ function submitValue(id, value) {
 
 /* Steps to do with HTML elements after unit system
    selection response. */
-function setElements(infoElement, MenuElement, data) {
+function setElements(infoElement, menuObject, data) {
   // Refresh system info box with animation.
   animatedFade(infoElement, data.info);
-  /* Reset unit menu (remove all elements
-     besides placeholder). */
-  while (MenuElement.options.length > 1) {
-    MenuElement.remove(1);
-  }
+  // Reset unit menu.
+  menuObject.destroy();
+  menuObject.init();
   // Populate unit menu.
-  Object.entries(data.list).forEach(([key, value]) => {
-    let newOption = new Option(value, key);
-    MenuElement.add(newOption);
-  });
-  // Set default option to placeholder.
-  MenuElement.selectedIndex = 0;
+  menuObject.setChoices(data.list, "value", "label", false);
   // Enable select menu if disabled.
-  MenuElement.disabled = false;
+  menuObject.enable();
 }
 
 /* Rudimentary fade-out fade-in animation
@@ -149,10 +167,10 @@ function validateConvBtn(id, value) {
   if (valueBox.value == "") {
     animatedFade(resultField, errorText);
     animatedFade(symbolField, missingValue);
-  } else if (inputUnitMenu.value == "") {
+  } else if (inputUnitMenu.getValue(true) == "") {
     animatedFade(resultField, errorText);
     animatedFade(symbolField, missingInput);
-  } else if (outputUnitMenu.value == "") {
+  } else if (outputUnitMenu.getValue(true) == "") {
     animatedFade(resultField, errorText);
     animatedFade(symbolField, missingOutput);
   } else {
