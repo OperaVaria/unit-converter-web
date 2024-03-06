@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Choices.js select menus implemented.
+- New unit systems: Austrian fortification area, length, Austro-Hungarian sailor's.
 
 ### Changed
 
@@ -17,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Style tweaks.
 - Spacing tweaks.
 - Docs updated.
+
+### Fixed
+
+- Database typos.
 
 ## [1.0.1] - 2024.02.25
 
