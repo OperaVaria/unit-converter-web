@@ -29,7 +29,7 @@
         <label class="label" for="{{side ~ '-system-menu'}}">
           {{ _("Mértékegységrendszer") }}:</label>
         <select name="{{side ~ '-system'}}" id="{{side ~ '-system-menu'}}"
-          class="custom-select" onchange="submitValue(this.id, this.value);">
+          class="custom-select" onchange="submitValue(this.id, this.value);" hidden>
           <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
           <!-- Menu populated by jinja2 on loading. -->
           {% for raw, gui in unit_sys_dict.items() %}
@@ -51,7 +51,7 @@
       <div class="item">
         <label class="label" for="{{side ~ '-unit-menu'}}">{{ _("Mértékegység") }}:</label>
         <select name="{{side ~ '-unit'}}" id="{{side ~ '-unit-menu'}}"
-          class="custom-select" onchange="submitValue(this.id, this.value);">
+          class="custom-select" onchange="submitValue(this.id, this.value);" hidden>
           <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
           <!-- Menu populated by JavaScript after unit system selection. -->
         </select>
@@ -108,7 +108,7 @@
     <div class="item">
       <button class="normal" onclick="loadPage('/');">{{ _("Vissza") }}</button>
     </div>
-    <span class="spacer"></span>
+    <span class="spacer-normal"></span>
   </div>
 </div>
 {% endblock body %}

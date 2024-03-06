@@ -6,7 +6,7 @@
   <div class="item title">
     <h1>{{ _("Felhasznált irodalom") }}</h1>
   </div>
-  <span class="spacer"></span>
+  <span class="spacer-small"></span>
   <!-- List of consulted works, populated by jinja2 loop from dictionary. -->
   <div class="item bilb-text">
     <dl>
@@ -16,7 +16,7 @@
       {% endfor %}
     </dl>
   </div>
-  <span class="spacer"></span>
+  <span class="spacer-small"></span>
   <!-- Back button. -->
   <div class="item full-wide">
     <button class="normal" onclick="loadPage('/about');">{{ _("Vissza") }}</button>

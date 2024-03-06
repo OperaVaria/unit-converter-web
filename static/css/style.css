@@ -100,7 +100,6 @@ body {
 .info-box {
   background-color: #1167b1;
   color: #f5f5f5;
-
 }
 
 .result-box {
@@ -130,19 +129,25 @@ body {
   font-size: 1em;
 }
 
-.choices[data-type*=select-one] > .choices__list > .choices__list > .choices__item--selectable
-{
-	padding-right: 1.5em;
+.choices[data-type*="select-one"]
+  > .choices__list
+  > .choices__list
+  > .choices__item--selectable {
+  padding-right: 1.5em;
 }
 
-.choices[data-type*=select-one] > .choices__list > .choices__list > .choices__item--disabled
-{
-	padding-right: 1em;
+.choices[data-type*="select-one"]
+  > .choices__list
+  > .choices__list
+  > .choices__item--disabled {
+  padding-right: 1em;
 }
 
-.choices[data-type*=select-one] > .choices__list > .choices__list > .choices__item--selectable::after
-{
-	display: none;
+.choices[data-type*="select-one"]
+  > .choices__list
+  > .choices__list
+  > .choices__item--selectable::after {
+  display: none;
 }
 
 /* Input elements */
@@ -163,17 +168,17 @@ dt {
 }
 
 dd {
-  margin-left: 6em;
   margin-bottom: 1em;
+  margin-left: 6em;
   text-indent: -3em;
 }
 
 /* Text */
 
 .body-text {
-  max-width: 60vw;
-  margin-top: 1em;
   margin-bottom: 1em;
+  margin-top: 1em;
+  max-width: 60vw;
   text-align: justify;
 }
 
@@ -240,8 +245,8 @@ button {
 button.small {
   font-size: 0.75em;
   height: 3em;
-  width: 12em;
   margin: 0 0.5em;
+  width: 12em;
 }
 
 button.normal {
@@ -267,9 +272,19 @@ button:hover {
 
 /* Spacer element */
 
-.spacer {
-  flex-basis: 100%;
+.spacer-small {
+  flex-basis: 100%;  
   height: 1em;
+}
+
+.spacer-normal {
+  flex-basis: 100%;
+  height: 2em;
+}
+
+.spacer-large {
+  flex-basis: 100%;
+  height: 17vh;
 }
 
 /* Resizes for tablet screens: */
@@ -286,7 +301,6 @@ button:hover {
     gap: 0;
     padding: 1vh 1vw;
   }
-
 }
 
 /* Resizes for larger mobile screens: */
