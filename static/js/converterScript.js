@@ -21,6 +21,7 @@ let choicesGlobSet = {
   searchPlaceholderValue: searchPlaceholder,
   shouldSort: false,
 };
+
 // Create Choices objects.
 const inputSystemMenu = new Choices(
   document.getElementById("input-system-menu"),
