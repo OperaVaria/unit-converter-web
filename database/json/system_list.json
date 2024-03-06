@@ -58,6 +58,17 @@
         "cat_eng": "area",
         "cat_hun": "terület",
         "cat_raw": "area",
+        "info_eng": "Theorized square units of the Austrian fortification length measures, introduced from 1748.",
+        "info_hun": "Feltételezett négyszög egységei az osztrák erődítmény hosszmértékeknek, amelyeket 1748-tól vezettek be.",
+        "name_eng": "Austrian fortification",
+        "name_hun": "osztrák erődítmény",
+        "name_raw": "austrian_fortification_area",
+        "source": "Bogdán 1990, 46."
+    },
+    {
+        "cat_eng": "area",
+        "cat_hun": "terület",
+        "cat_raw": "area",
         "info_eng": "A national system used from the Middle Ages to the 19th century. Unlike the Hungarian Royal length units, it was not adopted but developed internally.",
         "info_hun": "A középkortól a 19. századig használt országos rendszer. A hosszmértékekkel ellentétben nem átvétel, hanem belső fejlődés eredménye.",
         "name_eng": "Hungarian Royal",
@@ -251,6 +262,28 @@
         "name_hun": "osztrák/bécsi",
         "name_raw": "austrian_viennese_length",
         "source": "Bogdán 1990, 35."
+    },
+    {
+        "cat_eng": "length",
+        "cat_hun": "hosszúság",
+        "cat_raw": "length",
+        "info_eng": "Introduced in 1748 by Austrian military engineers to uniformly measure fortification dimensions. Based on the French system.",
+        "info_hun": "1748-ban vezették be az osztrák hadmérnökök a katonai objektumok egységes mérésére. A francia rendszeren alapszik.",
+        "name_eng": "Austrian fortification",
+        "name_hun": "osztrák erődítmény",
+        "name_raw": "austrian_fortification_length",
+        "source": "Bogdán 1990, 38."
+    },
+    {
+        "cat_eng": "length",
+        "cat_hun": "hosszúság",
+        "cat_raw": "length",
+        "info_eng": "Appears at the end of the 19th century. Senary number system, based on the Viennese inch. Rare, specific use.",
+        "info_hun": "A 19. század végén tűnik fel. Hatos számrendszerű, a bécsi hüvelyken alapszik. Ritka, specifikus használat.",
+        "name_eng": "Austro-Hungarian sailor's",
+        "name_hun": "osztrák-magyar hajós",
+        "name_raw": "austro_hungarian_sailor_s",
+        "source": "Bogdán 1990, 38, 161."
     },
     {
         "cat_eng": "length",
@@ -454,7 +487,7 @@
         "cat_eng": "volume (dry)",
         "cat_hun": "szárazmérték",
         "cat_raw": "dry_vol",
-        "info_eng": "The Buda system until the beginning of the 17th century. Its use was mandated nationally by Acts 1405(I):1. and (II):VI. After the Ottoman conquest, its relavance was reduced to a local scale. Rates follow the liquid pint.",
+        "info_eng": "The Buda system until the beginning of the 17th century. Its use was mandated nationally by Acts 1405(I):1. and (II):VI. After the Ottoman conquest, its relevance was reduced to a local scale. Rates follow the liquid pint.",
         "info_hun": "Budai rendszer a 17. század elejéig. Használatát az 1405(I):1. és (II):VI. tc. országosan is előírta. Az oszmán hódítást követően helyi léptékűvé süllyed. Mértékei a híg iccéhez igazodnak.",
         "name_eng": "Buda (-17th c. start)",
         "name_hun": "budai (–17. sz. eleje)",

@@ -27,12 +27,15 @@ iugerum,iugerum,iugerum,"Rom. acre: 120*140 pedes, i.e. 2 aq.","róm. hold: 120*
 heredium,heredium,heredium,"mg. ""hereditary lot"", 2 iug.","jel. ""öröklött telek"", 2 iug.",her.,roman_area,Roman,area,"Egger, Jochen, and Smart 2010, 461.",5046.68
 centuria,centuria,centuria,100 her.,100 her.,cent.,roman_area,Roman,area,"Egger, Jochen, and Smart 2010, 461.",504700.0
 saltus,saltus,saltus,"mg. ""pasture"", 4 cent.","jel. ""legelő"", 4 cent.",sal.,roman_area,Roman,area,"Egger, Jochen, and Smart 2010, 461.",2018700.0
-wiener_quadratlinie,Wiener Quadratlinie,Wiener Quadratlinie,Viennese sq. rope,bécsi négyszögvonal,QLin.,austrian_viennese_area,Austrian/Viennese,area,"Bogdán 1990, 37.",4.8179861e-06
+wiener_quadratlinie,Wiener Quadratlinie,Wiener Quadratlinie,Viennese sq. line,bécsi négyszögvonal,QLin.,austrian_viennese_area,Austrian/Viennese,area,"Bogdán 1990, 37.",4.8179861e-06
 wiener_quadratzoll,Wiener Quadratzoll,Wiener Quadratzoll,Viennese sq. inch: 144 QLin.,bécsi négyszöghüvelyk: 144 QLin.,QZoll,austrian_viennese_area,Austrian/Viennese,area,"Bogdán 1990, 37.",0.00069379
 wiener_quadratfuss,Wiener Quadratfuß,Wiener Quadratfuß,Viennese sq. foot: 144 QZoll,bécsi négyszögláb: 144 QZoll,QFuß,austrian_viennese_area,Austrian/Viennese,area,"Bogdán 1990, 37.",0.099907
 wiener_quadratklafter,Wiener Quadratklafter,Wiener Quadratklafter,Viennese sq. fathom: 36 QFuß,bécsi négyszögöl: 36 QFuß,QKlaf.,austrian_viennese_area,Austrian/Viennese,area,"Bogdán 1990, 37.",3.59665
-niederosterreiches_joch,Niederösterreiches Joch,Niederösterreiches Joch,"Lower Austrian acre, originally 1584 QKlaf, rounded to 1600 in 1786 by Joseph II's decree.","Alsó-ausztriai hold, eredetileg 1584 QKlaft, 1786-ban II. József rendelettel kerekíti 1600-ra.",Joch,austrian_viennese_area,Austrian/Viennese,area,"Bogdán 1990, 37.",5754.64
-osterreichische_quadratmeile,Österreichische Quadratmeile,Österreichische Quadratmeile,Austrian sq. mile: 100 Joch,osztrák négyszögmérföld: 100 Joch,QMei.,austrian_viennese_area,Austrian/Viennese,area,"Bogdán 1990, 37.",575464.0
+niederoesterreiches_joch,Niederösterreiches Joch,Niederösterreiches Joch,"Lower Austrian acre, originally 1584 QKlaf, rounded to 1600 in 1786 by Joseph II's decree.","Alsó-ausztriai hold, eredetileg 1584 QKlaft, 1786-ban II. József rendelettel kerekíti 1600-ra.",Joch,austrian_viennese_area,Austrian/Viennese,area,"Bogdán 1990, 37.",5754.64
+oesterreichische_quadratmeile,Österreichische Quadratmeile,Österreichische Quadratmeile,Austrian sq. mile: 100 Joch,osztrák négyszögmérföld: 100 Joch,QMei.,austrian_viennese_area,Austrian/Viennese,area,"Bogdán 1990, 37.",575464.0
+fort_quadratzoll,Fort. Quadratzoll,Fort. Quadratzoll,"Austrian fort. sq. inch, equal to the Paris sq. inch.","Osztrák erődítmény négyszöghüvelyk, megegyezik a párizsi négyszöghüvelykkel.",FQZ,austrian_fortification_area,Austrian fortification,area,"Bogdán 1990, 46.",0.00732
+fort_quadratfuss,Fort. Quadratfuß,Fort. Quadratfuß,Austrian fort. sq. foot: 144 FQZ,osztrák erődítmény négyszögláb: 144 FQZ,FQF,austrian_fortification_area,Austrian fortification,area,"Bogdán 1990, 46.",0.10549
+fort_quadratklafter,Fort. Quadratklafter,Fort. Quadratklafter,Austrian fort. sq. fathom: 36 FQF,osztrák erődítmény négyszögöl: 36 FQF,FQK,austrian_fortification_area,Austrian fortification,area,"Bogdán 1990, 46.",3.79782
 kiralyi_negyszoglab,királyi négyszögláb,királyi négyszögláb,Hun. Royal sq. foot: 1/864 hold,"lat. pes quadratus, 1/864 hold",nláb,hungarian_royal_area,Hungarian Royal,area,"Bogdán 1978, 35, and Bogdán 1990, 36.",0.0977
 kiralyi_negyszogol,királyi négyszögöl,királyi négyszögöl,Hun. Royal sq. fathom: 100 nláb,"lat. orgia quadrata, 100 nláb",nöl,hungarian_royal_area,Hungarian Royal,area,"Bogdán 1978, 35, and Bogdán 1990, 36.",9.772
 kiralyi_hold,királyi hold,királyi hold,"Hun. Royal acre, 12*72 fathoms.","lat. iugerum, 12*72 öl",hold,hungarian_royal_area,Hungarian Royal,area,"Bogdán 1978, 35, and Bogdán 1990, 36.",8440.0
@@ -137,12 +140,19 @@ actus,actus,actus,"The length of a furrow: 12 per, 24 pass.","Egy barázda hossz
 mille_passus,mille passus,mille passus,Rom. mile: 1000 pass.,róm. mérföld: 1000 pass.,mille,roman_length,Roman,length,"Nissen 1886, tab. III.",1480.0
 wiener_punkt,Wiener Punkt,Wiener Punkt,Viennese dot: 1/144 Zoll,bécsi pont: 1/144 Zoll,Punkt,austrian_viennese_length,Austrian/Viennese,length,"Bogdán 1990, 35.",0.0001829
 wiener_linie,Wiener Linie,Wiener Linie,Viennese line: 12 Punkt,bécsi vonal: 12 Punkt,Lin.,austrian_viennese_length,Austrian/Viennese,length,"Bogdán 1990, 35.",0.002195
-wiener_zoll,Wiener Zoll,Wiener Zoll,Viennese inch: 12 Lin.,bécsi hüvelyk: 12 Lin.,Zoll,austrian_viennese_length,Austrian/Viennese,length,"Bogdán 1990, 35.",0.02634
+wiener_zoll_norm,Wiener Zoll,Wiener Zoll,Viennese inch: 12 Lin.,bécsi hüvelyk: 12 Lin.,Zoll,austrian_viennese_length,Austrian/Viennese,length,"Bogdán 1990, 35.",0.02634
 wiener_fuss,Wiener Fuß,Wiener Fuß,Viennese foot: 12 Zoll,bécsi láb: 12 Zoll,Fuß,austrian_viennese_length,Austrian/Viennese,length,"Bogdán 1990, 35.",0.31608
 wiener_elle,Wiener Elle,Wiener Elle,Viennese cubit (does not fit into the senary system),bécsi rőf (nem illeszkedik a hatos számrendszerbe),Elle,austrian_viennese_length,Austrian/Viennese,length,"Bogdán 1990, 35.",0.77755
 wiener_klafter,Wiener Klafter,Wiener Klafter,Viennese fathom: 6 Fuß,bécsi öl: 6 Fuß,Klaf.,austrian_viennese_length,Austrian/Viennese,length,"Bogdán 1990, 35.",1.8964
 wiener_rute,Wiener Rute,Wiener Rute,Viennese rod: 12 Fuß,bécsi rúd: 12 Fuß,Rute,austrian_viennese_length,Austrian/Viennese,length,"Bogdán 1990, 35.",3.793
 wiener_meile,Wiener Meile,Wiener Meile,"Viennese mile: 2400 Fuß, 4000 Klaf.","bécsi mérföld: 2400 Fuß, 4000 Klaf.",Mei.,austrian_viennese_length,Austrian/Viennese,length,"Bogdán 1990, 35.",7585.9
+fortifikationslinie,Fortifikationslinie,Fortifikationslinie,Austrian fort. line: 1/144 FFuß,osztrák erődítményvonal: 1/144 FFuß,FLin.,austrian_fortification_length,Austrian fortification,length,"Bogdán 1990, 38.",0.00226
+fortifikationszoll,Fortifikationszoll,Fortifikationszoll,Austrian fort. inch: 12 FLin.,osztrák erődítményhüvelyk: 12 FLin.,FZoll,austrian_fortification_length,Austrian fortification,length,"Bogdán 1990, 38.",0.02701
+fortifikationsfuß,Fortifikationsfuß,Fortifikationsfuß,Austrian fort. foot: 12 FZoll,osztrák erődítményláb: 12 FZoll,FFuß,austrian_fortification_length,Austrian fortification,length,"Bogdán 1990, 38.",0.3248
+fortifikationsklafter,Fortifikationsklafter,Fortifikationsklafter,Austrian fort. fathom: 6 FFuß,osztrák erődítményöl: 6 FFuß,FKlaf.,austrian_fortification_length,Austrian fortification,length,"Bogdán 1990, 38.",1.9488
+fortifikationsmeile,Fortifikationsmeile,Fortifikationsmeile,"Austrian fort. mile, theoretical unit: 40,000 FKlaf.","osztrák erődítménymérföld, feltételezett tag: 4000 FKlaf.",FMei.,austrian_fortification_length,Austrian fortification,length,"Bogdán 1990, 38.",7795.4
+wiener_zoll_sail,Wiener Zoll,bécsi hüvelyk,Viennese inch: 1/12 foot,1/12 bécsi láb,Zoll,austro_hungarian_sailor_s,Austro-Hungarian sailor's,length,"Bogdán 1990, 38.",0.02634
+marok_sail,Faust,marok,Austro-Hungarian sailor's fist: 6 Viennese inches,osztrák-magyar hajós marok: 6 bécsi hüvelyk,Fst.,austro_hungarian_sailor_s,Austro-Hungarian sailor's,length,"Bogdán 1990, 38.",15.8
 kiralyi_ujj,királyi ujj,királyi ujj,Hun. Royal finger: 1/16 láb,"lat. digitus, 1/16 láb",ujj,hungarian_royal_length,Hungarian Royal,length,"Bogdán 1978, 35, and Bogdán 1990, 34.",0.01953
 kiralyi_huvelyk,királyi hüvelyk,királyi hüvelyk,Hun. Royal inch: 1/12 láb,"lat. pollex, 1/12 láb",hüv.,hungarian_royal_length,Hungarian Royal,length,"Bogdán 1978, 35, and Bogdán 1990, 34.",0.02605
 kiralyi_tenyer,királyi tenyér,királyi tenyér,Hun. Royal palm: 4 ujj,"lat. palmus, 4 ujj",teny.,hungarian_royal_length,Hungarian Royal,length,"Bogdán 1978, 35, and Bogdán 1990, 34.",0.07815
@@ -329,7 +339,7 @@ wiener_weinfass_1762_1871,Wiener Weinfaß,Wiener Weinfaß,Viennese wine barrel: 
 wiener_dreiling_1762_1871,Wiener Dreiling,Wiener Dreiling,Viennese dreiling barrel: 24 Eim.,bécsi dreiling: 24 Eim.,Drei.,viennese_wholesale_liq_vol_1762_1871,Viennese wholesale (1762-1871),volume (liquid),"Bogdán 1991, 30.",1697.67
 wiener_fuder_1762_1871,Wiener Fuder,Wiener Fuder,Viennese fuder barrel: 32 Eim.,bécsi fuder: 32 Eim.,Fud.,viennese_wholesale_liq_vol_1762_1871,Viennese wholesale (1762-1871),volume (liquid),"Bogdán 1991, 30.",1810.85
 budai_messzely_1762_1871,budai messzely,budai messzely,"Buda gill: 1/4 pint, 1/32 köb.","1/4 pint, 1/32 köb.",messz.,buda_liq_vol_pre17c,Buda (-17th c. start),volume (liquid),"Bogdán 1991, 31.",0.4197
-budai_icce_pre17c_liq,budai icce,budai icce,Buda half-pint (chopine): ,2 messz.,icce,buda_liq_vol_pre17c,Buda (-17th c. start),volume (liquid),"Bogdán 1991, 31.",0.8393
+budai_icce_pre17c_liq,budai icce,budai icce,Buda half-pint (chopine):,2 messz.,icce,buda_liq_vol_pre17c,Buda (-17th c. start),volume (liquid),"Bogdán 1991, 31.",0.8393
 budai_pint_pre17c_liq,budai pint,budai pint,Buda pint: 2 icce,2 icce,pint,buda_liq_vol_pre17c,Buda (-17th c. start),volume (liquid),"Bogdán 1991, 31.",1.6786
 budai_kobol_pre17c_liq,budai köböl,budai köböl,Buda gallon: 8 pint,8 pint,köb.,buda_liq_vol_pre17c,Buda (-17th c. start),volume (liquid),"Bogdán 1991, 31.",13.43
 budai_kis_ako_pre17c_liq,budai kis akó,budai kis akó,Buda small bucket: 44 ice,44 icce,kiakó,buda_liq_vol_pre17c,Buda (-17th c. start),volume (liquid),"Bogdán 1991, 31.",36.93
