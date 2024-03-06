@@ -49,7 +49,10 @@
   <div class="item">
     <p class="body-text">
       Projektünk a Flask web frameworkre épül, Python backenddel és hagyományos
-      HTML-CSS-JS frontenddel. Külső weboldal sablon nem került felhasználásra.
+      HTML-CSS-JS frontenddel, külső weboldal sablon nem került felhasználásra.
+      A légördülő menük a
+      <a href="https://github.com/Choices-js/Choices" target="_blank">Choices.js</a>
+      plugin felhasználásával készültek.
       Az alkalmazás a HTML oldalak generálásában nagyban támaszkodik a Jinja
       sablon motorra a lehető leg&shy;optimálisabb weboldal-kódolás elérése
       érdekében. A mértékegység-adatbázis az SQLite adatbázis&shy;motorral készült. A
@@ -99,7 +102,9 @@
     <p class="body-text">
       Our project is built on the Flask web framework, with a Python backend and
       a conventional HTML-CSS-JS frontend. No external website templates were
-      utilized. The application relies greatly on the Jinja template engine in
+      utilized. The drop-down menus were made with the
+      <a href="https://github.com/Choices-js/Choices" target="_blank">Choices.js</a>
+      plugin. The application relies greatly on the Jinja template engine in
       generating the HTML pages to achieve the most optimal website coding. The
       localization is done with the aid of the Flask-Babel extension, the
       language selection is stored in server-side sessions.
@@ -125,7 +130,8 @@
         {{ _("Vissza") }}
       </button>
     </div>
-  </div>
+  </div>  
+  <span class="spacer-normal"></span>
 </div>
 {% endblock body %}
 <!-- Main footer with copyright. -->

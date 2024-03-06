@@ -178,11 +178,13 @@ dd {
 .body-text {
   margin-bottom: 1em;
   margin-top: 1em;
-  max-width: 60vw;
+  width: 70ch;
+  max-width: 70vw;
   text-align: justify;
 }
 
-.bilb-text {
+.bibl-text {
+  width: 70ch;
   max-width: 70vw;
   text-align: start;
 }
