@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New favicon.
 - Style tweaks.
 - Spacing tweaks.
+- Docs updated.
 
 ## [1.0.1] - 2024.02.25
 

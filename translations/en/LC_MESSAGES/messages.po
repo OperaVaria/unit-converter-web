@@ -33,15 +33,15 @@ msgstr "Hungarian"
 msgid "Angol"
 msgstr "English"
 
-#: templates/about.html:114
+#: templates/about.html:119
 msgid "Irodalom"
 msgstr "Sources"
 
-#: templates/about.html:120
+#: templates/about.html:125
 msgid "Forráskód"
 msgstr "Source code"
 
-#: templates/about.html:125 templates/converter.html:109
+#: templates/about.html:130 templates/converter.html:109
 #: templates/sources.html:22
 msgid "Vissza"
 msgstr "Back"

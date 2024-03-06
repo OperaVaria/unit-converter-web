@@ -23,11 +23,11 @@ Az ógörög szavak átírásakor az úgynevezett "tudományos" átírást alkal
 
 ## Technikai háttér
 
-Projektünk a Flask web frameworkre épül, Python backenddel és hagyományos HTML-CSS-JS
-frontenddel. Külső weboldal sablon nem került felhasználásra. Az alkalmazás a HTML oldalak generálásában
-nagyban támaszkodik a Jinja sablon motorra a lehető legoptimálisabb weboldal-kódolás elérése érdekében.
-A mértékegység-adatbázis az SQLite adatbázismotorral készült. A lokalizáció a Flask-Babel kiegészítő
-segítségével történik, a nyelvválasztást az alkalmazás szerver oldali munkamenetekkel rögzíti.
+Projektünk a Flask web frameworkre épül, Python backenddel és hagyományos HTML-CSS-JS frontenddel,
+külső weboldal sablon nem került felhasználásra. A légördülő menük a [Choices.js](https://github.com/Choices-js/Choices)
+plugin felhasználásával készültek. Az alkalmazás a HTML oldalak generálásában nagyban támaszkodik a Jinja sablon motorra,
+a lehető legoptimálisabb weboldal-kódolás elérése érdekében. A mértékegység-adatbázis az SQLite adatbázismotorral készült.
+A lokalizáció a Flask-Babel kiegészítő segítségével történik, a nyelvválasztást az alkalmazás szerver oldali munkamenetekkel rögzíti.
 
 E projekt a korábbi, [Python asztali alkalmazásunk](https://github.com/OperaVaria/unit-converter) online implementációja és továbbfejlesztése.
 
@@ -54,7 +54,8 @@ The Ancient Greek words were transliterated following the ALA-LC romanization st
 ## Technical background
 
 Our project is built on the Flask web framework, with a Python backend and a conventional HTML-CSS-JS frontend.
-No external website templates were utilized. The application relies greatly on the Jinja template engine in
+No external website templates were utilized. The drop-down menus were made with the [Choices.js](https://github.com/Choices-js/Choices) plugin.
+The application relies greatly on the Jinja template engine in
 generating the HTML pages to achieve the most optimal website coding. The localization is done with the aid of
 the Flask-Babel extension, the language selection is stored in server-side sessions.
 
@@ -63,6 +64,8 @@ This project is the improved version and online implementation of our previous, 
 ## Egyéb információk - Other Information
 
 Tesztelve/Tested on: Firefox 123.0, Google Chrome 122.0 (Windows 11 and Android versions)
+
+Favicon: "Scale Unbalanced" by Templarian from [SVG Repo](https://www.svgrepo.com/svg/370577/scale-unbalanced), PD Licence.
 
 **[Elérhetőség/Contact](mailto:lcs_it@proton.me)**
 
