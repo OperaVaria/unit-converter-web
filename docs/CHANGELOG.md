@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2024.03.07
+
+## Added
+
+- Choices.js css added locally for easier styling.
+- Choices.js licence file attached.
+
+### Changed
+
+- Choices.js menu further customized, simple animation added.
+
+### Fixed
+
+- Some comments clarified.
+
 ## [1.1.0] - 2024.03.06
 
 ### Added

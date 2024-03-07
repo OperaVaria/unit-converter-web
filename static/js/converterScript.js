@@ -15,6 +15,7 @@ const symbolField = document.getElementById("symbol-field");
 // Global settings for Choices objects.
 let choicesGlobSet = {
   allowHTML: false,
+  itemSelectText: "",
   noResultsText: noResult,
   position: "bottom",
   searchFields: ["label"],

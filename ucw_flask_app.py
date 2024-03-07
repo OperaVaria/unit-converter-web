@@ -26,8 +26,8 @@ TODO: 1. Testing.
 # Metadata variables:
 __author__ = "OperaVaria"
 __contact__ = "lcs_it@proton.me"
-__version__ = "1.1.0"
-__date__ = "2024.03.06"
+__version__ = "1.1.1"
+__date__ = "2024.03.07"
 
 
 # Licence:

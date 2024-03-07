@@ -117,39 +117,6 @@ body {
   width: 20em;
 }
 
-/* Choices.js menus */
-
-.choices {
-  margin: 0.5em 0;
-  max-width: 70vw;
-  width: 20em;
-}
-
-.choices__inner {
-  font-size: 1em;
-}
-
-.choices[data-type*="select-one"]
-  > .choices__list
-  > .choices__list
-  > .choices__item--selectable {
-  padding-right: 1.5em;
-}
-
-.choices[data-type*="select-one"]
-  > .choices__list
-  > .choices__list
-  > .choices__item--disabled {
-  padding-right: 1em;
-}
-
-.choices[data-type*="select-one"]
-  > .choices__list
-  > .choices__list
-  > .choices__item--selectable::after {
-  display: none;
-}
-
 /* Input elements */
 
 input {
