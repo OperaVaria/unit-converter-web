@@ -21,17 +21,30 @@ SESSION_COOKIE_SAMESITE = "Strict"
 # Talisman settings:
 csp = {
     "default-src": [
-        "'self'",
-
+        "https: 'self'"
     ],
+
+    "object-src": [
+        "'none'"
+    ],
+
     "script-src": [
         "'self'",
         "'unsafe-inline'",
         "https://cdn.jsdelivr.net/npm/"
     ],
-    'style-src': [
+
+    "style-src": [
         "'self'",
         "https://cdn.jsdelivr.net/npm/"
+    ],
+
+    "base-uri": [
+        "'none'"
+    ],
+
+    "form-action": [
+        "'self'"
     ]
 }
 
