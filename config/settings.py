@@ -18,6 +18,24 @@ SESSION_COOKIE_SECURE = True
 SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SAMESITE = "Strict"
 
+# Talisman settings:
+csp = {
+    "default-src": [
+        "'self'",
+
+    ],
+    "script-src": [
+        "'self'",
+        "'unsafe-inline'",
+        "https://cdn.jsdelivr.net/npm/"
+    ],
+    'style-src': [
+        "'self'",
+        "https://cdn.jsdelivr.net/npm/"
+    ]
+}
+
+
 # Display message when accidentally run:
 if __name__ == "__main__":
     print("This is a config file for Flask. Not meant to be run!")

@@ -51,10 +51,13 @@ from flask import Flask, abort, jsonify, make_response, redirect, render_templat
 
 # Flask extension imports:
 from flask_babel import Babel
+from flask_minify import Minify
 from flask_session import Session
+from flask_talisman import Talisman
 
 # Other imports:
 import json
+from config.settings import csp # Content security policy settings.
 
 # Local imports:
 from py_backend.setup_functions import (title_setup, sys_dict_setup, sys_info_setup,
@@ -69,6 +72,12 @@ app = Flask(__name__)
 app.config.from_file("./config/secretKey.json", load=json.load) # Load secret key.
 app.config.from_pyfile("./config/settings.py") # Load other settings.
 app.json.sort_keys = False # Do not sort json content alphabetically.
+
+# Set up Talisman.
+tali = Talisman(app, content_security_policy=csp)
+
+# Set up Minify.
+mini = Minify(app=app, html=True, js=True, cssless=True)
 
 # Set up Session.
 sess = Session(app)
