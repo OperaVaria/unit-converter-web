@@ -144,7 +144,9 @@ function setElements(infoElement, menuObject, data) {
   menuObject.init();
   // Populate unit menu.
   menuObject.setChoices(data.list, "value", "label", false);
-  // Enable select menu if disabled.
+  // (Re)select placeholder item.
+  menuObject.setChoiceByValue("");
+  // Enable select menu.
   menuObject.enable();
 }
 
