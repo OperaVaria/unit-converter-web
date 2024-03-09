@@ -12,7 +12,9 @@ const symbolField = document.getElementById("symbol-field");
 
 // Choices.js setup:
 
-// Global settings for Choices objects.
+/* Global settings for Choices objects.
+   Some string variables in HTML file so
+   jinja2 can insert proper translation. */
 let choicesGlobSet = {
   allowHTML: false,
   itemSelectText: "",

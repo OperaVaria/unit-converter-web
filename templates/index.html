@@ -9,12 +9,12 @@
   <!-- Button builder jinja2 loop (unit category selector buttons for main menu).-->
   {% for raw, gui in cat_dict.items() %}
   <div class="item one-third">
-    <button id="{{raw}}" class="link-btn normal">{{gui}}</button>
+    <button data-target="{{'/' ~ raw}}" class="link-btn normal">{{gui}}</button>
   </div>
   {% endfor %}
   <!-- About page button. -->
   <div class="item full-wide">
-    <button id="/about" class="link-btn normal">{{ _("Információ") }}</button>
+    <button data-target="/about" class="link-btn normal">{{ _("Információ") }}</button>
   </div>
   <!-- Language selection buttons. -->
   <div class="item full-wide">

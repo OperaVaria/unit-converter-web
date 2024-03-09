@@ -129,6 +129,11 @@ input {
 
 /* Lists */
 
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
 dt {
   font-weight: bold;
   margin-bottom: 0.2em;
@@ -242,7 +247,7 @@ button:hover {
 /* Spacer element */
 
 .spacer-small {
-  flex-basis: 100%;  
+  flex-basis: 100%;
   height: 1em;
 }
 

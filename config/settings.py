@@ -20,23 +20,33 @@ SESSION_COOKIE_SAMESITE = "Strict"
 
 # Talisman settings:
 csp = {
-    "default-src": [
-        "https: 'self'"
-    ],
 
-    "object-src": [
+    "default-src": [
         "'none'"
+    ],
+    "connect-src": [
+        "'self'"
     ],
 
     "script-src": [
         "'self'",
-        "'unsafe-inline'",
-        "https://cdn.jsdelivr.net/npm/"
+        "'sha256-StHcb2rwa+JQQMEW05Q1ksZqLW064v3HKGcKpiYMMsc='",
+        "'sha256-mNoUSBnIsLtJrvz4HSLr6Zob4ftw0pbk4UzBxZfjr04='",
+        "https://cdn.jsdelivr.net/npm/",
+        "https://gc.kis.v2.scr.kaspersky-labs.com"
     ],
 
     "style-src": [
         "'self'",
         "https://cdn.jsdelivr.net/npm/"
+    ],
+
+    "img-src": [
+        "'self'"
+    ],
+
+    "object-src": [
+        "'none'"
     ],
 
     "base-uri": [

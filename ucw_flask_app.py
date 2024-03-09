@@ -1,22 +1,13 @@
 """
 ucw_flask_app.py
 
-This web application is an easy-to-use converter for historical measurement units. Its aim is
-to assist both researchers and regular users with the conversion of historical units. Contrary to
-other converters available on the internet, in the present project all information is derived from reliable
-literature, their source is duly noted and verifiable in the unit database. The short information
-notices on the interface provide the user with the basic context of the selected unit or unit system.
+This web application is an easy-to-use converter for historical measurement units.
+Its aim is to assist both researchers and regular users with the conversion of units
+from the past. Contrary to other converters available on the internet,
+in the present project all information is derived from reliable literature,
+their source is duly noted and verifiable in the unit database.
 
-Currently the database features mostly unit systems connected to the historical Austria and Hungary,
-as well as the Ancient Greek and Roman measurements; however any unit system can be implemented,
-and their addition is continuous. All modern metric and relevant Anglo-American units are present for reference.
-
-The application is available with both English and Hungarian interfaces.
-
-Our project is built on the Flask web framework, with a Python backend and a conventional HTML-CSS-JS frontend.
-No external website templates were utilized. The application relies greatly on the Jinja template engine in
-generating the HTML pages to achieve the most optimal website coding. The localization is done with the aid of
-the Flask-Babel extension, the language selection is stored in server-side sessions.
+Further information in ./docs/REASME.md.
 
 TODO: 1. Testing.
       2. Add more unit systems.
@@ -26,8 +17,8 @@ TODO: 1. Testing.
 # Metadata variables:
 __author__ = "OperaVaria"
 __contact__ = "lcs_it@proton.me"
-__version__ = "1.1.1"
-__date__ = "2024.03.07"
+__version__ = "1.2.0"
+__date__ = "2024.03.09"
 
 
 # Licence:
@@ -180,6 +171,7 @@ def fetch_traffic():
         case _ :
             # Any other option (should not happen): error response.
             res = make_response(jsonify({"error": "Unknown sender id!"}), 400)
+    # Send response.
     return res
 
 @app.route("/receive-post", methods=["POST"])

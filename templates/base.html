@@ -18,21 +18,20 @@
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}">
-    <!-- Jinja2 nesting: additional CSS. -->
-    {% block css %}{% endblock css %}
   </head>
   <body>
     <!-- Fixed header with title -->
     <header class="header container horizontal">
-      <h1 id="/" class="header-text link-btn anim-link"
-        >{{ _("Mértékegység&shy;váltó a történeti tudományok számára") }}</h1>
+      <h1 data-target="/" class="header-text link-btn anim-link">
+        {{ _("Mértékegység&shy;váltó a történeti tudományok számára") }}
+      </h1>
     </header>
     <!-- Jinja2 nesting: main content -->
     {% block body %}{% endblock body %}
     <!-- Fixed footer. -->
     <footer class="footer container horizontal">
-    <!-- Jinja2 nesting: footer content -->
-    {% block footer %}{% endblock footer %}
+      <!-- Jinja2 nesting: footer content -->
+      {% block footer %}{% endblock footer %}
     </footer>
     <!-- Base JavaScript file. -->
     <script src="{{ url_for('static', filename='js/baseScript.js') }}"></script>

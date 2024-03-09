@@ -1,11 +1,11 @@
 // Base JavasScript for functionality present on all pages.
 
-// Declare constant variables:
+// Declare constants:
 const yearLocation = document.getElementById("year-location");
 const resetBtn = document.getElementById("reset-btn");
 const githubBtn = document.getElementById("github-btn");
 
-// Insert current year into copyright info if element exists.
+// Insert current year into copyright info location, if element exists.
 if (yearLocation) {
   let currentYear = new Date().getFullYear();
   yearLocation.innerHTML = currentYear;
@@ -30,7 +30,7 @@ if (githubBtn) {
 // General link buttons.
 document.querySelectorAll(".link-btn").forEach((btn) => {
   btn.addEventListener("click", function (ev) {
-    loadPage(btn.id);
+    loadPage(btn.getAttribute("data-target"));
   });
 });
 

@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  v1.1.0\n"
+"Project-Id-Version:  v1.2.0\n"
 "Report-Msgid-Bugs-To: lcs_it@proton.me\n"
-"POT-Creation-Date: 2024-03-05 23:31+0100\n"
-"PO-Revision-Date: 2024-03-05 23:32+0100\n"
+"POT-Creation-Date: 2024-03-09 20:21+0100\n"
+"PO-Revision-Date: 2024-03-09 20:30+0100\n"
 "Last-Translator: Csaba Latosinszky <lcs_it@proton.me>\n"
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: py_backend/calc_functions.py:33 templates/converter.html:129
+#: py_backend/calc_functions.py:33 templates/converter.html:132
 msgid "Hiba!"
 msgstr "Error!"
 
@@ -29,19 +29,19 @@ msgstr "About"
 msgid "Magyar"
 msgstr "Hungarian"
 
-#: templates/about.html:63 templates/index.html:27
+#: templates/about.html:77 templates/index.html:27
 msgid "Angol"
 msgstr "English"
 
-#: templates/about.html:119
+#: templates/about.html:147
 msgid "Irodalom"
 msgstr "Sources"
 
-#: templates/about.html:125
+#: templates/about.html:153
 msgid "Forráskód"
 msgstr "Source code"
 
-#: templates/about.html:130 templates/converter.html:109
+#: templates/about.html:158 templates/converter.html:111
 #: templates/sources.html:22
 msgid "Vissza"
 msgstr "Back"
@@ -50,7 +50,7 @@ msgstr "Back"
 msgid "Mértékegységváltó a történeti tudományok számára"
 msgstr "Unit Converter for Historical Studies"
 
-#: templates/base.html:28
+#: templates/base.html:26
 msgid "Mértékegység&shy;váltó a történeti tudományok számára"
 msgstr "Unit Converter for Historical Studies"
 
@@ -58,32 +58,32 @@ msgstr "Unit Converter for Historical Studies"
 msgid "Mértékegységrendszer"
 msgstr "Unit system"
 
-#: templates/converter.html:33 templates/converter.html:55
+#: templates/converter.html:34 templates/converter.html:58
 msgid "Kérem válasszon"
 msgstr "Please select"
 
-#: templates/converter.html:42 templates/converter.html:61
+#: templates/converter.html:43 templates/converter.html:64
 #: templates/index.html:17
 msgid "Információ"
 msgstr "Information"
 
-#: templates/converter.html:52
+#: templates/converter.html:54
 msgid "Mértékegység"
 msgstr "Unit"
 
-#: templates/converter.html:73
+#: templates/converter.html:77
 msgid "Bemeneti érték"
 msgstr "Input value"
 
-#: templates/converter.html:76
+#: templates/converter.html:80
 msgid "Érték"
 msgstr "Value"
 
-#: templates/converter.html:83
+#: templates/converter.html:85
 msgid "Konvertálás"
 msgstr "Convert"
 
-#: templates/converter.html:87
+#: templates/converter.html:89
 msgid "Eredmény"
 msgstr "Result"
 
@@ -91,7 +91,7 @@ msgstr "Result"
 msgid "Fordított"
 msgstr "Swap"
 
-#: templates/converter.html:105
+#: templates/converter.html:106
 msgid "Reset"
 msgstr "Reset"
 

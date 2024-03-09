@@ -30,7 +30,8 @@
           {{ _("Mértékegységrendszer") }}:</label>
         <select name="{{side ~ '-system'}}" id="{{side ~ '-system-menu'}}"
           class="custom-select" hidden>
-          <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
+          <option value="" disabled selected>
+            {{ _("Kérem válasszon") }}:</option>
           <!-- Menu populated by jinja2 on loading. -->
           {% for raw, gui in unit_sys_dict.items() %}
           <option value="{{raw}}">{{gui}}</option>
@@ -49,10 +50,12 @@
     <div class="container vertical bordered">
       <!-- Unit selection menu. Swapped out by Choices.js. -->
       <div class="item">
-        <label class="label" for="{{side ~ '-unit-menu'}}">{{ _("Mértékegység") }}:</label>
+        <label class="label" for="{{side ~ '-unit-menu'}}">
+            {{ _("Mértékegység") }}:</label>
         <select name="{{side ~ '-unit'}}" id="{{side ~ '-unit-menu'}}"
           class="custom-select" hidden>
-          <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
+          <option value="" disabled selected>
+            {{ _("Kérem válasszon") }}:</option>
           <!-- Menu populated by JavaScript after unit system selection. -->
         </select>
       </div>
@@ -70,17 +73,16 @@
   <div class="container vertical full-wide">
     <!-- Input value box. -->
     <div class="item">
-      <label class="label" for="input-value-box">{{ _("Bemeneti érték") }}:</label>
+      <label class="label" for="input-value-box">
+        {{ _("Bemeneti érték") }}:</label>
       <br>
       <input type="number" name="input-value" class="bordered"
-        id="input-value-box" placeholder="{{ _('Érték') }}" min="0"
-        >
+        id="input-value-box" placeholder="{{ _('Érték') }}" min="0">
     </div>
     <!-- Convert button. -->
     <div class="item">
-      <button class="conv-btn normal"
-        id="convert-btn"
-        >{{ _("Konvertálás") }}</button>
+      <button id="convert-btn" class="conv-btn normal">
+        {{ _("Konvertálás") }}</button>
     </div>
     <!-- Result box. -->
     <div class="item result-box bordered">
@@ -95,20 +97,20 @@
   <div class="container horizontal full-wide">
     <!-- Swap button. -->
     <div class="item">
-      <button
-        class="conv-btn normal"
-        id="swap-btn"
-        >{{ _("Fordított") }}</button>
+      <button id="swap-btn" class="conv-btn normal">
+        {{ _("Fordított") }}</button>
     </div>
     <!-- Reset button. -->
     <div class="item">
-      <button id="reset-btn" class="normal">{{ _("Reset") }}</button>
+      <button id="reset-btn" class="normal">
+        {{ _("Reset") }}</button>
     </div>
     <!-- Back button. -->
     <div class="item">
-      <button id="/" class="link-btn normal">{{ _("Vissza") }}</button>
+      <button data-target="/" class="link-btn normal">
+        {{ _("Vissza") }}</button>
     </div>
-  </div>  
+  </div>
   <span class="spacer-normal"></span>
 </div>
 {% endblock body %}
@@ -117,9 +119,10 @@
 <!-- Button builder jinja2 loop.-->
 {% for raw, title in cat_dict.items() %}
 <div class="item">
-  <button id="{{raw}}" class="link-btn small">{{title}}</button>
+  <button data-target="{{'/' ~ raw}}" class="link-btn small">{{title}}</button>
 </div>
-{% endfor %} {% endblock footer %}
+{% endfor %}
+{% endblock footer %}
 <!-- Additional JavaScript for converter page functionality. -->
 {% block js %}
 <!-- Text strings that need gettext handling. -->
