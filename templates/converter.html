@@ -29,7 +29,7 @@
         <label class="label" for="{{side ~ '-system-menu'}}">
           {{ _("Mértékegységrendszer") }}:</label>
         <select name="{{side ~ '-system'}}" id="{{side ~ '-system-menu'}}"
-          class="custom-select" onchange="submitValue(this.id, this.value);" hidden>
+          class="custom-select" hidden>
           <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
           <!-- Menu populated by jinja2 on loading. -->
           {% for raw, gui in unit_sys_dict.items() %}
@@ -51,7 +51,7 @@
       <div class="item">
         <label class="label" for="{{side ~ '-unit-menu'}}">{{ _("Mértékegység") }}:</label>
         <select name="{{side ~ '-unit'}}" id="{{side ~ '-unit-menu'}}"
-          class="custom-select" onchange="submitValue(this.id, this.value);" hidden>
+          class="custom-select" hidden>
           <option value="" disabled selected>{{ _("Kérem válasszon") }}:</option>
           <!-- Menu populated by JavaScript after unit system selection. -->
         </select>
@@ -74,12 +74,12 @@
       <br>
       <input type="number" name="input-value" class="bordered"
         id="input-value-box" placeholder="{{ _('Érték') }}" min="0"
-        onfocus="this.value='';">
+        >
     </div>
     <!-- Convert button. -->
     <div class="item">
-      <button class="normal" id="convert-btn"
-        onclick="validateConvBtn(this.id, this.value);"
+      <button class="conv-btn normal"
+        id="convert-btn"
         >{{ _("Konvertálás") }}</button>
     </div>
     <!-- Result box. -->
@@ -96,17 +96,17 @@
     <!-- Swap button. -->
     <div class="item">
       <button
-        class="normal" id="swap-btn"
-        onclick="validateConvBtn(this.id, this.value);"
+        class="conv-btn normal"
+        id="swap-btn"
         >{{ _("Fordított") }}</button>
     </div>
     <!-- Reset button. -->
     <div class="item">
-      <button class="normal" onclick="window.location.reload(true);">{{ _("Reset") }}</button>
+      <button id="reset-btn" class="normal">{{ _("Reset") }}</button>
     </div>
     <!-- Back button. -->
     <div class="item">
-      <button class="normal" onclick="loadPage('/');">{{ _("Vissza") }}</button>
+      <button id="/" class="link-btn normal">{{ _("Vissza") }}</button>
     </div>
   </div>  
   <span class="spacer-normal"></span>
@@ -117,7 +117,7 @@
 <!-- Button builder jinja2 loop.-->
 {% for raw, title in cat_dict.items() %}
 <div class="item">
-  <button class="small" onclick="loadPage('{{raw}}');">{{title}}</button>
+  <button id="{{raw}}" class="link-btn small">{{title}}</button>
 </div>
 {% endfor %} {% endblock footer %}
 <!-- Additional JavaScript for converter page functionality. -->

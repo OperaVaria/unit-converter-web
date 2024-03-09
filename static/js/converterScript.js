@@ -10,7 +10,7 @@ const convertButton = document.getElementById("convert-btn");
 const resultField = document.getElementById("result-field");
 const symbolField = document.getElementById("symbol-field");
 
-// Choices.js setup.
+// Choices.js setup:
 
 // Global settings for Choices objects.
 let choicesGlobSet = {
@@ -41,6 +41,19 @@ const outputUnitMenu = new Choices(
   choicesGlobSet
 );
 
+// Add event listeners to select menus:
+document.querySelectorAll(".custom-select").forEach((menu) => {
+  menu.addEventListener(
+    "choice",
+    function (event) {
+      if (event.detail.choice.value) {
+        submitValue(menu.id, event.detail.choice.value);
+      }
+    },
+    false
+  );
+});
+
 // Tasks on load: corrects soft reloading imperfections.
 window.addEventListener("load", windowLoad);
 function windowLoad() {
@@ -65,14 +78,14 @@ function submitValue(id, value) {
   if (id === "convert-btn") {
     var subData = {
       sender: id,
-      inputValue: valueBox.value,
+      inputValue: value,
       inputUnit: inputUnitMenu.getValue(true),
       outputUnit: outputUnitMenu.getValue(true),
     };
   } else if (id === "swap-btn") {
     var subData = {
       sender: id,
-      inputValue: valueBox.value,
+      inputValue: value,
       inputUnit: outputUnitMenu.getValue(true),
       outputUnit: inputUnitMenu.getValue(true),
     };
@@ -162,25 +175,28 @@ function animatedFade(element, newText) {
 }
 
 /* Validate calculation buttons:
+   Add event listeners.
    Display error with animation
    if unit selection is incomplete
    or unit value is invalid.
    String variables in HTML file so jinja2
    can insert proper translation. */
-function validateConvBtn(id, value) {
-  if (valueBox.value == "") {
-    animatedFade(resultField, errorText);
-    animatedFade(symbolField, missingValue);
-  } else if (inputUnitMenu.getValue(true) == "") {
-    animatedFade(resultField, errorText);
-    animatedFade(symbolField, missingInput);
-  } else if (outputUnitMenu.getValue(true) == "") {
-    animatedFade(resultField, errorText);
-    animatedFade(symbolField, missingOutput);
-  } else {
-    submitValue(id, value);
-  }
-}
+document.querySelectorAll(".conv-btn").forEach((btn) => {
+  btn.addEventListener("click", function (event) {
+    if (valueBox.value == "") {
+      animatedFade(resultField, errorText);
+      animatedFade(symbolField, missingValue);
+    } else if (inputUnitMenu.getValue(true) == "") {
+      animatedFade(resultField, errorText);
+      animatedFade(symbolField, missingInput);
+    } else if (outputUnitMenu.getValue(true) == "") {
+      animatedFade(resultField, errorText);
+      animatedFade(symbolField, missingOutput);
+    } else {
+      submitValue(btn.id, valueBox.value);
+    }
+  });
+});
 
 // Input value field: submit if enter pressed.
 valueBox.addEventListener("keypress", (event) => {
@@ -188,4 +204,8 @@ valueBox.addEventListener("keypress", (event) => {
     event.preventDefault();
     convertButton.click();
   }
+});
+
+valueBox.addEventListener("focus", (event) => {
+  valueBox.value = "";
 });

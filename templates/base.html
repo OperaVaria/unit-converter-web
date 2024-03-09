@@ -24,7 +24,7 @@
   <body>
     <!-- Fixed header with title -->
     <header class="header container horizontal">
-      <h1 class="header-text anim-link" onclick="loadPage('/');"
+      <h1 id="/" class="header-text link-btn anim-link"
         >{{ _("Mértékegység&shy;váltó a történeti tudományok számára") }}</h1>
     </header>
     <!-- Jinja2 nesting: main content -->
@@ -34,8 +34,8 @@
     <!-- Jinja2 nesting: footer content -->
     {% block footer %}{% endblock footer %}
     </footer>
-    <!-- Main JavaScript file. -->
-    <script src="{{ url_for('static', filename='js/mainScript.js') }}"></script>
+    <!-- Base JavaScript file. -->
+    <script src="{{ url_for('static', filename='js/baseScript.js') }}"></script>
     <!-- Jinja2 nesting: additional Javascript. -->
     {% block js %}{% endblock js %}
   </body>
