@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Typos in database.
-- Code formating.
+- Code formatting.
 - Fixed further soft refresh imperfections.
 - All links open in new tab.
 
