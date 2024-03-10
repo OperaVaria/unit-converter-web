@@ -184,7 +184,7 @@ function animatedFade(element, newText) {
    String variables in HTML file so jinja2
    can insert proper translation. */
 document.querySelectorAll(".conv-btn").forEach((btn) => {
-  btn.addEventListener("click", function (event) {
+  btn.addEventListener("click", () => {
     if (valueBox.value == "") {
       animatedFade(resultField, errorText);
       animatedFade(symbolField, missingValue);
@@ -208,6 +208,6 @@ valueBox.addEventListener("keypress", (event) => {
   }
 });
 
-valueBox.addEventListener("focus", (event) => {
+valueBox.addEventListener("focus",  () => {
   valueBox.value = "";
 });
