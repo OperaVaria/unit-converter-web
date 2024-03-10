@@ -117,6 +117,14 @@ body {
   width: 20em;
 }
 
+.desktop-view {
+  display: block;
+}
+
+.mobile-view {
+  display: none;
+}
+
 /* Input elements */
 
 input {
@@ -131,7 +139,9 @@ input {
 
 ul {
   display: inline-block;
+  max-width: 60vw;
   text-align: left;
+  width: 60ch;
 }
 
 dt {
@@ -277,9 +287,17 @@ button:hover {
   }
 }
 
-/* Resizes for larger mobile screens: */
+/* Resizes and footer swap for mobile screens: */
 @media only screen and (max-width: 480px) {
   .header-text {
     font-size: 1.75em;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
   }
 }
