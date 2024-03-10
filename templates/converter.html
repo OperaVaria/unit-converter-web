@@ -114,14 +114,18 @@
   <span class="spacer-normal"></span>
 </div>
 {% endblock body %}
-<!-- Footer with buttons to different calculators. -->
+<!-- Two sets of footer content, one for smaller screens. -->
 {% block footer %}
-<!-- Button builder jinja2 loop.-->
+<!-- Complex, larger footer with buttons, built by jinja2 loop.-->
 {% for raw, title in cat_dict.items() %}
-<div class="item">
+<div class="item desktop-view">
   <button data-target="{{'/' ~ raw}}" class="link-btn small">{{title}}</button>
 </div>
 {% endfor %}
+<!-- Basic footer with copyright. -->
+<p class="footer-text mobile-view">
+  &copy; OperaVaria,&#160;<span id="year-location"></span>
+</p>
 {% endblock footer %}
 <!-- Additional JavaScript for converter page functionality. -->
 {% block js %}

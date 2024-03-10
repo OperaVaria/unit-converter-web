@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version:  v1.2.0\n"
 "Report-Msgid-Bugs-To: lcs_it@proton.me\n"
 "POT-Creation-Date: 2024-03-09 22:51+0100\n"
-"PO-Revision-Date: 2024-03-09 22:53+0100\n"
+"PO-Revision-Date: 2024-03-10 07:11+0100\n"
 "Last-Translator: Csaba Latosinszky <lcs_it@proton.me>\n"
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: py_backend/calc_functions.py:33 templates/converter.html:132
+#: py_backend/calc_functions.py:33 templates/converter.html:136
 msgid "Hiba!"
 msgstr "Error!"
 
@@ -95,23 +95,23 @@ msgstr "Swap"
 msgid "Reset"
 msgstr "Reset"
 
-#: templates/converter.html:127
+#: templates/converter.html:134
 msgid "Keresés"
 msgstr "Search"
 
-#: templates/converter.html:128
+#: templates/converter.html:135
 msgid "Nincs találat"
 msgstr "No results"
 
-#: templates/converter.html:130
+#: templates/converter.html:137
 msgid "Hiányzó vagy rossz érték!"
 msgstr "Missing or invalid value!"
 
-#: templates/converter.html:131
+#: templates/converter.html:138
 msgid "Hiányzó bemeneti mértékegység!"
 msgstr "Missing input unit!"
 
-#: templates/converter.html:132
+#: templates/converter.html:139
 msgid "Hiányzó kimeneti mértékegység!"
 msgstr "Missing output unit!"
 
