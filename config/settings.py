@@ -10,6 +10,9 @@ LANGUAGES = {
     "en": "English",
 }
 
+# Minify settings:
+bypass = ["robots_txt", "humans_txt", "sitemap_xml"]
+
 # Session settings:
 SESSION_TYPE = "filesystem"
 SESSION_PERMANENT = True

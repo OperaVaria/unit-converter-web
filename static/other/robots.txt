@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /fetch-traffic
+Disallow: /receive-post
+
+Sitemap: https://www.historicalconverter.com/sitemap.xml

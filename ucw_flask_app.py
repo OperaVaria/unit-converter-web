@@ -38,7 +38,9 @@ see <https://www.gnu.org/licenses/>
 """
 
 # Flask imports:
-from flask import Flask, abort, jsonify, make_response, redirect, render_template, request, session, url_for
+from flask import (Flask, abort, jsonify, make_response, redirect,
+                   render_template, request, send_from_directory,
+                   session, url_for)
 
 # Flask extension imports:
 from flask_babel import Babel
@@ -49,6 +51,7 @@ from flask_talisman import Talisman
 # Other imports:
 import json
 from config.settings import csp # Content security policy settings.
+from config.settings import bypass # Minify bypass settings.
 
 # Local imports:
 from py_backend.setup_functions import (title_setup, sys_dict_setup, sys_info_setup,
@@ -68,7 +71,7 @@ app.json.sort_keys = False # Do not sort json content alphabetically.
 tali = Talisman(app, content_security_policy=csp)
 
 # Set up Minify.
-mini = Minify(app=app, html=True, js=True, cssless=True)
+mini = Minify(app=app, bypass=bypass, html=True, js=True, cssless=True)
 
 # Set up Session.
 sess = Session(app)
@@ -180,6 +183,21 @@ def receive_post():
     if request.method == 'POST':
         session["locale"] = request.form["locale-btn"]
     return redirect(url_for("index"))
+
+@app.route("/robots.txt")
+def robots_txt():
+    """Set up robots.txt."""
+    return send_from_directory("static", "other/robots.txt")
+
+@app.route("/humans.txt")
+def humans_txt():
+    """Set up humans.txt."""
+    return send_from_directory("static", "other/humans.txt")
+
+@app.route("/sitemap.xml")
+def sitemap_xml():
+    """Set up sitemap.xml."""
+    return send_from_directory("static", "other/sitemap.xml")
 
 
 # When run as main run on localhost, port 8080:
