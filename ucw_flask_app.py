@@ -7,7 +7,7 @@ from the past. Contrary to other converters available on the internet,
 in the present project all information is derived from reliable literature,
 their source is duly noted and verifiable in the unit database.
 
-Further information in ./docs/REASME.md.
+Further information in ./docs/README.md.
 
 TODO: 1. Testing.
       2. Add more unit systems.

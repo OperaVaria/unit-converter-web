@@ -1,44 +1,47 @@
 <!-- Main Menu -->
 {% extends "base.html" %}
-{% block body %}
-<div class="container horizontal">
+{% block main %}
+<main class="container horizontal">
   <!-- Title -->
-  <div class="item title">
+  <div class="item title" role="none">
     <h1>{{ _("Metrikus, angolszász, hagyományos, történelmi") }}</h1>
   </div>
-  <!-- Button builder jinja2 loop (unit category selector buttons for main menu).-->
-  {% for raw, gui in cat_dict.items() %}
-  <div class="item one-third">
-    <button data-target="{{'/' ~ raw}}" class="link-btn normal">{{gui}}</button>
-  </div>
-  {% endfor %}
-  <!-- About page button. -->
-  <div class="item full-wide">
-    <button data-target="/about" class="link-btn normal">{{ _("Információ") }}</button>
-  </div>
+  <!-- Navigation buttons. -->
+  <nav class="container horizontal" title="{{ _('Gombok') }}">
+    <!-- Button builder jinja2 loop (unit category selector buttons for main menu).-->
+    {% for raw, gui in cat_dict.items() %}
+    <div class="item one-third" role="none">
+      <button data-target="{{'/' ~ raw}}" class="link-btn normal">{{gui}}</button>
+    </div>
+    {% endfor %}
+    <!-- About page button. -->
+    <div class="item full-wide" role="none">
+      <button data-target="/about" class="link-btn normal">{{ _("Információ") }}</button>
+    </div>
+  </nav>
   <!-- Language selection buttons. -->
-  <div class="item full-wide">
-    <form action="{{ url_for('receive_post') }}" method="post">
-      <div class="item">
+  <section class="item full-wide" title="{{ _('Nyelv') }}">
+    <form action="{{ url_for('receive_post') }}" method="post" role="none">
+      <div class="item" role="none">
         <h2 class="label">{{ _("Nyelv") }}:</h2>
       </div>
-      <div class="container horizontal">
+      <div class="container horizontal" role="none">
         <button class="small" name="locale-btn" type="submit" value="hu">{{ _("Magyar") }}</button>
         <button class="small" name="locale-btn" type="submit" value="en">{{ _("Angol") }}</button>
       </div>
     </form>
-  </div>
+  </section>
   <span class="spacer-small"></span>
   <!-- Version number. -->
-  <div class="item full-wide">
-    <h3> {{ _("Verzió") }} - {{version}}</h3>
-  </div>
+  <section class="item full-wide" role="none">
+    <h3 role="note" title="{{ _('Verzió') }}">{{ _("Verzió") }} - {{version}}</h3>
+  </section>
   <span class="spacer-large"></span>
-</div>
-{% endblock body %}
+</main>
+{% endblock main %}
 <!-- Basic footer with copyright. -->
 {% block footer %}
-<p class="footer-text">
+<p class="footer-text" role="contentinfo">
   &copy; OperaVaria,&#160;<span id="year-location"></span>
 </p>
 {% endblock footer %}

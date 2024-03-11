@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  v1.2.0\n"
 "Report-Msgid-Bugs-To: lcs_it@proton.me\n"
-"POT-Creation-Date: 2024-03-09 22:51+0100\n"
-"PO-Revision-Date: 2024-03-10 07:11+0100\n"
+"POT-Creation-Date: 2024-03-11 13:51+0000\n"
+"PO-Revision-Date: 2024-03-11 03:05+0000\n"
 "Last-Translator: Csaba Latosinszky <lcs_it@proton.me>\n"
 "Language: en\n"
+"Language-Team: en <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -25,11 +26,11 @@ msgstr "Error!"
 msgid "Leírás"
 msgstr "About"
 
-#: templates/about.html:12 templates/index.html:26
+#: templates/about.html:12 templates/index.html:29
 msgid "Magyar"
 msgstr "Hungarian"
 
-#: templates/about.html:77 templates/index.html:27
+#: templates/about.html:77 templates/index.html:30
 msgid "Angol"
 msgstr "English"
 
@@ -50,7 +51,15 @@ msgstr "Back"
 msgid "Mértékegységváltó a történeti tudományok számára"
 msgstr "Unit Converter for Historical Studies"
 
-#: templates/base.html:26
+#: templates/base.html:12
+msgid ""
+"Könnyűsúlyú, praktikus és megbízható forrásokra épülő váltóalkalmazás a "
+"történelmi mértékegységekhez."
+msgstr ""
+"A lightweight, practical, and reliably sourced converter application "
+"for historical measurement units."
+
+#: templates/base.html:31
 msgid "Mértékegység&shy;váltó a történeti tudományok számára"
 msgstr "Unit Converter for Historical Studies"
 
@@ -63,7 +72,7 @@ msgid "Kérem válasszon"
 msgstr "Please select"
 
 #: templates/converter.html:43 templates/converter.html:64
-#: templates/index.html:17
+#: templates/index.html:19
 msgid "Információ"
 msgstr "Information"
 
@@ -119,11 +128,15 @@ msgstr "Missing output unit!"
 msgid "Metrikus, angolszász, hagyományos, történelmi"
 msgstr "Metric, Imperial, Traditional, Historical"
 
-#: templates/index.html:23
+#: templates/index.html:10
+msgid "Gombok"
+msgstr "Buttons"
+
+#: templates/index.html:23 templates/index.html:26
 msgid "Nyelv"
 msgstr "Language"
 
-#: templates/index.html:34
+#: templates/index.html:37
 msgid "Verzió"
 msgstr "Version"
 

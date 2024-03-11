@@ -3,9 +3,14 @@
 <html lang="{{locale}}">
   <head>
     <title>{{ _("Mértékegységváltó a történeti tudományok számára") }}</title>
+    <!-- Metadata. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="{{ _('Könnyűsúlyú, praktikus és megbízható forrásokra épülő váltóalkalmazás a történelmi mértékegységekhez.') }}"
+    />
     <!-- Favicon. -->
     <link
       rel="shortcut icon"
@@ -19,16 +24,16 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}">
   </head>
-  <body>
-    <!-- Fixed header with title -->
+<body>
+    <!-- Main header (sticky) with title. -->
     <header class="header container horizontal">
-      <h1 data-target="/" class="header-text link-btn anim-link">
+      <h1 data-target="/" class="header-text link-btn anim-link" role="button">
         {{ _("Mértékegység&shy;váltó a történeti tudományok számára") }}
       </h1>
     </header>
     <!-- Jinja2 nesting: main content -->
-    {% block body %}{% endblock body %}
-    <!-- Fixed footer. -->
+    {% block main %}{% endblock main %}
+    <!-- Main footer (sticky). -->
     <footer class="footer container horizontal">
       <!-- Jinja2 nesting: footer content -->
       {% block footer %}{% endblock footer %}
