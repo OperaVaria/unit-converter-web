@@ -15,21 +15,21 @@ if (yearLocation) {
 
 // Calculator reset button.
 if (resetBtn) {
-  resetBtn.addEventListener("click", function (ev) {
+  resetBtn.addEventListener("click", () => {
     window.location.reload(true);
   });
 }
 
 // Source code button.
 if (githubBtn) {
-  githubBtn.addEventListener("click", function (ev) {
+  githubBtn.addEventListener("click", () => {
     loadNewTab("https://github.com/OperaVaria/unit-converter-web");
   });
 }
 
 // General link buttons.
 document.querySelectorAll(".link-btn").forEach((btn) => {
-  btn.addEventListener("click", function (ev) {
+  btn.addEventListener("click", () => {
     loadPage(btn.getAttribute("data-target"));
   });
 });
