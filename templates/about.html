@@ -1,170 +1,176 @@
 <!-- About page -->
 {% extends "base.html" %}
 {% block main %}
-<div class="container horizontal">
+<main class="container about-page">
   <!-- Title -->
-  <div class="item title">
+  <div class="item title" role="none">
     <h1>{{ _("Leírás") }}</h1>
   </div>
-  <span class="spacer-normal"></span>
   <!-- Hungarian -->
-  <div class="item title">
-    <h2>{{ _("Magyar") }}</h2>
-  </div>
-  <div class="item">
-    <p class="body-text">
-      E webalkalmazás egy könnyen használható átváltó történelmi mérték&shy;egységek
-      számára. Célja, hogy segítse mind a kutatókat, mind az eligazodni vágyókat
-      a múlt mérték&shy;egységeinek konvertálásában. Szem&shy;ben az interneten elérhető
-      más átváltókkal, jelen projektben minden információ megbízható
-      szak&shy;irodalmi forrásból származik, eredetük a mértékegység-adatbázisban
-      részle&shy;tesen jelölve van és ellenőrizhető. A felületen megjelenő rövid
-      információk ellátják a felhasználót a kiválasztott mérték&shy;egységek és
-      mértékegység&shy;rendszerek alapvető kon&shy;textusával. Az alkalmazás elérhető
-      magyar és angol felülettel egyaránt.
-    </p>
-  </div>
-  <div class="item title">
-    <h3>Adatbázis</h3>
-  </div>
-  <div class="item">
-    <p class="body-text">
-      Az adatbázis pillanatnyilag főképp a történelmi Ausztriához és
-      Magyar&shy;országhoz kapcsolódó mértékegység&shy;rendszereket tartalmaz, csakúgy,
-      mint az ókori görög és római mértékeket; ugyanakkor bármely
-      mértékegység&shy;rendszer bevezethető, ezek hozzáadása folya&shy;matos. Minden
-      modern metrikus és lényegi angolszász mérték&shy;egység szerepel viszonyítás
-      végett. Az adatbázis tartalma
-      <a href="https://github.com/OperaVaria/unit-converter-web/tree/main/database"
-      target="_blank">külön hozzáférhető sqlite, csv és json formátumban egyaránt</a>.
-      Az ógörög szavak átírásakor az úgynevezett "tudományos" átírást alkalmaztuk.
-    </p>
-  </div>
-  <div class="item title">
-    <h3>Műszaki háttér</h3>
-  </div>
-  <div class="item">
-    <p class="body-text">
-      Projektünk a <a href="https://github.com/pallets/flask/" target="_blank">Flask</a>
-      web frame&shy;workre épül, Python back&shy;enddel és hagyományos HTML-CSS-JS front&shy;enddel.
-      Az extra funkcio&shy;nalitás a következő Flask kiegészítőkkel valósult meg:
-    </p>
-    <ul>
-      <li>Lokalizáció a <a href="https://github.com/python-babel/flask-babel"
-        target="_blank">Flask-Babel</a> segítségével.</li>
-      <li>A nyelvválasztást az alkalmazás
-        <a href="https://github.com/pallets-eco/flask-session"
-        target="_blank">Flask-Sessions</a>
-        szerver oldali munkamenetekkel rögzíti.</li>
-      <li>Minifikáció a <a href="https://github.com/mrf345/flask_minify"
-        target="_blank">Flask-Minifyjal</a>.</li>
-      <li>HTTP biztonsági fejlécek a
-        <a href="https://github.com/GoogleCloudPlatform/flask-talisman"
-        target="_blank">Flask-Talismannal</a>.</li>
-    </ul>
-    <p class="body-text">
-      A frontend elkészítéséhez külső weboldal-sablon nem került felhasz&shy;nálásra.
-      Az egyedi legördülő menük a <a href="https://github.com/Choices-js/Choices"
-      target="_blank">Choices.js</a> plugin integrá&shy;lásával készültek.
-      Az alkalmazás a HTML oldalak generálásában nagyban támaszkodik a Jinja
-      sablon motorra, a lehető legoptimá&shy;lisabb weboldal-kódolás elérése érdekében.
-      A mértékegység-adatbázis az SQLite adatbázis&shy;motor segítségével épült.
-    </p>
-  </div>
-  <span class="spacer-normal"></span>
+  <article class="container horizontal" aria-labelledby="main-title-hun">
+      <div class="item title" role="none">
+        <h2 id="main-title-hun">{{ _("Magyar") }}</h2>
+      </div>
+      <section class="item" aria-labelledby="gen-title-hun">
+        <div class="item title" role="none">
+          <h3 id="gen-title-hun">Általános</h3>
+        </div>
+        <p class="body-text">
+          E webalkalmazás egy könnyen használható átváltó történelmi mérték&shy;egységek
+          számára. Célja, hogy segítse mind a kutatókat, mind az eligazodni vágyókat
+          a múlt mérték&shy;egységeinek konvertálásában. Szem&shy;ben az interneten elérhető
+          más átváltókkal, jelen projektben minden információ megbízható
+          szak&shy;irodalmi forrásból származik, eredetük a mértékegység-adatbázisban
+          részle&shy;tesen jelölve van és ellenőrizhető. A felületen megjelenő rövid
+          információk ellátják a felhasználót a kiválasztott mérték&shy;egységek és
+          mértékegység&shy;rendszerek alapvető kon&shy;textusával. Az alkalmazás elérhető
+          magyar és angol felülettel egyaránt.
+        </p>
+      </section>
+      <section class="item" aria-labelledby="db-title-hun">
+        <div class="item title" role="none">
+          <h3 id="db-title-hun">Adatbázis</h3>
+        </div>
+        <p class="body-text">
+          Az adatbázis pillanatnyilag főképp a történelmi Ausztriához és
+          Magyar&shy;országhoz kapcsolódó mértékegység&shy;rendszereket tartalmaz, csakúgy,
+          mint az ókori görög és római mértékeket; ugyanakkor bármely
+          mértékegység&shy;rendszer bevezethető, ezek hozzáadása folya&shy;matos. Minden
+          modern metrikus és lényegi angolszász mérték&shy;egység szerepel viszonyítás
+          végett. Az adatbázis tartalma
+          <a href="https://github.com/OperaVaria/unit-converter-web/tree/main/database"
+          target="_blank">külön hozzáférhető sqlite, csv és json formátumban egyaránt</a>.
+          Az ógörög szavak átírásakor az úgynevezett "tudományos" átírást alkalmaztuk.
+        </p>
+      </section>
+      <section class="item" aria-labelledby="tech-title-hun">
+        <div class="item title" role="none">
+          <h3 id="tech-title-hun">Műszaki háttér</h3>
+        </div>
+        <p class="body-text">
+          Projektünk a <a href="https://github.com/pallets/flask/" target="_blank">Flask</a>
+          web frame&shy;workre épül, Python back&shy;enddel és hagyományos HTML-CSS-JS front&shy;enddel.
+          Az extra funkcio&shy;nalitás a következő Flask kiegészítőkkel valósult meg:
+        </p>
+        <ul>
+          <li>Lokalizáció a <a href="https://github.com/python-babel/flask-babel"
+            target="_blank">Flask-Babel</a> segítségével.</li>
+          <li>A nyelvválasztást az alkalmazás
+            <a href="https://github.com/pallets-eco/flask-session"
+            target="_blank">Flask-Sessions</a>
+            szerver oldali munkamenetekkel rögzíti.</li>
+          <li>Minifikáció a <a href="https://github.com/mrf345/flask_minify"
+            target="_blank">Flask-Minifyjal</a>.</li>
+          <li>HTTP biztonsági fejlécek a
+            <a href="https://github.com/GoogleCloudPlatform/flask-talisman"
+            target="_blank">Flask-Talismannal</a>.</li>
+        </ul>
+        <p class="body-text">
+          A frontend elkészítéséhez külső weboldal-sablon nem került felhasz&shy;nálásra.
+          Az egyedi legördülő menük a <a href="https://github.com/Choices-js/Choices"
+          target="_blank">Choices.js</a> plugin integrá&shy;lásával készültek.
+          Az alkalmazás a HTML oldalak generálásában nagyban támaszkodik a Jinja
+          sablon motorra, a lehető legoptimá&shy;lisabb weboldal-kódolás elérése érdekében.
+          A mértékegység-adatbázis az SQLite adatbázis&shy;motor segítségével épült.
+        </p>
+      </section>
+  </article>
   <!-- English -->
-  <div class="item title">
-    <h2>{{ _("Angol") }}</h2>
-  </div>
-  <div class="item">
-    <p class="body-text">
-      This web application is an easy-to-use converter for historical
-      measurement units. Its aim is to assist both researchers and regular users
-      with the conversion of units from the past. Contrary to other converters
-      available on the internet, in the present project all information is
-      derived from reliable literature, their source is duly noted and
-      verifiable in the unit database. Short information notices on the
-      interface provide the user with the basic context of the selected unit or
-      unit system. The application is available with both English and Hungarian
-      interfaces.
-    </p>
-  </div>
-  <div class="item title">
-    <h3>Database</h3>
-  </div>
-  <div class="item">
-    <p class="body-text">
-      Currently the database features mostly unit systems connected to the
-      historical Austria and Hungary, as well as the Ancient Greek and Roman
-      measurements; however any unit system can be implemented, their addition
-      is continuous. All modern metric and relevant Anglo-American units are
-      present for reference. The contents of the database
-      <a href="https://github.com/OperaVaria/unit-converter-web/tree/main/database"
-      target="_blank">is accessible separately</a>
-      in either sqlite, csv, or json formats. The Ancient Greek words were
-      transliterated following the ALA-LC romanization standard.
-    </p>
-  </div>
-  <div class="item title">
-    <h3>Technical background</h3>
-  </div>
-  <div class="item">
-    <p class="body-text">
-      Our project is built on the <a href="https://github.com/pallets/flask/"
-      target="_blank">Flask</a> web framework, with a Python backend and a
-      conventional HTML-CSS-JS frontend.Extra functionality has been added with
-      the following Flask extensions:
-    </p>
-    <ul>
-      <li>Localization with the aid of
-        <a href="https://github.com/python-babel/flask-babel"
-        target="_blank">Flask-Babel</a>.</li>
-      <li>The language selection is stored in server-side
-        <a href="https://github.com/pallets-eco/flask-session"
-        target="_blank">Flask-Sessions</a>.</li>
-      <li>Minifications with <a href="https://github.com/mrf345/flask_minify"
-        target="_blank">Flask-Minify</a>.</li>
-      <li>HTTP security headers with
-        <a href="https://github.com/GoogleCloudPlatform/flask-talisman"
-        target="_blank">Flask-Talisman</a>.</li>
-    </ul>
-    <p class="body-text">
-      No external website templates were utilized for the creation of the front-end.
-      The custom drop-down menus were made with the integration of the
-      <a href="https://github.com/Choices-js/Choices"
-      target="_blank">Choices.js</a> plugin. The application relies greatly on
-      the Jinja template engine in generating the HTML pages to achieve the
-      most optimal website coding. The unit database was built with the aid
-      of the SQLite database engine.
-    </p>
-  </div>
-  <span class="spacer-normal"></span>
+  <article class="container horizontal" aria-labelledby="main-title-eng">
+      <div class="item title" role="none">
+        <h2 id="main-title-eng">{{ _("Angol") }}</h2>
+      </div>
+      <section class="item" aria-labelledby="gen-title-eng">
+        <div class="item title" role="none">
+          <h3 id="gen-title-eng">General</h3>
+        </div>
+        <p class="body-text">
+          This web application is an easy-to-use converter for historical
+          measurement units. Its aim is to assist both researchers and regular users
+          with the conversion of units from the past. Contrary to other converters
+          available on the internet, in the present project all information is
+          derived from reliable literature, their source is duly noted and
+          verifiable in the unit database. Short information notices on the
+          interface provide the user with the basic context of the selected unit or
+          unit system. The application is available with both English and Hungarian
+          interfaces.
+        </p>
+      </section>
+      <section class="item" aria-labelledby="db-title-eng">
+        <div class="item title" role="none">
+          <h3 id="db-title-eng">Database</h3>
+        </div>
+        <p class="body-text">
+          Currently the database features mostly unit systems connected to the
+          historical Austria and Hungary, as well as the Ancient Greek and Roman
+          measurements; however any unit system can be implemented, their addition
+          is continuous. All modern metric and relevant Anglo-American units are
+          present for reference. The contents of the database
+          <a href="https://github.com/OperaVaria/unit-converter-web/tree/main/database"
+          target="_blank">is accessible separately</a>
+          in either sqlite, csv, or json formats. The Ancient Greek words were
+          transliterated following the ALA-LC romanization standard.
+        </p>
+      </section>
+      <section class="item" aria-labelledby="tech-title-eng">
+        <div class="item title" role="none">
+          <h3 id="tech-title-eng">Technical background</h3>
+        </div>
+        <p class="body-text">
+          Our project is built on the <a href="https://github.com/pallets/flask/"
+          target="_blank">Flask</a> web framework, with a Python backend and a
+          conventional HTML-CSS-JS frontend.Extra functionality has been added with
+          the following Flask extensions:
+        </p>
+        <ul>
+          <li>Localization with the aid of
+            <a href="https://github.com/python-babel/flask-babel"
+            target="_blank">Flask-Babel</a>.</li>
+          <li>The language selection is stored in server-side
+            <a href="https://github.com/pallets-eco/flask-session"
+            target="_blank">Flask-Sessions</a>.</li>
+          <li>Minifications with <a href="https://github.com/mrf345/flask_minify"
+            target="_blank">Flask-Minify</a>.</li>
+          <li>HTTP security headers with
+            <a href="https://github.com/GoogleCloudPlatform/flask-talisman"
+            target="_blank">Flask-Talisman</a>.</li>
+        </ul>
+        <p class="body-text">
+          No external website templates were utilized for the creation of the front-end.
+          The custom drop-down menus were made with the integration of the
+          <a href="https://github.com/Choices-js/Choices"
+          target="_blank">Choices.js</a> plugin. The application relies greatly on
+          the Jinja template engine in generating the HTML pages to achieve the
+          most optimal website coding. The unit database was built with the aid
+          of the SQLite database engine.
+        </p>
+      </section>
+  </article>
   <!-- Buttons -->
-  <div class="container horizontal">
-    <div class="item">
+  <nav class="container horizontal buttons" title="{{ _('Gombok') }}">
+    <div class="item" role="none">
       <button data-target="/about/sources"
       class="link-btn normal">
         {{ _("Irodalom") }}
       </button>
     </div>
-    <div class="item">
+    <div class="item" role="none">
       <button id="github-btn"
       class="normal">
         {{ _("Forráskód") }}
       </button>
     </div>
-    <div class="item full-wide">
+    <div class="item full-wide" role="none">
       <button data-target="/" class="link-btn normal">
         {{ _("Vissza") }}
       </button>
     </div>
-  </div>
-  <span class="spacer-normal"></span>
-</div>
+  </nav>
+</main>
 {% endblock main %}
 <!-- Basic footer with copyright. -->
 {% block footer %}
-<p class="footer-text">
-  &copy; OperaVaria,&#160;<span id="year-location"></span>
+<p class="footer-text" role="none">
+  &copy; OperaVaria,&#160;<span id="year-location" role="none"></span>
 </p>
 {% endblock footer %}

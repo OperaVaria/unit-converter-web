@@ -14,6 +14,7 @@ body {
   background-color: #d0efff;
   background-position: top left;
   background-repeat: no-repeat;
+  margin: auto;
 }
 
 /* All HTML items (avoid margin errors) */
@@ -68,6 +69,12 @@ body {
   padding: 1.5em;
 }
 
+.about-page {
+  flex-flow: column wrap;
+  gap: 2vh 1vw;
+  margin: 2vh 1vw;
+}
+
 /* Container items */
 
 .item {
@@ -115,6 +122,10 @@ body {
   margin: 1em;
   padding: 1em;
   width: 20em;
+}
+
+.buttons {
+  margin: 2vh 0;
 }
 
 .desktop-view {
@@ -198,7 +209,7 @@ dd {
 }
 
 .header-text {
-  font-size: 3em;
+  font-size: 2.5em;
   padding: 0.5em;
 }
 
@@ -273,10 +284,6 @@ button:hover {
 
 /* Resizes for tablet screens: */
 @media only screen and (max-width: 1024px) {
-  .header-text {
-    font-size: 2.5em;
-  }
-
   .item {
     padding: 1.25vh 1vw;
   }

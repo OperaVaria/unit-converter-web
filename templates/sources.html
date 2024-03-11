@@ -1,32 +1,29 @@
 <!-- Sources page -->
 {% extends "base.html" %}
 {% block main %}
-<div class="container horizontal">
+<main class="container about-page">
   <!-- Title. -->
-  <div class="item title">
+  <div class="item title" role="none">
     <h1>{{ _("Felhasznált irodalom") }}</h1>
   </div>
-  <span class="spacer-small"></span>
   <!-- List of consulted works, populated by jinja2 loop from dictionary. -->
-  <div class="item bibl-text">
+  <article class="item bibl-text" title="{{ _('Lista') }}">
     <dl>
       {% for author_date, entry in source_dict.items() %}
       <dt>{{author_date}}</dt>
         <dd>{{entry|safe}}</dd>
       {% endfor %}
     </dl>
-  </div>
-  <span class="spacer-small"></span>
+  </article>
   <!-- Back button. -->
-  <div class="item full-wide">
+  <nav class="item full-wide buttons" title="{{ _('Gombok') }}">
     <button data-target="/about" class="link-btn normal">{{ _("Vissza") }}</button>
-  </div>
-  <span class="spacer-normal"></span>
-</div>
+  </nav>
+</main>
 {% endblock main %}
 <!-- Basic footer with copyright. -->
 {% block footer %}
-<p class="footer-text">
-  &copy; OperaVaria,&#160;<span id="year-location"></span>
+<p class="footer-text" role="none">
+  &copy; OperaVaria,&#160;<span id="year-location" role="none"></span>
 </p>
 {% endblock footer %}

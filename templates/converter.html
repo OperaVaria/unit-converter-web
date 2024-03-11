@@ -2,18 +2,18 @@
 {% extends "base.html" %}
 {% block main %}
 <!-- Main container. -->
-<div class="container horizontal">
+<main class="container horizontal">
   <!-- Title. -->
-  <div class="item title">
+  <div class="item title" role="none">
     <h1>{{conv_title}}</h1>
   </div>
   <!-- Side container(s). With a for loop, jinja2 creates two identical containers,
        one with input and one with output attributes -->
   {% set sides = ["input", "output"] %}
   {% for side in sides %}
-  <div class="container vertical half-wide">
+  <section class="container vertical half-wide" title="{{side|capitalize}}">
     <!-- Subtitle, filled by a jinja2 if statement. -->
-    <div class="item">
+    <div class="item" role="none">
       {% if locale == "en" %}
         <h2>{{side|capitalize}}:</h2>
       {% elif locale == "hu" and side == "input" %}
@@ -23,7 +23,7 @@
       {% endif %}
     </div>
     <!-- Unit system box, bordered. -->
-    <div class="container vertical bordered">
+    <div class="container vertical bordered" title="{{ _('Mértékegységrendszer') }}">
       <!-- Unit system selection menu. Swapped out by Choices.js. -->
       <div class="item">
         <label class="label" for="{{side ~ '-system-menu'}}">
@@ -47,7 +47,7 @@
       </div>
     </div>
     <!-- Unit box, bordered. -->
-    <div class="container vertical bordered">
+    <div class="container vertical bordered" title="{{ _('Mértékegység') }}">
       <!-- Unit selection menu. Swapped out by Choices.js. -->
       <div class="item">
         <label class="label" for="{{side ~ '-unit-menu'}}">
@@ -67,64 +67,64 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   {% endfor %}
   <!-- Calculation and result container. -->
-  <div class="container vertical full-wide">
+  <section class="container vertical full-wide" title="{{ _('Konvertálás') }}">
     <!-- Input value box. -->
-    <div class="item">
+    <div class="item" title="{{ _('Bemeneti érték') }}">
       <label class="label" for="input-value-box">
         {{ _("Bemeneti érték") }}:</label>
-      <br>
+      <br role="none">
       <input type="number" name="input-value" class="bordered"
         id="input-value-box" placeholder="{{ _('Érték') }}" min="0">
     </div>
     <!-- Convert button. -->
-    <div class="item">
+    <div class="item" role="none">
       <button id="convert-btn" class="conv-btn normal">
         {{ _("Konvertálás") }}</button>
     </div>
     <!-- Result box. -->
-    <div class="item result-box bordered">
+    <div class="item result-box bordered" title="{{ _('Eredmény') }}">
       <h3>{{ _("Eredmény") }}:</h3>
-      <div>
-        <p id="result-field" class="result-text">---</p>
-        <p id="symbol-field" class="result-text">n/a</p>
+      <div role="none">
+        <p id="result-field" class="result-text" title="{{ _('Érték') }}">---</p>
+        <p id="symbol-field" class="result-text" title="{{ _('Rövidítés') }}">n/a</p>
       </div>
     </div>
-  </div>
+  </section>
   <!-- Button container. -->
-  <div class="container horizontal full-wide">
+  <section class="container horizontal full-wide" title="{{ _('Gombok') }}">
     <!-- Swap button. -->
-    <div class="item">
+    <div class="item" role="none">
       <button id="swap-btn" class="conv-btn normal">
         {{ _("Fordított") }}</button>
     </div>
     <!-- Reset button. -->
-    <div class="item">
+    <div class="item" role="none">
       <button id="reset-btn" class="normal">
         {{ _("Reset") }}</button>
     </div>
     <!-- Back button. -->
-    <div class="item">
+    <div class="item" role="none">
       <button data-target="/" class="link-btn normal">
         {{ _("Vissza") }}</button>
     </div>
-  </div>
+  </section>
   <span class="spacer-normal"></span>
-</div>
+</main>
 {% endblock main %}
 <!-- Two sets of footer content, one for smaller screens. -->
 {% block footer %}
 <!-- Complex, larger footer with buttons, built by jinja2 loop.-->
 {% for raw, title in cat_dict.items() %}
-<div class="item desktop-view">
+<div class="item desktop-view" role="none">
   <button data-target="{{'/' ~ raw}}" class="link-btn small">{{title}}</button>
 </div>
 {% endfor %}
 <!-- Basic footer with copyright. -->
-<p class="footer-text mobile-view">
-  &copy; OperaVaria,&#160;<span id="year-location"></span>
+<p class="footer-text mobile-view" role="none">
+  &copy; OperaVaria,&#160;<span id="year-location" role="none"></span>
 </p>
 {% endblock footer %}
 <!-- Additional JavaScript for converter page functionality. -->

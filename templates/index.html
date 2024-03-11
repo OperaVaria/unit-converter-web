@@ -20,7 +20,7 @@
     </div>
   </nav>
   <!-- Language selection buttons. -->
-  <section class="item full-wide" title="{{ _('Nyelv') }}">
+  <section class="item full-wide buttons" title="{{ _('Nyelv') }}">
     <form action="{{ url_for('receive_post') }}" method="post" role="none">
       <div class="item" role="none">
         <h2 class="label">{{ _("Nyelv") }}:</h2>
@@ -31,7 +31,6 @@
       </div>
     </form>
   </section>
-  <span class="spacer-small"></span>
   <!-- Version number. -->
   <section class="item full-wide" title="{{ _('Verzió') }}" role="note">
     <h3>{{ _("Verzió") }} - {{version}}</h3>
@@ -41,7 +40,7 @@
 {% endblock main %}
 <!-- Basic footer with copyright. -->
 {% block footer %}
-<p class="footer-text" role="contentinfo">
-  &copy; OperaVaria,&#160;<span id="year-location"></span>
+<p class="footer-text" role="none">
+  &copy; OperaVaria,&#160;<span id="year-location" role="none"></span>
 </p>
 {% endblock footer %}
