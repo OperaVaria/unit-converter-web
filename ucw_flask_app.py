@@ -50,6 +50,7 @@ from flask_talisman import Talisman
 
 # Other imports:
 import json
+from datetime import datetime
 from config.settings import csp  # Content security policy settings.
 from config.settings import bypass  # Minify bypass settings.
 
@@ -67,7 +68,7 @@ app.config.from_file("./config/secretKey.json", load=json.load)  # Load secret k
 app.config.from_pyfile("./config/settings.py")  # Load other settings.
 app.json.sort_keys = False  # Do not sort json content alphabetically.
 
-# Set up Talisman. Force HTTPS should be normally on, but Cloudflare handles it.
+# Set up Talisman. Force HTTPS should normally be on, but Cloudflare handles it.
 tali = Talisman(app, content_security_policy=csp, force_https=False)
 
 # Set up Minify.
@@ -95,6 +96,9 @@ def get_locale():
 # Set up Babel.
 babel = Babel(app, locale_selector=get_locale)
 
+# Current year variable for footer.
+current_year = datetime.now().year
+
 
 # Flask page building decorators:
 
@@ -106,7 +110,7 @@ def index():
     # Create dictionary for button builder loop.
     cat_dict = cat_dict_setup(locale)
     # Render.
-    return render_template("index.html", locale=locale,
+    return render_template("index.html", locale=locale, current_year=current_year,
                            cat_dict=cat_dict, version=__version__)
 
 @app.route("/<unit_cat>")
@@ -125,8 +129,9 @@ def converter(unit_cat):
     # Create dictionary to populate system lists.
     unit_sys_dict = sys_dict_setup(unit_cat, locale)
     # Render.
-    return render_template("converter.html", locale=locale, conv_title=conv_title,
-                           unit_sys_dict=unit_sys_dict, cat_dict=cat_dict)
+    return render_template("converter.html", locale=locale, current_year=current_year,
+                           conv_title=conv_title, unit_sys_dict=unit_sys_dict,
+                           cat_dict=cat_dict)
 
 @app.route("/about")
 def about():
@@ -134,7 +139,7 @@ def about():
     # Get current locale.
     locale = get_locale()
     # Render.
-    return render_template("about.html", locale=locale)
+    return render_template("about.html", locale=locale, current_year=current_year)
 
 @app.route("/about/sources")
 def sources():
@@ -144,7 +149,8 @@ def sources():
     # Create dictionary to populate sources lists.
     source_dict = source_dict_setup()
     # Render.
-    return render_template("sources.html", locale=locale, source_dict=source_dict)
+    return render_template("sources.html", locale=locale, current_year=current_year,
+                           source_dict=source_dict)
 
 @app.route("/fetch-traffic", methods=["POST"])
 def fetch_traffic():

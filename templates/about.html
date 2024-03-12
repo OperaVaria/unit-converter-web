@@ -16,14 +16,14 @@
           <h3 id="gen-title-hun">Általános</h3>
         </div>
         <p class="body-text">
-          E webalkalmazás egy könnyen használható átváltó történelmi mérték&shy;egységek
+          E webalkalmazás egy könnyen használható átváltó történelmi mértékegységek
           számára. Célja, hogy segítse mind a kutatókat, mind az eligazodni vágyókat
-          a múlt mérték&shy;egységeinek konvertálásában. Szem&shy;ben az interneten elérhető
+          a múlt mértékegységeinek konvertálásában. Szemben az interneten elérhető
           más átváltókkal, jelen projektben minden információ megbízható
-          szak&shy;irodalmi forrásból származik, eredetük a mértékegység-adatbázisban
-          részle&shy;tesen jelölve van és ellenőrizhető. A felületen megjelenő rövid
-          információk ellátják a felhasználót a kiválasztott mérték&shy;egységek és
-          mértékegység&shy;rendszerek alapvető kon&shy;textusával. Az alkalmazás elérhető
+          szakirodalmi forrásból származik, eredetük a mértékegység-adatbázisban
+          részletesen jelölve van és ellenőrizhető. A felületen megjelenő rövid
+          információk ellátják a felhasználót a kiválasztott mértékegységek és
+          mértékegység&shy;rendszerek alapvető kontextusával. Az alkalmazás elérhető
           magyar és angol felülettel egyaránt.
         </p>
       </section>
@@ -33,10 +33,10 @@
         </div>
         <p class="body-text">
           Az adatbázis pillanatnyilag főképp a történelmi Ausztriához és
-          Magyar&shy;országhoz kapcsolódó mértékegység&shy;rendszereket tartalmaz, csakúgy,
+          Magyarországhoz kapcsolódó mértékegységrendszereket tartalmaz, csakúgy,
           mint az ókori görög és római mértékeket; ugyanakkor bármely
-          mértékegység&shy;rendszer bevezethető, ezek hozzáadása folya&shy;matos. Minden
-          modern metrikus és lényegi angolszász mérték&shy;egység szerepel viszonyítás
+          mértékegység&shy;rendszer bevezethető, ezek hozzáadása folyamatos. Minden
+          modern metrikus és lényegi angolszász mértékegység szerepel viszonyítás
           végett. Az adatbázis tartalma
           <a href="https://github.com/OperaVaria/unit-converter-web/tree/main/database"
           target="_blank">külön hozzáférhető sqlite, csv és json formátumban egyaránt</a>.
@@ -49,8 +49,8 @@
         </div>
         <p class="body-text">
           Projektünk a <a href="https://github.com/pallets/flask/" target="_blank">Flask</a>
-          web frame&shy;workre épül, Python back&shy;enddel és hagyományos, reszponzív HTML-CSS-JS
-          front&shy;enddel. Az extra funkcio&shy;nalitás a következő Flask kiegészítőkkel valósult meg:
+          web frameworkre épül, Python backenddel és hagyományos, reszponzív HTML-CSS-JS
+          frontenddel. Az extra funkcionalitás a következő Flask kiegészítőkkel valósult meg:
         </p>
         <ul>
           <li>Lokalizáció a <a href="https://github.com/python-babel/flask-babel"
@@ -66,11 +66,11 @@
             target="_blank">Flask-Talismannal</a>.</li>
         </ul>
         <p class="body-text">
-          A frontend elkészítéséhez külső weboldal-sablon nem került felhasz&shy;nálásra.
+          A frontend elkészítéséhez külső weboldal-sablon nem került felhasználásra.
           Az egyedi legördülő menük a <a href="https://github.com/Choices-js/Choices"
-          target="_blank">Choices.js</a> plugin integrá&shy;lásával készültek.
+          target="_blank">Choices.js</a> plugin integrálásával készültek.
           Az alkalmazás a HTML oldalak generálásában nagyban támaszkodik a Jinja
-          sablon motorra, a lehető legoptimá&shy;lisabb weboldal-kódolás elérése érdekében.
+          sablon motorra, a lehető legoptimálisabb weboldal-kódolás elérése érdekében.
           A mértékegység-adatbázis az SQLite adatbázis&shy;motor segítségével épült.
         </p>
       </section>
@@ -171,6 +171,6 @@
 <!-- Basic footer with copyright. -->
 {% block footer %}
 <p class="footer-text" role="none">
-  &copy; OperaVaria,&#160;<span id="year-location" role="none"></span>
+  &copy; OperaVaria, {{current_year}}
 </p>
 {% endblock footer %}

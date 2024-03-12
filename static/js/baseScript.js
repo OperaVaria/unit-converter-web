@@ -5,12 +5,6 @@ const yearLocation = document.getElementById("year-location");
 const resetBtn = document.getElementById("reset-btn");
 const githubBtn = document.getElementById("github-btn");
 
-// Insert current year into copyright info location, if element exists.
-if (yearLocation) {
-  let currentYear = new Date().getFullYear();
-  yearLocation.innerHTML = currentYear;
-}
-
 // Add event listeners:
 
 // Calculator reset button.
