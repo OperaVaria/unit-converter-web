@@ -17,14 +17,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - HTML restructured for accessibility and SEO.
 - Simple footer for mobile screens instead of buttons.
 - Smaller header on desktop.
-- Slow loading "current year" JS swapped for Jinja/Python variable.
+- Slow loading "current year" JS swapped out for Jinja/Python variable.
 - CSS tweaks.
 
 ### Fixed
 
 - About page Flask extension lists' display problems.
 - Hyphenation problems with Hungarian texts.
-- Code formating.
+- Code formatting.
 - Typos.
 
 ## [1.2.0] - 2024.03.09
