@@ -16,8 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - HTML restructured for accessibility and SEO.
 - Simple footer for mobile screens instead of buttons.
-- Slow loading "current year" JS swapped for Jinja/Python variable.
 - Smaller header on desktop.
+- Slow loading "current year" JS swapped for Jinja/Python variable.
 - CSS tweaks.
 
 ### Fixed
