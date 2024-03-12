@@ -67,8 +67,8 @@ app.config.from_file("./config/secretKey.json", load=json.load)  # Load secret k
 app.config.from_pyfile("./config/settings.py")  # Load other settings.
 app.json.sort_keys = False  # Do not sort json content alphabetically.
 
-# Set up Talisman.
-tali = Talisman(app, content_security_policy=csp)
+# Set up Talisman. Force HTTPS should be normally on, but Cloudflare handles it.
+tali = Talisman(app, content_security_policy=csp, force_https=False)
 
 # Set up Minify.
 mini = Minify(app=app, bypass=bypass, html=True, js=True, cssless=True)
