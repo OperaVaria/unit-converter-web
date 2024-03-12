@@ -208,6 +208,6 @@ valueBox.addEventListener("keypress", (event) => {
   }
 });
 
-valueBox.addEventListener("focus",  () => {
+valueBox.addEventListener("focus", () => {
   valueBox.value = "";
 });

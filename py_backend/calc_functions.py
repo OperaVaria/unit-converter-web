@@ -23,7 +23,7 @@ def calculate(input_value, input_inter, output_inter):
         # Rounded with precision 10.
         getcontext().prec = 10
         # Normalize, if between 1E-5 and 1E+5: no scientific notation.
-        # Smaller or larger numbers: yes.              
+        # Smaller or larger numbers: yes.
         if 0.00001 <= float(solution) <= 100000:
             solution = "{:f}".format(solution.normalize())
         else:

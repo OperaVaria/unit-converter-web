@@ -20,7 +20,7 @@ def fetch_one(command, param):
     # Execute.
     res = cur.execute(command, param)
     # Fetch and unpack tuple,
-    value = (res.fetchone()[0])
+    value = res.fetchone()[0]
     # Close connection.
     con.close()
     return value

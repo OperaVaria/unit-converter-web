@@ -4,7 +4,7 @@
 from datetime import timedelta
 
 # Babel settings:
-BABEL_DEFAULT_LOCALE="hu"
+BABEL_DEFAULT_LOCALE = "hu"
 LANGUAGES = {
     "hu": "magyar",
     "en": "English",
@@ -23,42 +23,20 @@ SESSION_COOKIE_SAMESITE = "Strict"
 
 # Talisman settings:
 csp = {
-
-    "default-src": [
-        "'none'"
-    ],
-    "connect-src": [
-        "'self'"
-    ],
-
+    "default-src": ["'none'"],
+    "connect-src": ["'self'"],
     "script-src": [
         "'self'",
         "'sha256-StHcb2rwa+JQQMEW05Q1ksZqLW064v3HKGcKpiYMMsc='",
         "'sha256-mNoUSBnIsLtJrvz4HSLr6Zob4ftw0pbk4UzBxZfjr04='",
         "https://cdn.jsdelivr.net/npm/",
-        "https://gc.kis.v2.scr.kaspersky-labs.com"
+        "https://gc.kis.v2.scr.kaspersky-labs.com",
     ],
-
-    "style-src": [
-        "'self'",
-        "https://cdn.jsdelivr.net/npm/"
-    ],
-
-    "img-src": [
-        "'self'"
-    ],
-
-    "object-src": [
-        "'none'"
-    ],
-
-    "base-uri": [
-        "'none'"
-    ],
-
-    "form-action": [
-        "'self'"
-    ]
+    "style-src": ["'self'", "https://cdn.jsdelivr.net/npm/"],
+    "img-src": ["'self'"],
+    "object-src": ["'none'"],
+    "base-uri": ["'none'"],
+    "form-action": ["'self'"],
 }
 
 

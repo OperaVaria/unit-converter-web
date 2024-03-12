@@ -22,7 +22,7 @@ az úgynevezett "tudományos" átírást alkalmaztuk.
 ## Technikai háttér
 
 Projektünk a [Flask](https://github.com/pallets/flask/) web frameworkre épül,
-Python backenddel és hagyományos HTML-CSS-JS frontenddel.
+Python backenddel és hagyományos, reszponzív HTML-CSS-JS frontenddel.
 Az extra funkcionalitás a következő Flask kiegészítőkkel valósult meg:
 
 - Lokalizáció a [Flask-Babel](https://github.com/python-babel/flask-babel) segítségével.
@@ -63,7 +63,7 @@ following the ALA-LC romanization standard.
 ## Technical background
 
 Our project is built on the [Flask](https://github.com/pallets/flask/) web framework,
-with a Python backend and a conventional HTML-CSS-JS frontend.
+with a Python backend and a conventional, responsive HTML-CSS-JS frontend.
 Extra functionality has been added with the following Flask extensions:
 
 - Localization with the aid of [Flask-Babel](https://github.com/python-babel/flask-babel).

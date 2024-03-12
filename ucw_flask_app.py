@@ -17,8 +17,8 @@ TODO: 1. Testing.
 # Metadata variables:
 __author__ = "OperaVaria"
 __contact__ = "lcs_it@proton.me"
-__version__ = "1.2.0"
-__date__ = "2024.03.09"
+__version__ = "1.3.0"
+__date__ = "2024.03.12"
 
 
 # Licence:
@@ -50,8 +50,8 @@ from flask_talisman import Talisman
 
 # Other imports:
 import json
-from config.settings import csp # Content security policy settings.
-from config.settings import bypass # Minify bypass settings.
+from config.settings import csp  # Content security policy settings.
+from config.settings import bypass  # Minify bypass settings.
 
 # Local imports:
 from py_backend.setup_functions import (title_setup, sys_dict_setup, sys_info_setup,
@@ -63,9 +63,9 @@ from py_backend.calc_functions import calculate
 app = Flask(__name__)
 
 # Flask app configuration:
-app.config.from_file("./config/secretKey.json", load=json.load) # Load secret key.
-app.config.from_pyfile("./config/settings.py") # Load other settings.
-app.json.sort_keys = False # Do not sort json content alphabetically.
+app.config.from_file("./config/secretKey.json", load=json.load)  # Load secret key.
+app.config.from_pyfile("./config/settings.py")  # Load other settings.
+app.json.sort_keys = False  # Do not sort json content alphabetically.
 
 # Set up Talisman.
 tali = Talisman(app, content_security_policy=csp)
@@ -83,7 +83,7 @@ def get_locale():
         locale = session["locale"]
     else:
         # If not, attempt best match.
-        loc_best = request.accept_languages.best_match(app.config['LANGUAGES'].keys())
+        loc_best = request.accept_languages.best_match(app.config["LANGUAGES"].keys())
         # if unsuccessful: set default locale.
         if loc_best is None:
             locale = app.config.get("BABEL_DEFAULT_LOCALE")
@@ -144,8 +144,7 @@ def sources():
     # Create dictionary to populate sources lists.
     source_dict = source_dict_setup()
     # Render.
-    return render_template("sources.html", locale=locale,
-                           source_dict=source_dict)
+    return render_template("sources.html", locale=locale, source_dict=source_dict)
 
 @app.route("/fetch-traffic", methods=["POST"])
 def fetch_traffic():
@@ -180,7 +179,7 @@ def fetch_traffic():
 @app.route("/receive-post", methods=["POST"])
 def receive_post():
     """URL for receiving locale post requests."""
-    if request.method == 'POST':
+    if request.method == "POST":
         session["locale"] = request.form["locale-btn"]
     return redirect(url_for("index"))
 
@@ -201,5 +200,5 @@ def sitemap_xml():
 
 
 # When run as main run on localhost, port 8080:
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
