@@ -169,7 +169,10 @@ dd {
 /* Text */
 
 .body-text {
-  hyphens: auto;  
+  hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
   margin-bottom: 1em;
   margin-top: 1em;
   max-width: 70vw;
