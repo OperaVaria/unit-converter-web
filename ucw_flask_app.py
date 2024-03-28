@@ -77,21 +77,23 @@ mini = Minify(app=app, bypass=bypass, html=True, js=True, cssless=True)
 # Set up Session.
 sess = Session(app)
 
-# Babel get_locale function.
+
 def get_locale():
+    """Babel get_locale function."""
     # If locale information in session: set it as locale.
     if "locale" in session:
         locale = session["locale"]
     else:
         # If not, attempt best match.
         loc_best = request.accept_languages.best_match(app.config["LANGUAGES"].keys())
-        # if unsuccessful: set default locale.
+        # if unsuccessful: set English.
         if loc_best is None:
-            locale = app.config.get("BABEL_DEFAULT_LOCALE")
+            locale = "en"
         # If successful: set best match.
         else:
             locale = loc_best
     return locale
+
 
 # Set up Babel.
 babel = Babel(app, locale_selector=get_locale)
