@@ -46,7 +46,7 @@ becsi_negyszogol,bécsi négyszögöl,bécsi négyszögöl,"From the Austrian sy
 magyar_hold,magyar hold,magyar hold,"From the Hungarian system, adjusted to the Viennese sq. fathom (1200).","A magyar rendszerből, a bécsi nölhőz igazítva (1200).",hold,austro_hungarian_area,(Austro-)Hungarian,area,"Bogdán 1990, 37.",4316.0
 magyar_negyszogmerfold,magyar négyszögmérföld,magyar négyszögmérföld,"Latter development, does not fit the system: 161 2/5 hold.","Utólagos, nem illeszkedik a rendszerbe: 161 2/5 hold.",nmérf.,austro_hungarian_area,(Austro-)Hungarian,area,"Bogdán 1990, 37.",697800.0
 katasztralis_negyszogol,katasztrális négyszögöl,katasztrális négyszögöl,Adoption of the Viennese sq. fathom.,A bécsi nöl adoptálása.,kat. nöl,cadastral,Cadastral,area,"Bogdán 1990, 36.",3.59665
-katasztralis_hold,katasztrális hold,katasztrális hold,"Adoption of the Lower Austian acre, 1600 QKlaf/kat. nöl.","Az alsó-ausztriai hold adoptálása, 1600 kat. QKlaf/kat. nöl.",kat. hold,cadastral,Cadastral,area,"Bogdán 1990, 36.",5754.642
+katasztralis_hold,katasztrális hold,katasztrális hold,"Adoption of the Lower Austrian acre, 1600 QKlaf/kat. nöl.","Az alsó-ausztriai hold adoptálása, 1600 kat. QKlaf/kat. nöl.",kat. hold,cadastral,Cadastral,area,"Bogdán 1990, 36.",5754.642
 pozsonyi_negyszoglab,pozsonyi négyszögláb,pozsonyi négyszögláb,Pressburg sq. foot,A pozsonyi láb négyzete.,nláb,pressburg_area,Pressburg,area,"Bogdán 1990, 50.",0.10036
 pozsonyi_negyszogol,pozsonyi négyszögöl,pozsonyi négyszögöl,"Pressburg sq. fathom, 6*6 Pressburg feet.","6*6 pozsonyi láb, azaz 36 nláb.",nöl,pressburg_area,Pressburg,area,"Bogdán 1990, 50.",3.6138
 banyanegyszogkotel_med,bánya(-négyszög)kötél,bánya(-négyszög)kötél,Selmecbánya mining (sq.) rope: 7*7 mining fathoms,selmeci bánya(-négyszög)kötél: 7*7 bányaöl,nköt.,selmec_area_med,Selmec/Hungarian mining (Medieval),area,"Bogdán 1990, 39.",200.08
@@ -90,7 +90,7 @@ kis_szazas,short hundred,kis százas,"Ger. Hundert: 5 stiga, 100 p.","ném. Hund
 nagy_szazas,long hundred,nagy százas,"Ger. Hundert: 6 stiga, 120 p.","ném. Hundertből: 6 stiga, 120 db",n. száz.,general_hungary_dl,general (Hungary),dimensionless,"Bogdán 1991, 53.",120.0
 nagy,large,nagy,"Ger. Gross: 12 dozen, 144 p.","ném. Grossból: 12 tucat, 144 db",nagy,general_hungary_dl,general (Hungary),dimensionless,"Bogdán 1991, 53.",144.0
 kis_ezres,short thousand,kis ezres,"Ger. Tausend: 50 stiga, 1000 p.","ném. Tausendből: 50 stiga, 1000 db",k. ez.,general_hungary_dl,general (Hungary),dimensionless,"Bogdán 1991, 53.",1000.0
-nagy_ezres,long thoulsand,nagy ezres,"Ger. Tausend: 60 stiga, 1200 p.","ném. Tausendből: 60 stiga, 1200 db",n. ez.,general_hungary_dl,general (Hungary),dimensionless,"Bogdán 1991, 53.",1200.0
+nagy_ezres,long thousand,nagy ezres,"Ger. Tausend: 60 stiga, 1200 p.","ném. Tausendből: 60 stiga, 1200 db",n. ez.,general_hungary_dl,general (Hungary),dimensionless,"Bogdán 1991, 53.",1200.0
 millimetre,millimetre,milliméter,SI unit: 10⁻³m,SI mértékegység: 10⁻³m,mm,metric_length,SI,length,SI 2009.,0.001
 centimetre,centimetre,centiméter,SI unit: 10⁻²m,SI mértékegység: 10⁻²m,cm,metric_length,SI,length,SI 2009.,0.01
 decimetre,decimetre,deciméter,SI unit: 10⁻¹m,SI mértékegység: 10⁻¹m,dm,metric_length,SI,length,SI 2009.,0.1
@@ -107,7 +107,7 @@ furlong,furlong,furlong,10 ch,ang. stadion: 10 ch,fur,imperial_us_customary_leng
 mile,mile,mile,1760 yd,ang. mérföld: 1760 yd,mi,imperial_us_customary_length,Imperial,length,1995 No. 1804.,1609.344
 nautical_mile,nautical mile,nautical mile,The length of one minute of latitude at the Equator.,Tengeri mérföld = egy szögpercnyi távolság az Egyenlítőnél.,nmi,imperial_us_customary_length,Imperial,length,1995 No. 1804.,1853.0
 daktylos,δάκτυλος (daktylos),δάκτυλος (daktylos),Att. finger: 1/16 p.,att. ujj: 1/16 p.,dak.,attic_length,Attic,length,"Egger, Jochen, and Smart 2010, 459.",0.01927
-kondylos,κόνδυλος (kondylos),κόνδυλος (kondylos),"mg. ""knuckle"" or ""joint"", length of the medial finger joint, 2 dak.","jel. ""ököl"" v. ""izület"", az ujj középső percének hossza, 2 dak.",kon.,attic_length,Attic,length,"Based on values in Egger, Jochen, and Smart 2010, 459.",0.03854
+kondylos,κόνδυλος (kondylos),κόνδυλος (kondylos),"mg. ""knuckle"" or ""joint"", length of the medial finger joint, 2 dak.","jel. ""ököl"" v. ""ízület"", az ujj középső percének hossza, 2 dak.",kon.,attic_length,Attic,length,"Based on values in Egger, Jochen, and Smart 2010, 459.",0.03854
 palaiste,παλαιστή (palaistē),παλαιστή (palaisté),"Att. palm, aka. δῶρον (dōron), 4 dak.","att. tenyér, aka. δῶρον (dóron), 4 dak.",pal.,attic_length,Attic,length,"Egger, Jochen, and Smart 2010, 459.",0.07708
 dichas,διχάς (dichas),διχάς (dichas),"aka. ἡμιπόδιον (hēmipodion), 1/2 p., 8 dak.","aka. ἡμιπόδιον (hémipodion), 1/2 p., 8 dak.",dich.,attic_length,Attic,length,"Based on values in Egger, Jochen, and Smart 2010, 459.",0.15415
 lichas,λιχάς (lichas),λιχάς (lichas),Att. short/little span: 10 dak.,att. kisarasz: 10 dak.,lich.,attic_length,Attic,length,"Hultsch 1882, 697, tab. II.A.",0.1927
@@ -133,7 +133,7 @@ palmus_maior,palmus maior,palmus maior,"Rom. larger palm, i.e. span: 3 pal.","r�
 pes,pes,pes,"Rom. foot, basic unit, 4 pal.","róm. láb, a rendszer alapmértéke, 4 pal.",p.,roman_length,Roman,length,"Nissen 1886, tab. III.",0.296
 palmipes,palmipes,palmipes,mg. palm and foot: 5 pal.,jel. tenyér és láb: 5 pal.,plp.,roman_length,Roman,length,"Nissen 1886, tab. III.",0.37
 cubitus,cubitus,cubitus,Rom. ell/cubit: 6 pal.,róm. könyök/rőf: 6 pal.,cub.,roman_length,Roman,length,"Nissen 1886, tab. III.",0.444
-gradius,gradus,gradus,"Rom. step, aka. grassus or pes sestertius: 2 1/2 p, 10 pal.","róm. lépés, aka. grassus v. pes sestertius: 2 1/2 p, 10 pal.",gra.,roman_length,Roman,length,"Nissen 1886, tab. III.",0.74
+gradus,gradus,gradus,"Rom. step, aka. grassus or pes sestertius: 2 1/2 p, 10 pal.","róm. lépés, aka. grassus v. pes sestertius: 2 1/2 p, 10 pal.",gra.,roman_length,Roman,length,"Nissen 1886, tab. III.",0.74
 passus,passus,passus,Rom. double step/pace (2 gradus): 5 p.,róm. kettős lépés (2 gradus): 5 p.,pass.,roman_length,Roman,length,"Nissen 1886, tab. III.",1.48
 pertica,pertica,pertica,"Rom. rod, length of 10 p, aka. decempeda","róm. rúd, 10 p. hosszúságú, aka. decempeda",per.,roman_length,Roman,length,"Nissen 1886, tab. III.",2.96
 actus,actus,actus,"The length of a furrow: 12 per, 24 pass.","Egy barázda hossza: 12 per, 24 pass.",act.,roman_length,Roman,length,"Nissen 1886, tab. III.",35.52
