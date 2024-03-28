@@ -1,7 +1,11 @@
 """ Flask and Flask extensions configuration file. """
 
-# Timedelta import:
+# Built-in imports:
 from datetime import timedelta
+from pathlib import Path
+
+# CacheLib import:
+from cachelib.file import FileSystemCache
 
 # Babel settings:
 BABEL_DEFAULT_LOCALE = "hu"
@@ -14,7 +18,9 @@ LANGUAGES = {
 bypass = ["robots_txt", "humans_txt", "sitemap_xml"]
 
 # Session settings:
-SESSION_TYPE = "filesystem"
+sessions_path = Path(__file__).parents[1].resolve() / "flask_session"
+SESSION_TYPE = "cachelib"
+SESSION_CACHELIB = FileSystemCache(threshold=500, cache_dir=sessions_path)
 SESSION_PERMANENT = True
 PERMANENT_SESSION_LIFETIME = timedelta(days=30)
 SESSION_COOKIE_SECURE = True
