@@ -3,5 +3,5 @@
 .vscode/
 .temp/
 config/secretKey.json
-flask_session/
+flask_session/*
 messages.pot
