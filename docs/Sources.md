@@ -1,4 +1,4 @@
-# Felhsznált irodalom - Consulted works
+# Felhasznált irodalom - Consulted works
 
 <div style="line-height: 1.35; margin-left: 2em; text-indent:-2em;">
   <div>
