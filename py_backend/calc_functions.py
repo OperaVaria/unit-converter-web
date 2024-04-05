@@ -25,7 +25,7 @@ def calculate(input_value, input_inter, output_inter):
         # Normalize, if between 1E-5 and 1E+5: no scientific notation.
         # Smaller or larger numbers: yes.
         if 0.00001 <= float(solution) <= 100000:
-            solution = "{:f}".format(solution.normalize())
+            solution = f"{solution.normalize():f}"
         else:
             solution = solution.normalize()
     # Zero division, overflow, invalid operator displays an error.
