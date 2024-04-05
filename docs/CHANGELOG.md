@@ -5,14 +5,32 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Pylint workflow.
+
+### Changed
+
+- ChaceLib settings for new Flask-Session version 0.8.0.
+- If cannot set best match, fallback locale is English.
+
+### Fixed
+
+- Session folder notice missing.
+- Small arrangements based on Pylint suggestions.
+- Database typos.
+- General typos.
+
 ## [1.3.0] - 2024.03.12
 
-## Added
+### Added
 
 - SEO files (robots.txt, sitemap.xml).
 - humans.txt.
 
-## Changed
+### Changed
 
 - HTML restructured for accessibility and SEO.
 - Simple footer for mobile screens instead of buttons.
@@ -49,7 +67,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.1] - 2024.03.07
 
-## Added
+### Added
 
 - Choices.js css added locally for easier styling.
 - Choices.js licence file attached.
@@ -57,10 +75,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Choices.js menu further customized, simple animation added.
+- JS code rearrangements.
 
 ### Fixed
 
-- Some comments clarified.
+- Missing and unclear comments.
+
+### Removed
+
+- No longer used JS lines.
 
 ## [1.1.0] - 2024.03.06
 
