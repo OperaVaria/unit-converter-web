@@ -208,6 +208,7 @@ valueBox.addEventListener("keypress", (event) => {
   }
 });
 
+// Input value field: delete content on press:
 valueBox.addEventListener("focus", () => {
   valueBox.value = "";
 });

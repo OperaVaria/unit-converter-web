@@ -1,7 +1,6 @@
 // Base JavasScript for functionality present on all pages.
 
 // Declare constants:
-const yearLocation = document.getElementById("year-location");
 const resetBtn = document.getElementById("reset-btn");
 const githubBtn = document.getElementById("github-btn");
 
