@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - ChaceLib settings for new Flask-Session version 0.8.0.
 - If cannot set best match, fallback locale is English.
+- Updated requirements.txt.
 
 ### Fixed
 
