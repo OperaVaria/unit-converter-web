@@ -116,7 +116,7 @@ def cat_dict_setup(locale):
     # Call fetch function.
     cat_dict = fetch_dict(command, param)
     # Capitalize button tiles
-    cat_dict = {key: str.capitalize(cat_dict[key]) for key in cat_dict}
+    cat_dict = {key: str.capitalize(value) for key, value in cat_dict}
     return cat_dict
 
 
