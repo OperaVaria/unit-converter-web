@@ -3,6 +3,6 @@
     Contact: lcs_it@proton.me
 
 /* SITE */
-    Last update: 2024/03/11
+    Last update: 2024/04/05
     Language: Hungarian / English
     Standards: HTML5, CSS3, ES14, Python 3.10
