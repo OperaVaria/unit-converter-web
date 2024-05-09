@@ -784,6 +784,28 @@
         "cat_eng": "volume (liquid)",
         "cat_hun": "folyadékmérték",
         "cat_raw": "liq_vol",
+        "info_eng": "Sopron retail and wholesale liquid measures before the end of the 17th century. The system was used in Western Transdanubia.",
+        "info_hun": "Soproni kis- és nagykereskedelmi folyadékmértékek a 17. század vége előtt. A rendszert a Nyugat-Dunántúlon használták.",
+        "name_eng": "Sopron (-17th c. end)",
+        "name_hun": "soproni (–17. sz. vége)",
+        "name_raw": "sopron_liq_vol_pre17c_end",
+        "source": "Bogdán 1991, 36."
+    },
+    {
+        "cat_eng": "volume (liquid)",
+        "cat_hun": "folyadékmérték",
+        "cat_raw": "liq_vol",
+        "info_eng": "Sopron retail and wholesale liquid measures from the beginning of the 18th century until 1874. In the 19th century, in addition to the Western Transdanubia region, the system was also used in the national wine trade.",
+        "info_hun": "Soproni kis- és nagykereskedelmi folyadékmértékek a 18. század elejétől 1874-ig. A 19. században a rendszert a Nyugat-Dunántúl mellett az országos borkereskedelemben is használták",
+        "name_eng": "Sopron (18th c. start-1874)",
+        "name_hun": "soproni (18. sz. eleje–1874)",
+        "name_raw": "sopron_liq_vol_18c_start_1874",
+        "source": "Bogdán 1991, 36."
+    },
+    {
+        "cat_eng": "volume (liquid)",
+        "cat_hun": "folyadékmérték",
+        "cat_raw": "liq_vol",
         "info_eng": "Retail and wholesale system of the Transylvanian and Partium lands until 1823.",
         "info_hun": "Az erdélyi és partiumi területek kis- és nagykereskedelmi rendszere 1823-ig.",
         "name_eng": "Transylvanian (-1823)",
