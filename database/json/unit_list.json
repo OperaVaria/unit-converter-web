@@ -898,7 +898,7 @@
     },
     {
         "category": "area",
-        "info_eng": "Tokaj vineyard area átalag (half-barrel): 2 1/2 putt.",
+        "info_eng": "Tokaj vineyard area half-barrel: 2 1/2 putt.",
         "info_hun": "tokaji szőlő földmérték átalag: 2 1/2 putt.",
         "inter_val": 305.54,
         "name_eng": "tokaji átalag",
@@ -3615,7 +3615,7 @@
     },
     {
         "category": "volume (dry)",
-        "info_eng": "Transylvanian (dry goods) köböl: 4 véka",
+        "info_eng": "Transylvanian (dry goods) bucket: 4 véka",
         "info_hun": "4 véka",
         "inter_val": 87.2,
         "name_eng": "erdélyi köböl",
@@ -3667,7 +3667,7 @@
     },
     {
         "category": "volume (dry)",
-        "info_eng": "Transylvanian (dry goods) köböl, approx. 3 véka.",
+        "info_eng": "Transylvanian (dry goods) bucket, approx. 3 véka.",
         "info_hun": "közel 3 véka",
         "inter_val": 90.54,
         "name_eng": "erdélyi (száraz) köböl",
@@ -3987,8 +3987,8 @@
         "name_raw": "wiener_pfiff_pre1359",
         "source": "Bogdán 1991, 29.",
         "symbol": "Pfi.",
-        "sys_dat": "Viennese small (-1359)",
-        "sys_raw": "viennese_small_liq_vol_pre1359"
+        "sys_dat": "Viennese retail (-1359)",
+        "sys_raw": "viennese_retail_liq_vol_pre1359"
     },
     {
         "category": "volume (liquid)",
@@ -4000,8 +4000,8 @@
         "name_raw": "wiener_seidel_pre1359",
         "source": "Bogdán 1991, 29.",
         "symbol": "Sei.",
-        "sys_dat": "Viennese small (-1359)",
-        "sys_raw": "viennese_small_liq_vol_pre1359"
+        "sys_dat": "Viennese retail (-1359)",
+        "sys_raw": "viennese_retail_liq_vol_pre1359"
     },
     {
         "category": "volume (liquid)",
@@ -4013,8 +4013,8 @@
         "name_raw": "wiener_halbe_mass_pre1359",
         "source": "Bogdán 1991, 29.",
         "symbol": "Hal.",
-        "sys_dat": "Viennese small (-1359)",
-        "sys_raw": "viennese_small_liq_vol_pre1359"
+        "sys_dat": "Viennese retail (-1359)",
+        "sys_raw": "viennese_retail_liq_vol_pre1359"
     },
     {
         "category": "volume (liquid)",
@@ -4026,8 +4026,8 @@
         "name_raw": "wiener_mass_pre1359",
         "source": "Bogdán 1991, 29.",
         "symbol": "Maß",
-        "sys_dat": "Viennese small (-1359)",
-        "sys_raw": "viennese_small_liq_vol_pre1359"
+        "sys_dat": "Viennese retail (-1359)",
+        "sys_raw": "viennese_retail_liq_vol_pre1359"
     },
     {
         "category": "volume (liquid)",
@@ -4039,8 +4039,8 @@
         "name_raw": "wiener_eimer_pre1359",
         "source": "Bogdán 1991, 29.",
         "symbol": "Eim.",
-        "sys_dat": "Viennese small (-1359)",
-        "sys_raw": "viennese_small_liq_vol_pre1359"
+        "sys_dat": "Viennese retail (-1359)",
+        "sys_raw": "viennese_retail_liq_vol_pre1359"
     },
     {
         "category": "volume (liquid)",
@@ -4052,8 +4052,8 @@
         "name_raw": "wiener_pfiff_1359_1556",
         "source": "Bogdán 1991, 29.",
         "symbol": "Pfi.",
-        "sys_dat": "Viennese small (1359-1556)",
-        "sys_raw": "viennese_small_liq_vol_1359_1556"
+        "sys_dat": "Viennese retail (1359-1556)",
+        "sys_raw": "viennese_retail_liq_vol_1359_1556"
     },
     {
         "category": "volume (liquid)",
@@ -4065,8 +4065,8 @@
         "name_raw": "wiener_seidel_1359_1556",
         "source": "Bogdán 1991, 29.",
         "symbol": "Sei.",
-        "sys_dat": "Viennese small (1359-1556)",
-        "sys_raw": "viennese_small_liq_vol_1359_1556"
+        "sys_dat": "Viennese retail (1359-1556)",
+        "sys_raw": "viennese_retail_liq_vol_1359_1556"
     },
     {
         "category": "volume (liquid)",
@@ -4078,8 +4078,8 @@
         "name_raw": "wiener_halbe_mass_1359_1556",
         "source": "Bogdán 1991, 29.",
         "symbol": "Hal.",
-        "sys_dat": "Viennese small (1359-1556)",
-        "sys_raw": "viennese_small_liq_vol_1359_1556"
+        "sys_dat": "Viennese retail (1359-1556)",
+        "sys_raw": "viennese_retail_liq_vol_1359_1556"
     },
     {
         "category": "volume (liquid)",
@@ -4091,8 +4091,8 @@
         "name_raw": "wiener_mass_1359_1556",
         "source": "Bogdán 1991, 29.",
         "symbol": "Maß",
-        "sys_dat": "Viennese small (1359-1556)",
-        "sys_raw": "viennese_small_liq_vol_1359_1556"
+        "sys_dat": "Viennese retail (1359-1556)",
+        "sys_raw": "viennese_retail_liq_vol_1359_1556"
     },
     {
         "category": "volume (liquid)",
@@ -4104,8 +4104,8 @@
         "name_raw": "wiener_eimer_1359_1556",
         "source": "Bogdán 1991, 29.",
         "symbol": "Eim.",
-        "sys_dat": "Viennese small (1359-1556)",
-        "sys_raw": "viennese_small_liq_vol_1359_1556"
+        "sys_dat": "Viennese retail (1359-1556)",
+        "sys_raw": "viennese_retail_liq_vol_1359_1556"
     },
     {
         "category": "volume (liquid)",
@@ -4117,8 +4117,8 @@
         "name_raw": "wiener_pfiff_1557_1568",
         "source": "Bogdán 1991, 29.",
         "symbol": "Pfi.",
-        "sys_dat": "Viennese small (1557-1568)",
-        "sys_raw": "viennese_small_liq_vol_1557_1568"
+        "sys_dat": "Viennese retail (1557-1568)",
+        "sys_raw": "viennese_retail_liq_vol_1557_1568"
     },
     {
         "category": "volume (liquid)",
@@ -4130,8 +4130,8 @@
         "name_raw": "wiener_seidel_1557_1568",
         "source": "Bogdán 1991, 29.",
         "symbol": "Sei.",
-        "sys_dat": "Viennese small (1557-1568)",
-        "sys_raw": "viennese_small_liq_vol_1557_1568"
+        "sys_dat": "Viennese retail (1557-1568)",
+        "sys_raw": "viennese_retail_liq_vol_1557_1568"
     },
     {
         "category": "volume (liquid)",
@@ -4143,8 +4143,8 @@
         "name_raw": "wiener_halbe_mass_1557_1568",
         "source": "Bogdán 1991, 29.",
         "symbol": "Hal.",
-        "sys_dat": "Viennese small (1557-1568)",
-        "sys_raw": "viennese_small_liq_vol_1557_1568"
+        "sys_dat": "Viennese retail (1557-1568)",
+        "sys_raw": "viennese_retail_liq_vol_1557_1568"
     },
     {
         "category": "volume (liquid)",
@@ -4156,8 +4156,8 @@
         "name_raw": "wiener_mass_1557_1568",
         "source": "Bogdán 1991, 29.",
         "symbol": "Maß",
-        "sys_dat": "Viennese small (1557-1568)",
-        "sys_raw": "viennese_small_liq_vol_1557_1568"
+        "sys_dat": "Viennese retail (1557-1568)",
+        "sys_raw": "viennese_retail_liq_vol_1557_1568"
     },
     {
         "category": "volume (liquid)",
@@ -4169,8 +4169,8 @@
         "name_raw": "wiener_eimer_1557_1568",
         "source": "Bogdán 1991, 29.",
         "symbol": "Eim.",
-        "sys_dat": "Viennese small (1557-1568)",
-        "sys_raw": "viennese_small_liq_vol_1557_1568"
+        "sys_dat": "Viennese retail (1557-1568)",
+        "sys_raw": "viennese_retail_liq_vol_1557_1568"
     },
     {
         "category": "volume (liquid)",
@@ -4182,8 +4182,8 @@
         "name_raw": "wiener_pfiff_1569_1761",
         "source": "Bogdán 1991, 29.",
         "symbol": "Pfi.",
-        "sys_dat": "Viennese small (1569-1761)",
-        "sys_raw": "viennese_small_liq_vol_1569_1761"
+        "sys_dat": "Viennese retail (1569-1761)",
+        "sys_raw": "viennese_retail_liq_vol_1569_1761"
     },
     {
         "category": "volume (liquid)",
@@ -4195,8 +4195,8 @@
         "name_raw": "wiener_seidel_1569_1761",
         "source": "Bogdán 1991, 29.",
         "symbol": "Sei.",
-        "sys_dat": "Viennese small (1569-1761)",
-        "sys_raw": "viennese_small_liq_vol_1569_1761"
+        "sys_dat": "Viennese retail (1569-1761)",
+        "sys_raw": "viennese_retail_liq_vol_1569_1761"
     },
     {
         "category": "volume (liquid)",
@@ -4208,8 +4208,8 @@
         "name_raw": "wiener_halbe_mass_1569_1761",
         "source": "Bogdán 1991, 29.",
         "symbol": "Hal.",
-        "sys_dat": "Viennese small (1569-1761)",
-        "sys_raw": "viennese_small_liq_vol_1569_1761"
+        "sys_dat": "Viennese retail (1569-1761)",
+        "sys_raw": "viennese_retail_liq_vol_1569_1761"
     },
     {
         "category": "volume (liquid)",
@@ -4221,8 +4221,8 @@
         "name_raw": "wiener_mass_1569_1761",
         "source": "Bogdán 1991, 29.",
         "symbol": "Maß",
-        "sys_dat": "Viennese small (1569-1761)",
-        "sys_raw": "viennese_small_liq_vol_1569_1761"
+        "sys_dat": "Viennese retail (1569-1761)",
+        "sys_raw": "viennese_retail_liq_vol_1569_1761"
     },
     {
         "category": "volume (liquid)",
@@ -4234,8 +4234,8 @@
         "name_raw": "wiener_eimer_1569_1761",
         "source": "Bogdán 1991, 29.",
         "symbol": "Eim.",
-        "sys_dat": "Viennese small (1569-1761)",
-        "sys_raw": "viennese_small_liq_vol_1569_1761"
+        "sys_dat": "Viennese retail (1569-1761)",
+        "sys_raw": "viennese_retail_liq_vol_1569_1761"
     },
     {
         "category": "volume (liquid)",
@@ -4247,8 +4247,8 @@
         "name_raw": "wiener_pfiff_1762_1871",
         "source": "Bogdán 1991, 30.",
         "symbol": "Pfi.",
-        "sys_dat": "Viennese small (1762-1871)",
-        "sys_raw": "viennese_small_liq_vol_1762_1871"
+        "sys_dat": "Viennese retail (1762-1871)",
+        "sys_raw": "viennese_retail_liq_vol_1762_1871"
     },
     {
         "category": "volume (liquid)",
@@ -4260,8 +4260,8 @@
         "name_raw": "wiener_seidel_1762_1871",
         "source": "Bogdán 1991, 30.",
         "symbol": "Sei.",
-        "sys_dat": "Viennese small (1762-1871)",
-        "sys_raw": "viennese_small_liq_vol_1762_1871"
+        "sys_dat": "Viennese retail (1762-1871)",
+        "sys_raw": "viennese_retail_liq_vol_1762_1871"
     },
     {
         "category": "volume (liquid)",
@@ -4273,8 +4273,8 @@
         "name_raw": "wiener_halbe_mass_1762_1871",
         "source": "Bogdán 1991, 30.",
         "symbol": "Hal.",
-        "sys_dat": "Viennese small (1762-1871)",
-        "sys_raw": "viennese_small_liq_vol_1762_1871"
+        "sys_dat": "Viennese retail (1762-1871)",
+        "sys_raw": "viennese_retail_liq_vol_1762_1871"
     },
     {
         "category": "volume (liquid)",
@@ -4286,8 +4286,8 @@
         "name_raw": "wiener_mass_1762_1871",
         "source": "Bogdán 1991, 30.",
         "symbol": "Maß",
-        "sys_dat": "Viennese small (1762-1871)",
-        "sys_raw": "viennese_small_liq_vol_1762_1871"
+        "sys_dat": "Viennese retail (1762-1871)",
+        "sys_raw": "viennese_retail_liq_vol_1762_1871"
     },
     {
         "category": "volume (liquid)",
@@ -4299,8 +4299,8 @@
         "name_raw": "wiener_eimer_1762_1871",
         "source": "Bogdán 1991, 30.",
         "symbol": "Eim.",
-        "sys_dat": "Viennese small (1762-1871)",
-        "sys_raw": "viennese_small_liq_vol_1762_1871"
+        "sys_dat": "Viennese retail (1762-1871)",
+        "sys_raw": "viennese_retail_liq_vol_1762_1871"
     },
     {
         "category": "volume (liquid)",
@@ -4348,7 +4348,7 @@
         "inter_val": 56.589,
         "name_eng": "Wiener Eimer (wholesale)",
         "name_hun": "Wiener Eimer (nagyker.)",
-        "name_raw": "wiener_eimer_wholes_1762_1871",
+        "name_raw": "wiener_eimer_wholesl_1762_1871",
         "source": "Bogdán 1991, 30.",
         "symbol": "Eim.",
         "sys_dat": "Viennese wholesale (1762-1871)",
@@ -4421,7 +4421,7 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Buda half-pint (chopine):",
+        "info_eng": "Buda half-pint (chopine): 2 messz.",
         "info_hun": "2 messz.",
         "inter_val": 0.8393,
         "name_eng": "budai icce",
@@ -4611,8 +4611,8 @@
         "name_raw": "pozsonyi_rompoly_pre1592",
         "source": "Bogdán 1991, 35.",
         "symbol": "röm.",
-        "sys_dat": "Pressburg small (-1592)",
-        "sys_raw": "pressburg_small_liq_vol_pre1592"
+        "sys_dat": "Pressburg retail (-1592)",
+        "sys_raw": "pressburg_retail_liq_vol_pre1592"
     },
     {
         "category": "volume (liquid)",
@@ -4624,8 +4624,8 @@
         "name_raw": "pozsonyi_messzely_pre1592",
         "source": "Bogdán 1991, 35.",
         "symbol": "messz.",
-        "sys_dat": "Pressburg small (-1592)",
-        "sys_raw": "pressburg_small_liq_vol_pre1592"
+        "sys_dat": "Pressburg retail (-1592)",
+        "sys_raw": "pressburg_retail_liq_vol_pre1592"
     },
     {
         "category": "volume (liquid)",
@@ -4637,8 +4637,8 @@
         "name_raw": "pozsonyi_icce_pre1592",
         "source": "Bogdán 1991, 35.",
         "symbol": "icce",
-        "sys_dat": "Pressburg small (-1592)",
-        "sys_raw": "pressburg_small_liq_vol_pre1592"
+        "sys_dat": "Pressburg retail (-1592)",
+        "sys_raw": "pressburg_retail_liq_vol_pre1592"
     },
     {
         "category": "volume (liquid)",
@@ -4650,8 +4650,8 @@
         "name_raw": "pozsonyi_pint_pre1592",
         "source": "Bogdán 1991, 35.",
         "symbol": "pint",
-        "sys_dat": "Pressburg small (-1592)",
-        "sys_raw": "pressburg_small_liq_vol_pre1592"
+        "sys_dat": "Pressburg retail (-1592)",
+        "sys_raw": "pressburg_retail_liq_vol_pre1592"
     },
     {
         "category": "volume (liquid)",
@@ -4663,8 +4663,8 @@
         "name_raw": "pozsonyi_csobor_pre1592",
         "source": "Bogdán 1991, 35.",
         "symbol": "csöb.",
-        "sys_dat": "Pressburg small (-1592)",
-        "sys_raw": "pressburg_small_liq_vol_pre1592"
+        "sys_dat": "Pressburg retail (-1592)",
+        "sys_raw": "pressburg_retail_liq_vol_pre1592"
     },
     {
         "category": "volume (liquid)",
@@ -4676,8 +4676,8 @@
         "name_raw": "pozsonyi_ako_pre1592",
         "source": "Bogdán 1991, 35.",
         "symbol": "akó",
-        "sys_dat": "Pressburg small (-1592)",
-        "sys_raw": "pressburg_small_liq_vol_pre1592"
+        "sys_dat": "Pressburg retail (-1592)",
+        "sys_raw": "pressburg_retail_liq_vol_pre1592"
     },
     {
         "category": "volume (liquid)",
@@ -4689,8 +4689,8 @@
         "name_raw": "pozsonyi_rompoly_1593_1874",
         "source": "Bogdán 1991, 35.",
         "symbol": "röm.",
-        "sys_dat": "Pressburg small (1593-1874)",
-        "sys_raw": "pressburg_small_liq_vol_1593-1874"
+        "sys_dat": "Pressburg retail (1593-1874)",
+        "sys_raw": "pressburg_retail_liq_vol_1593-1874"
     },
     {
         "category": "volume (liquid)",
@@ -4702,8 +4702,8 @@
         "name_raw": "pozsonyi_messzely_1593_1874",
         "source": "Bogdán 1991, 35.",
         "symbol": "messz.",
-        "sys_dat": "Pressburg small (1593-1874)",
-        "sys_raw": "pressburg_small_liq_vol_1593-1874"
+        "sys_dat": "Pressburg retail (1593-1874)",
+        "sys_raw": "pressburg_retail_liq_vol_1593-1874"
     },
     {
         "category": "volume (liquid)",
@@ -4715,8 +4715,8 @@
         "name_raw": "pozsonyi_icce_1593_1874",
         "source": "Bogdán 1991, 35.",
         "symbol": "icce",
-        "sys_dat": "Pressburg small (1593-1874)",
-        "sys_raw": "pressburg_small_liq_vol_1593-1874"
+        "sys_dat": "Pressburg retail (1593-1874)",
+        "sys_raw": "pressburg_retail_liq_vol_1593-1874"
     },
     {
         "category": "volume (liquid)",
@@ -4728,8 +4728,8 @@
         "name_raw": "pozsonyi_pint_1593_1874",
         "source": "Bogdán 1991, 35.",
         "symbol": "pint",
-        "sys_dat": "Pressburg small (1593-1874)",
-        "sys_raw": "pressburg_small_liq_vol_1593-1874"
+        "sys_dat": "Pressburg retail (1593-1874)",
+        "sys_raw": "pressburg_retail_liq_vol_1593-1874"
     },
     {
         "category": "volume (liquid)",
@@ -4741,8 +4741,8 @@
         "name_raw": "pozsonyi_csobor_1593_1874",
         "source": "Bogdán 1991, 35.",
         "symbol": "csöb.",
-        "sys_dat": "Pressburg small (1593-1874)",
-        "sys_raw": "pressburg_small_liq_vol_1593-1874"
+        "sys_dat": "Pressburg retail (1593-1874)",
+        "sys_raw": "pressburg_retail_liq_vol_1593-1874"
     },
     {
         "category": "volume (liquid)",
@@ -4754,8 +4754,8 @@
         "name_raw": "pozsonyi_ako_1593_1874",
         "source": "Bogdán 1991, 35.",
         "symbol": "akó",
-        "sys_dat": "Pressburg small (1593-1874)",
-        "sys_raw": "pressburg_small_liq_vol_1593-1874"
+        "sys_dat": "Pressburg retail (1593-1874)",
+        "sys_raw": "pressburg_retail_liq_vol_1593-1874"
     },
     {
         "category": "volume (liquid)",
@@ -4915,16 +4915,16 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Eger half-pint (chopine). Identical to that of Buda.",
-        "info_hun": "A budaival megegyező.",
+        "info_eng": "Eger half-pint (chopine): 1/120 akó",
+        "info_hun": "1/120 akó",
         "inter_val": 0.8393,
         "name_eng": "egri icce",
         "name_hun": "egri icce",
         "name_raw": "egri_icce",
         "source": "Bogdán 1991, 32.",
         "symbol": "icce",
-        "sys_dat": "Eger small (-mid17th c.)",
-        "sys_raw": "eger_small_liq_vol"
+        "sys_dat": "Eger retail (-mid17th c.)",
+        "sys_raw": "eger_retail_liq_vol"
     },
     {
         "category": "volume (liquid)",
@@ -4936,12 +4936,12 @@
         "name_raw": "egri_pint",
         "source": "Bogdán 1991, 32.",
         "symbol": "pint",
-        "sys_dat": "Eger small (-mid17th c.)",
-        "sys_raw": "eger_small_liq_vol"
+        "sys_dat": "Eger retail (-mid17th c.)",
+        "sys_raw": "eger_retail_liq_vol"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Eger gallon: 15 pint",
+        "info_eng": "Eger quater-bucket: 15 pint",
         "info_hun": "15 pint",
         "inter_val": 25.18,
         "name_eng": "egri köböl",
@@ -4949,8 +4949,8 @@
         "name_raw": "egri_kobol",
         "source": "Bogdán 1991, 32.",
         "symbol": "köb.",
-        "sys_dat": "Eger small (-mid17th c.)",
-        "sys_raw": "eger_small_liq_vol"
+        "sys_dat": "Eger retail (-mid17th c.)",
+        "sys_raw": "eger_retail_liq_vol"
     },
     {
         "category": "volume (liquid)",
@@ -4962,12 +4962,12 @@
         "name_raw": "egri_ako",
         "source": "Bogdán 1991, 32.",
         "symbol": "akó",
-        "sys_dat": "Eger small (-mid17th c.)",
-        "sys_raw": "eger_small_liq_vol"
+        "sys_dat": "Eger retail (-mid17th c.)",
+        "sys_raw": "eger_retail_liq_vol"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Eger small barrel: 96 Pressburg half-pints/chopines",
+        "info_eng": "Eger small barrel: 96 Pressburg half-pints",
         "info_hun": "96 pozsonyi icce",
         "inter_val": 80.58,
         "name_eng": "egri kis hordó",
@@ -5045,8 +5045,8 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Kassa small barrel: 200 pint. Used until the mid-18th c.",
-        "info_hun": "A 18. sz. közepéig használatos: 200 pint.",
+        "info_eng": "Kassa small barrel (wholesale): 200 pint. Used until the mid-18th c.",
+        "info_hun": "Nagykereskedelmi, a 18. sz. közepéig használatos: 200 pint.",
         "inter_val": 335.72,
         "name_eng": "kassai kis hordó",
         "name_hun": "kassai kis hordó",
@@ -5058,8 +5058,8 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Kassa large barrel: 250 pint. Used until the mid-18th c.",
-        "info_hun": "A 18. sz. közepéig használatos: 250 pint.",
+        "info_eng": "Kassa large barrel (wholesale): 250 pint. Used until the mid-18th c.",
+        "info_hun": "Nagykereskedelmi, a 18. sz. közepéig használatos: 250 pint.",
         "inter_val": 419.65,
         "name_eng": "kassai nagy hordó",
         "name_hun": "kassai nagy hordó",
@@ -5149,7 +5149,7 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Sopron gallon: 1 1/4 akó",
+        "info_eng": "Sopron major bucket: 1 1/4 akó",
         "info_hun": "1 1/4 akó",
         "inter_val": 88.13,
         "name_eng": "soproni csöbör",
@@ -5162,8 +5162,8 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Sopron barrel: 13 1/5 akó",
-        "info_hun": "13 1/5 akó",
+        "info_eng": "Sopron barrel (wholesale): 13 1/5 akó",
+        "info_hun": "nagykereskedelmi, 13 1/5 akó",
         "inter_val": 930.6,
         "name_eng": "soproni hordó",
         "name_hun": "soproni hordó",
@@ -5175,8 +5175,8 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Sopron dreiling barrel: 24 akó",
-        "info_hun": "24 akó",
+        "info_eng": "Sopron dreiling barrel (wholesale): 24 akó",
+        "info_hun": "nagykereskedelmi, 24 akó",
         "inter_val": 1692.0,
         "name_eng": "soproni dreiling",
         "name_hun": "soproni dreiling",
@@ -5227,8 +5227,8 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Sopron barrel, much smaller than before: 1 1/5 akó",
-        "info_hun": "Sokkal kisebb mint korábban: 1 1/5 akó.",
+        "info_eng": "Sopron barrel (wholesale), much smaller than before: 1 1/5 akó",
+        "info_hun": "Nagykereskedelmi, sokkal kisebb mint korábban: 1 1/5 akó.",
         "inter_val": 105.75,
         "name_eng": "soproni hordó",
         "name_hun": "soproni hordó",
@@ -5240,29 +5240,29 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja half-pint (chopine). Identical to that of Buda.",
-        "info_hun": "A budaival megegyező.",
+        "info_eng": "Tokaj-Hegyalja half-pint (chopine): 1/64 akó",
+        "info_hun": "1/64 akó",
         "inter_val": 0.8393,
         "name_eng": "tokaj-hegyaljai icce",
         "name_hun": "tokaj-hegyaljai icce",
         "name_raw": "tokaj_hegyaljai_icce_premid17c",
         "source": "Bogdán 1991, 37.",
         "symbol": "icce",
-        "sys_dat": "Tokaj-Hegyalja small (-mid17th c.)",
-        "sys_raw": "tokaj_hegyalja_small_premid17c"
+        "sys_dat": "Tokaj-Hegyalja retail (-mid17th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_premid17c"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja pint: 2 icce. Identical to that of Buda.",
-        "info_hun": "2 icce. A budaival megegyező.",
+        "info_eng": "Tokaj-Hegyalja pint: 2 icce",
+        "info_hun": "2 icce",
         "inter_val": 1.6786,
         "name_eng": "tokaj-hegyaljai pint",
         "name_hun": "tokaj-hegyaljai pint",
         "name_raw": "tokaj_hegyaljai_pint_premid17c",
         "source": "Bogdán 1991, 37.",
         "symbol": "pint",
-        "sys_dat": "Tokaj-Hegyalja small (-mid17th c.)",
-        "sys_raw": "tokaj_hegyalja_small_premid17c"
+        "sys_dat": "Tokaj-Hegyalja retail (-mid17th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_premid17c"
     },
     {
         "category": "volume (liquid)",
@@ -5274,25 +5274,25 @@
         "name_raw": "tokaj_hegyaljai_kobol_premid17c",
         "source": "Bogdán 1991, 37.",
         "symbol": "köb.",
-        "sys_dat": "Tokaj-Hegyalja small (-mid17th c.)",
-        "sys_raw": "tokaj_hegyalja_small_premid17c"
+        "sys_dat": "Tokaj-Hegyalja retail (-mid17th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_premid17c"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja quarter-bucket: 16 icce. Identical to the Buda gallon.",
-        "info_hun": "16 icce. A budai köböllel megegyező.",
+        "info_eng": "Tokaj-Hegyalja quarter-bucket: 16 icce. Identical to the Buda gallon (köböl).",
+        "info_hun": "A budai köböllel megegyező: 16 icce.",
         "inter_val": 13.43,
         "name_eng": "tokaj-hegyaljai fertály",
         "name_hun": "tokaj-hegyaljai fertály",
         "name_raw": "tokaj_hegyaljai_fertaly_premid17c",
         "source": "Bogdán 1991, 37.",
         "symbol": "fert.",
-        "sys_dat": "Tokaj-Hegyalja small (-mid17th c.)",
-        "sys_raw": "tokaj_hegyalja_small_premid17c"
+        "sys_dat": "Tokaj-Hegyalja retail (-mid17th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_premid17c"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja small bucket: 50 icce, 5 köb.",
+        "info_eng": "Tokaj-Hegyalja minor bucket: 50 icce, 5 köb.",
         "info_hun": "50 icce, 5 köb.",
         "inter_val": 41.97,
         "name_eng": "tokaj-hegyaljai csöbör",
@@ -5300,47 +5300,47 @@
         "name_raw": "tokaj_hegyaljai_csobor_premid17c",
         "source": "Bogdán 1991, 37.",
         "symbol": "csöb.",
-        "sys_dat": "Tokaj-Hegyalja small (-mid17th c.)",
-        "sys_raw": "tokaj_hegyalja_small_premid17c"
+        "sys_dat": "Tokaj-Hegyalja retail (-mid17th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_premid17c"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja bucket: 64 icce. Identical to the Buda large bucket.",
-        "info_hun": "64 icce. A budai nagy akóval megegyező.",
+        "info_eng": "Tokaj-Hegyalja bucket: 64 icce. Identical to the Buda large bucket (nagy akó).",
+        "info_hun": "A budai nagy akóval megegyező: 64 icce.",
         "inter_val": 53.72,
         "name_eng": "tokaj-hegyaljai akó",
         "name_hun": "tokaj-hegyaljai akó",
         "name_raw": "tokaj_hegyaljai_ako_premid17c",
         "source": "Bogdán 1991, 37.",
         "symbol": "akó",
-        "sys_dat": "Tokaj-Hegyalja small (-mid17th c.)",
-        "sys_raw": "tokaj_hegyalja_small_premid17c"
+        "sys_dat": "Tokaj-Hegyalja retail (-mid17th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_premid17c"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja half-pint (chopine). Identical to that of Buda.",
-        "info_hun": "A budaival megegyező.",
+        "info_eng": "Tokaj-Hegyalja half-pint (chopine): 1/60 akó",
+        "info_hun": "1/60 akó",
         "inter_val": 0.8393,
         "name_eng": "tokaj-hegyaljai icce",
         "name_hun": "tokaj-hegyaljai icce",
         "name_raw": "tokaj_hegyaljai_icce_mid17c_mid18c",
         "source": "Bogdán 1991, 37.",
         "symbol": "icce",
-        "sys_dat": "Tokaj-Hegyalja small (mid17th c.-mid18th c.)",
-        "sys_raw": "tokaj_hegyalja_small_mid17c_mid18c"
+        "sys_dat": "Tokaj-Hegyalja retail (mid17th c.-mid18th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_mid17c_mid18c"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja pint: 2 icce. Identical to that of Buda.",
-        "info_hun": "2 icce. A budaival megegyező.",
+        "info_eng": "Tokaj-Hegyalja pint: 2 icce",
+        "info_hun": "2 icce",
         "inter_val": 1.6786,
         "name_eng": "tokaj-hegyaljai pint",
         "name_hun": "tokaj-hegyaljai pint",
         "name_raw": "tokaj_hegyaljai_pint_mid17c_mid18c",
         "source": "Bogdán 1991, 37.",
         "symbol": "pint",
-        "sys_dat": "Tokaj-Hegyalja small (mid17th c.-mid18th c.)",
-        "sys_raw": "tokaj_hegyalja_small_mid17c_mid18c"
+        "sys_dat": "Tokaj-Hegyalja retail (mid17th c.-mid18th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_mid17c_mid18c"
     },
     {
         "category": "volume (liquid)",
@@ -5352,12 +5352,12 @@
         "name_raw": "tokaj_hegyaljai_kobol_mid17c_mid18c",
         "source": "Bogdán 1991, 37.",
         "symbol": "köb.",
-        "sys_dat": "Tokaj-Hegyalja small (mid17th c.-mid18th c.)",
-        "sys_raw": "tokaj_hegyalja_small_mid17c_mid18c"
+        "sys_dat": "Tokaj-Hegyalja retail (mid17th c.-mid18th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_mid17c_mid18c"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja small bucket: 50 icce, 5 köb.",
+        "info_eng": "Tokaj-Hegyalja minor bucket: 50 icce, 5 köb.",
         "info_hun": "50 icce, 5 köb.",
         "inter_val": 41.97,
         "name_eng": "tokaj-hegyaljai csöbör",
@@ -5365,21 +5365,47 @@
         "name_raw": "tokaj_hegyaljai_csobor_mid17c_mid18c",
         "source": "Bogdán 1991, 37.",
         "symbol": "csöb.",
-        "sys_dat": "Tokaj-Hegyalja small (mid17th c.-mid18th c.)",
-        "sys_raw": "tokaj_hegyalja_small_mid17c_mid18c"
+        "sys_dat": "Tokaj-Hegyalja retail (mid17th c.-mid18th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_mid17c_mid18c"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja bucket: 64 icce. Identical to the Buda large bucket.",
-        "info_hun": "64 icce. A budai nagy akóval megegyező.",
+        "info_eng": "Tokaj-Hegyalja bucket: 60 icce",
+        "info_hun": "60 icce",
         "inter_val": 50.36,
         "name_eng": "tokaj-hegyaljai akó",
         "name_hun": "tokaj-hegyaljai akó",
         "name_raw": "tokaj_hegyaljai_ako_mid17c_mid18c",
         "source": "Bogdán 1991, 37.",
         "symbol": "akó",
-        "sys_dat": "Tokaj-Hegyalja small (mid17th c.-mid18th c.)",
-        "sys_raw": "tokaj_hegyalja_small_mid17c_mid18c"
+        "sys_dat": "Tokaj-Hegyalja retail (mid17th c.-mid18th c.)",
+        "sys_raw": "tokaj_hegyalja_retail_mid17c_mid18c"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Pressburg half-pint (chopine). One of the basic units of the Tokaj-Hegyalja wholesale system.",
+        "info_hun": "A tokaj-hegyaljai nagyker. rendszer egyik alapegysége.",
+        "inter_val": 0.8393,
+        "name_eng": "pozsonyi icce",
+        "name_hun": "pozsonyi icce",
+        "name_raw": "tokaj_hegyaljai_pozsonyi_icce_17c",
+        "source": "Bogdán 1991, 37.",
+        "symbol": "icce",
+        "sys_dat": "Tokaj-Hegyalja wholesale (17th c.)",
+        "sys_raw": "tokaj_hegyalja_wholesale_17c"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Pressburg bucket. One of the basic units of the Tokaj-Hegyalja wholesale system.",
+        "info_hun": "A tokaj-hegyaljai nagyker. rendszer egyik alapegysége.",
+        "inter_val": 53.72,
+        "name_eng": "pozsonyi akó",
+        "name_hun": "pozsonyi akó",
+        "name_raw": "tokaj_hegyaljai_pozsonyi_ako_17c",
+        "source": "Bogdán 1991, 37.",
+        "symbol": "akó",
+        "sys_dat": "Tokaj-Hegyalja wholesale (17th c.)",
+        "sys_raw": "tokaj_hegyalja_wholesale_17c"
     },
     {
         "category": "volume (liquid)",
@@ -5396,8 +5422,8 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja barrel: 160 icce, 2 átl.",
-        "info_hun": "160 icce",
+        "info_eng": "Tokaj-Hegyalja barrel: 160 icce, 2 1/2 akó, 2 átl.",
+        "info_hun": "160 icce, 2 1/2 akó, 2 átl.",
         "inter_val": 134.29,
         "name_eng": "tokaj-hegyaljai hordó",
         "name_hun": "tokaj-hegyaljai hordó",
@@ -5409,6 +5435,19 @@
     },
     {
         "category": "volume (liquid)",
+        "info_eng": "Pressburg half-pint (chopine). One of the basic units of the Tokaj-Hegyalja wholesale system.",
+        "info_hun": "A tokaj-hegyaljai nagyker. rendszer egyik alapegysége.",
+        "inter_val": 0.8393,
+        "name_eng": "pozsonyi icce",
+        "name_hun": "pozsonyi icce",
+        "name_raw": "tokaj_hegyaljai_pozsonyi_icce_18c_start_1807",
+        "source": "Bogdán 1991, 38.",
+        "symbol": "icce",
+        "sys_dat": "Tokaj-Hegyalja wholesale (18th c. start-1807)",
+        "sys_raw": "tokaj_hegyalja_wholesale_18c_start_1807"
+    },
+    {
+        "category": "volume (liquid)",
         "info_eng": "Tokaj-Hegyalja quater-barrel: 45 icce",
         "info_hun": "45 icce",
         "inter_val": 37.77,
@@ -5417,6 +5456,19 @@
         "name_raw": "tokaj_hegyaljai_puttony_18c_start_1807",
         "source": "Bogdán 1991, 38.",
         "symbol": "putt.",
+        "sys_dat": "Tokaj-Hegyalja wholesale (18th c. start-1807)",
+        "sys_raw": "tokaj_hegyalja_wholesale_18c_start_1807"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Pressburg bucket. One of the basic units of the Tokaj-Hegyalja wholesale system.",
+        "info_hun": "A tokaj-hegyaljai nagyker. rendszer egyik alapegysége.",
+        "inter_val": 53.72,
+        "name_eng": "pozsonyi akó",
+        "name_hun": "pozsonyi akó",
+        "name_raw": "tokaj_hegyaljai_pozsonyi_ako_18c_start_1807",
+        "source": "Bogdán 1991, 38.",
+        "symbol": "akó",
         "sys_dat": "Tokaj-Hegyalja wholesale (18th c. start-1807)",
         "sys_raw": "tokaj_hegyalja_wholesale_18c_start_1807"
     },
@@ -5435,8 +5487,8 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja barrel: 180 icce, 2 átl.",
-        "info_hun": "180 icce",
+        "info_eng": "Tokaj-Hegyalja barrel: 180 icce, 2 5/6 akó, 2 átl.",
+        "info_hun": "180 icce, 2 5/6 akó, 2 átl.",
         "inter_val": 151.07,
         "name_eng": "tokaj-hegyaljai hordó",
         "name_hun": "tokaj-hegyaljai hordó",
@@ -5448,55 +5500,29 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja quarter-barrel: 44 icce",
-        "info_hun": "44 icce",
-        "inter_val": 36.93,
-        "name_eng": "tokaj-hegyaljai puttony",
-        "name_hun": "tokaj-hegyaljai puttony",
-        "name_raw": "tokaj_hegyaljai_puttony_1807_1830",
-        "source": "Bogdán 1991, 38.",
-        "symbol": "putt.",
-        "sys_dat": "Tokaj-Hegyalja wholesale (1807-1830)",
-        "sys_raw": "tokaj_hegyalja_wholesale_1807_1830"
-    },
-    {
-        "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja half-barrel: 88 icce",
-        "info_hun": "88 icce",
-        "inter_val": 73.87,
-        "name_eng": "tokaj-hegyaljai átalag",
-        "name_hun": "tokaj-hegyaljai átalag",
-        "name_raw": "tokaj_hegyaljai_atalag_1807_1830",
-        "source": "Bogdán 1991, 38.",
-        "symbol": "átl.",
-        "sys_dat": "Tokaj-Hegyalja wholesale (1807-1830)",
-        "sys_raw": "tokaj_hegyalja_wholesale_1807_1830"
-    },
-    {
-        "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja barrel: 176 icce, 2 átl.",
-        "info_hun": "176 icce",
-        "inter_val": 147.73,
-        "name_eng": "tokaj-hegyaljai hordó",
-        "name_hun": "tokaj-hegyaljai hordó",
-        "name_raw": "tokaj_hegyaljai_hordo_1807_1830",
-        "source": "Bogdán 1991, 38.",
-        "symbol": "hor.",
-        "sys_dat": "Tokaj-Hegyalja wholesale (1807-1830)",
-        "sys_raw": "tokaj_hegyalja_wholesale_1807_1830"
-    },
-    {
-        "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja bottle: 1/120 half-barrel",
-        "info_hun": "1/120 átalag",
+        "info_eng": "Tokaj-Hegyalja bottle: 1/120 átl. Usage recorded form 1830.",
+        "info_hun": "1830-tól adatolt, 1/120 átl.",
         "inter_val": 0.6155,
         "name_eng": "tokaj-hegyaljai butélia",
         "name_hun": "tokaj-hegyaljai butélia",
-        "name_raw": "tokaj_hegyaljai_butelia_1830_1874",
+        "name_raw": "tokaj_hegyaljai_butelia_1807_1874",
         "source": "Bogdán 1991, 38.",
         "symbol": "but.",
-        "sys_dat": "Tokaj-Hegyalja wholesale (1830-1874)",
-        "sys_raw": "tokaj_hegyalja_wholesale_1830_1874"
+        "sys_dat": "Tokaj-Hegyalja wholesale (1807-1874)",
+        "sys_raw": "tokaj_hegyalja_wholesale_1807_1874"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Pressburg half-pint (chopine). One of the basic units of the Tokaj-Hegyalja wholesale system.",
+        "info_hun": "A tokaj-hegyaljai nagyker. rendszer egyik alapegysége.",
+        "inter_val": 0.8393,
+        "name_eng": "pozsonyi icce",
+        "name_hun": "pozsonyi icce",
+        "name_raw": "tokaj_hegyaljai_pozsonyi_icce_1807_1874",
+        "source": "Bogdán 1991, 38.",
+        "symbol": "icce",
+        "sys_dat": "Tokaj-Hegyalja wholesale (1807-1874)",
+        "sys_raw": "tokaj_hegyalja_wholesale_1807_1874"
     },
     {
         "category": "volume (liquid)",
@@ -5505,11 +5531,24 @@
         "inter_val": 36.93,
         "name_eng": "tokaj-hegyaljai puttony",
         "name_hun": "tokaj-hegyaljai puttony",
-        "name_raw": "tokaj_hegyaljai_puttony_1830_1874",
+        "name_raw": "tokaj_hegyaljai_puttony_1807_1874",
         "source": "Bogdán 1991, 38.",
         "symbol": "putt.",
-        "sys_dat": "Tokaj-Hegyalja wholesale (1830-1874)",
-        "sys_raw": "tokaj_hegyalja_wholesale_1830_1874"
+        "sys_dat": "Tokaj-Hegyalja wholesale (1807-1874)",
+        "sys_raw": "tokaj_hegyalja_wholesale_1807_1874"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Pressburg bucket. One of the basic units of the Tokaj-Hegyalja wholesale system.",
+        "info_hun": "A tokaj-hegyaljai nagyker. rendszer egyik alapegysége.",
+        "inter_val": 53.72,
+        "name_eng": "pozsonyi akó",
+        "name_hun": "pozsonyi akó",
+        "name_raw": "tokaj_hegyaljai_pozsonyi_ako_1807_1874",
+        "source": "Bogdán 1991, 38.",
+        "symbol": "akó",
+        "sys_dat": "Tokaj-Hegyalja wholesale (1807-1874)",
+        "sys_raw": "tokaj_hegyalja_wholesale_1807_1874"
     },
     {
         "category": "volume (liquid)",
@@ -5518,29 +5557,29 @@
         "inter_val": 73.87,
         "name_eng": "tokaj-hegyaljai átalag",
         "name_hun": "tokaj-hegyaljai átalag",
-        "name_raw": "tokaj_hegyaljai_atalag_1830_1874",
+        "name_raw": "tokaj_hegyaljai_atalag_1807_1874",
         "source": "Bogdán 1991, 38.",
         "symbol": "átl.",
-        "sys_dat": "Tokaj-Hegyalja wholesale (1830-1874)",
-        "sys_raw": "tokaj_hegyalja_wholesale_1830_1874"
+        "sys_dat": "Tokaj-Hegyalja wholesale (1807-1874)",
+        "sys_raw": "tokaj_hegyalja_wholesale_1807_1874"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Tokaj-Hegyalja barrel: 176 icce, 2 átl.",
-        "info_hun": "176 icce",
+        "info_eng": "Tokaj-Hegyalja barrel: 176 icce, 2 3/4 akó, 2 átl.",
+        "info_hun": "176 icce, 2 3/4 akó, 2 átl.",
         "inter_val": 147.73,
         "name_eng": "tokaj-hegyaljai hordó",
         "name_hun": "tokaj-hegyaljai hordó",
-        "name_raw": "tokaj_hegyaljai_hordo_1830_1874",
+        "name_raw": "tokaj_hegyaljai_hordo_1807_1874",
         "source": "Bogdán 1991, 38.",
         "symbol": "hor.",
-        "sys_dat": "Tokaj-Hegyalja wholesale (1830-1874)",
-        "sys_raw": "tokaj_hegyalja_wholesale_1830_1874"
+        "sys_dat": "Tokaj-Hegyalja wholesale (1807-1874)",
+        "sys_raw": "tokaj_hegyalja_wholesale_1807_1874"
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Transylvanian half-pint (chopine): 1/16 vöd.",
-        "info_hun": "1/16 vöd.",
+        "info_eng": "Transylvanian half-pint (chopine): 1/16 vöd. Usage recorded form the mid-18th c.",
+        "info_hun": "A 18. sz. közepétől adatolt, 1/16 vöd.",
         "inter_val": 0.6816,
         "name_eng": "erdélyi icce",
         "name_hun": "erdélyi icce",
@@ -5643,7 +5682,7 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Transylvanian (fluid) cup (pint). Adoption of the Viennese pint. 2 icce.",
+        "info_eng": "Transylvanian (fluid) cup (pint). Adoption of the Viennese pint: 2 icce.",
         "info_hun": "2 icce, a bécsi pint adoptálása.",
         "inter_val": 1.4147,
         "name_eng": "erdélyi (folyadék) kupa",
@@ -5669,7 +5708,7 @@
     },
     {
         "category": "volume (liquid)",
-        "info_eng": "Transylvanian bucket: 8 vöd.",
+        "info_eng": "Transylvanian (fluid) bucket: 8 vöd.",
         "info_hun": "8 vöd.",
         "inter_val": 90.54,
         "name_eng": "erdélyi (folyadék) köböl",
@@ -5770,6 +5809,240 @@
         "symbol": "ncsöb.",
         "sys_dat": "Bihar",
         "sys_raw": "bihar_liq_vol"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad half-pint (chopine): 1/32 akó",
+        "info_hun": "1/32 akó",
+        "inter_val": 0.8393,
+        "name_eng": "váradi icce",
+        "name_hun": "váradi icce",
+        "name_raw": "varad_icce_pre16c_end",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "icce",
+        "sys_dat": "Várad (-16th c. end)",
+        "sys_raw": "varad_liq_vol_pre16c_end"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad pint: 2 icce",
+        "info_hun": "2 icce",
+        "inter_val": 1.6786,
+        "name_eng": "váradi pint",
+        "name_hun": "váradi pint",
+        "name_raw": "varad_pint_pre16c_end",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "pint",
+        "sys_dat": "Várad (-16th c. end)",
+        "sys_raw": "varad_liq_vol_pre16c_end"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad jug: 5 pint",
+        "info_hun": "5 pint",
+        "inter_val": 8.393,
+        "name_eng": "váradi kanta",
+        "name_hun": "váradi kanta",
+        "name_raw": "varad_kanta_pre16c_end",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "kanta",
+        "sys_dat": "Várad (-16th c. end)",
+        "sys_raw": "varad_liq_vol_pre16c_end"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad minor bucket: 5 kanta",
+        "info_hun": "5 kanta",
+        "inter_val": 41.97,
+        "name_eng": "váradi csöbör",
+        "name_hun": "váradi csöbör",
+        "name_raw": "varad_csobor_pre16c_end",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "csöb.",
+        "sys_dat": "Várad (-16th c. end)",
+        "sys_raw": "varad_liq_vol_pre16c_end"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad bucket: 32 icce. Used until the begining of the 17th c.",
+        "info_hun": "A 17. sz. elejéig haszbálatos, 32 icce.",
+        "inter_val": 53.72,
+        "name_eng": "váradi akó",
+        "name_hun": "váradi akó",
+        "name_raw": "varad_ako_pre16c_end",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "akó",
+        "sys_dat": "Várad (-16th c. end)",
+        "sys_raw": "varad_liq_vol_pre16c_end"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad barrel (wholesale): 20 csöb.",
+        "info_hun": "nagykereskedelmi, 20 csöb.",
+        "inter_val": 839.4,
+        "name_eng": "váradi hordó",
+        "name_hun": "váradi hordó",
+        "name_raw": "varad_hordo_pre16c_end",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "hor.",
+        "sys_dat": "Várad (-16th c. end)",
+        "sys_raw": "varad_liq_vol_pre16c_end"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad half-pint (chopine): 1/50 csöb.",
+        "info_hun": "1/50 csöb.",
+        "inter_val": 0.8393,
+        "name_eng": "váradi icce",
+        "name_hun": "váradi icce",
+        "name_raw": "varad_icce_17c",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "icce",
+        "sys_dat": "Várad (17th c.)",
+        "sys_raw": "varad_lig_vol_17c"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad pint: 2 icce",
+        "info_hun": "2 icce",
+        "inter_val": 1.6786,
+        "name_eng": "váradi pint",
+        "name_hun": "váradi pint",
+        "name_raw": "varad_pint_17c",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "pint",
+        "sys_dat": "Várad (17th c.)",
+        "sys_raw": "varad_lig_vol_17c"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad jug: 5 pint. Used until 1874.",
+        "info_hun": "1874-ig használatos, 5 pint",
+        "inter_val": 8.393,
+        "name_eng": "váradi kanta",
+        "name_hun": "váradi kanta",
+        "name_raw": "varad_kanta_17c",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "kanta",
+        "sys_dat": "Várad (17th c.)",
+        "sys_raw": "varad_lig_vol_17c"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad minor bucket: 5 kanta",
+        "info_hun": "5 kanta",
+        "inter_val": 41.97,
+        "name_eng": "váradi csöbör",
+        "name_hun": "váradi csöbör",
+        "name_raw": "varad_csobor_17c",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "csöb.",
+        "sys_dat": "Várad (17th c.)",
+        "sys_raw": "varad_lig_vol_17c"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Várad barrel (wholesale): 15 4/5 csöb.",
+        "info_hun": "nagykereskedelmi, 15 4/5 csöb.",
+        "inter_val": 663.13,
+        "name_eng": "váradi hordó",
+        "name_hun": "váradi hordó",
+        "name_raw": "varad_hordo_17c",
+        "source": "Bodgán 1991, 38–39.",
+        "symbol": "hor.",
+        "sys_dat": "Várad (17th c.)",
+        "sys_raw": "varad_lig_vol_17c"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Zagreb pint",
+        "info_hun": "zágrábi pint",
+        "inter_val": 3.1988,
+        "name_eng": "zagrebačka pinta",
+        "name_hun": "zagrebačka pinta",
+        "name_raw": "zagrebacka_pinta_pre1733",
+        "source": "Bodgán 1991, 39.",
+        "symbol": "pint",
+        "sys_dat": "Zagreb (-1733)",
+        "sys_raw": "zagreb_liq_vol_pre1733"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Zagreb minor bucket: 16 pint. Used until the end of the 17. c.",
+        "info_hun": "zágrábi köböl, a 17. század végéig használatos, 16 pint",
+        "inter_val": 51.2,
+        "name_eng": "zagrebački kabao",
+        "name_hun": "zagrebački kabao",
+        "name_raw": "zagrebacko_kabao_pre1733",
+        "source": "Bodgán 1991, 39.",
+        "symbol": "kab.",
+        "sys_dat": "Zagreb (-1733)",
+        "sys_raw": "zagreb_liq_vol_pre1733"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Zagreb bucket: 20 pint",
+        "info_hun": "zágrábi akó: 20 pint",
+        "inter_val": 63.99,
+        "name_eng": "zagrebački akov",
+        "name_hun": "zagrebački akov",
+        "name_raw": "zagrebacki_akov_pre1733",
+        "source": "Bodgán 1991, 39.",
+        "symbol": "ako.",
+        "sys_dat": "Zagreb (-1733)",
+        "sys_raw": "zagreb_liq_vol_pre1733"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Zagreb/Croatian pint = 2 Pressburg pints",
+        "info_hun": "zágrábi/horvát pint = 2 pozsonyi pint",
+        "inter_val": 3.3572,
+        "name_eng": "zagrebačka/hrvatska pinta",
+        "name_hun": "zagrebačka/hrvatska pinta",
+        "name_raw": "zagrebacka_pinta_1734_1744",
+        "source": "Bodgán 1991, 39.",
+        "symbol": "pint",
+        "sys_dat": "Zagreb (1734-1744)",
+        "sys_raw": "zagreb_liq_vol_1734_1744"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Zagreb/Croatian bucket: 16 pint",
+        "info_hun": "zágrábi/horvát akó: 16 pint",
+        "inter_val": 53.72,
+        "name_eng": "zagrebački/hrvatski akov",
+        "name_hun": "zagrebački akov",
+        "name_raw": "zagrebacki_akov_1734_1744",
+        "source": "Bodgán 1991, 39.",
+        "symbol": "ako.",
+        "sys_dat": "Zagreb (1734-1744)",
+        "sys_raw": "zagreb_liq_vol_1734_1744"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Zagreb/Croatian pint = 2 Pressburg pints",
+        "info_hun": "zágrábi/horvát pint = 2 pozsonyi pint",
+        "inter_val": 3.3572,
+        "name_eng": "zagrebačka/hrvatska pinta",
+        "name_hun": "zagrebačka/hrvatska pinta",
+        "name_raw": "zagrebacka_pinta_1745_1876",
+        "source": "Bodgán 1991, 39.",
+        "symbol": "pint",
+        "sys_dat": "Zagreb (1745-1876)",
+        "sys_raw": "zagreb_liq_vol_1745_1874"
+    },
+    {
+        "category": "volume (liquid)",
+        "info_eng": "Zagreb/Croatian bucket: 17 pint",
+        "info_hun": "zágrábi/horvát akó: 17 pint",
+        "inter_val": 57.07,
+        "name_eng": "zagrebački/hrvatski akov",
+        "name_hun": "zagrebački akov",
+        "name_raw": "zagrebacki_akov_1745_1876",
+        "source": "Bodgán 1991, 39.",
+        "symbol": "ako.",
+        "sys_dat": "Zagreb (1745-1876)",
+        "sys_raw": "zagreb_liq_vol_1745_1874"
     },
     {
         "category": "weight",
