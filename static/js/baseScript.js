@@ -30,14 +30,9 @@ document.querySelectorAll(".link-btn").forEach((btn) => {
 // Page opening functions:
 
 // Load a page, same tab.
-<<<<<<< HEAD
 function loadPage(page) {
   let safePage = encodeURI(page);
   window.location.assign(safePage);
-=======
-function loadPage(Page) {
-  window.location.replace(Page);
->>>>>>> 0408d5f01ba7dbaaee1b7beed05a940ecab6418c
 }
 
 // Load a page in new tab.
