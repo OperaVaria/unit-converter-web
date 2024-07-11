@@ -31,7 +31,7 @@ document.querySelectorAll(".link-btn").forEach((btn) => {
 
 // Load a page, same tab.
 function loadPage(Page) {
-  window.location.href = Page;
+  window.location.replace(Page);
 }
 
 // Load a page in new tab.
