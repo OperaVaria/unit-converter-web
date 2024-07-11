@@ -17,7 +17,7 @@ def title_setup(unit_cat, locale):
     # SQLite command based on current locale.
     if locale == "hu":
         command = "SELECT cat_hun FROM cat_list WHERE cat_raw = ?"
-    elif locale == "en":
+    else:
         command = "SELECT cat_eng FROM cat_list WHERE cat_raw = ?"
     # Search parameter.
     param = (unit_cat,)
@@ -33,7 +33,7 @@ def sys_dict_setup(unit_cat, locale):
     # SQLite command based on current locale.
     if locale == "hu":
         command = "SELECT name_raw, name_hun FROM system_list WHERE cat_raw LIKE ?"
-    elif locale == "en":
+    else:
         command = "SELECT name_raw, name_eng FROM system_list WHERE cat_raw LIKE ?"
     # Search parameter.
     param = (f"%{unit_cat}%",)
@@ -47,7 +47,7 @@ def unit_list_setup(unit_system, locale):
     # SQLite command based on current locale.
     if locale == "hu":
         command = "SELECT name_raw, name_hun FROM unit_list WHERE sys_raw = ?"
-    elif locale == "en":
+    else:
         command = "SELECT name_raw, name_eng FROM unit_list WHERE sys_raw = ?"
     # Search parameter.
     param = (unit_system,)
@@ -63,7 +63,7 @@ def sys_info_setup(unit_system, locale):
     # SQLite command based on current locale.
     if locale == "hu":
         command = "SELECT info_hun FROM system_list WHERE name_raw = ?"
-    elif locale == "en":
+    else:
         command = "SELECT info_eng FROM system_list WHERE name_raw = ?"
     # Search parameter.
     param = (unit_system,)
@@ -77,7 +77,7 @@ def unit_info_setup(selected_unit, locale):
     # SQLite command based on current locale.
     if locale == "hu":
         command = "SELECT info_hun FROM unit_list WHERE name_raw = ?"
-    if locale == "en":
+    else:
         command = "SELECT info_eng FROM unit_list WHERE name_raw = ?"
     # Search parameter.
     param = (selected_unit,)
@@ -109,7 +109,7 @@ def cat_dict_setup(locale):
     # SQLite command based on current locale.
     if locale == "hu":
         command = "SELECT cat_raw, cat_hun FROM cat_list"
-    elif locale == "en":
+    else:
         command = "SELECT cat_raw, cat_eng FROM cat_list"
     # Search parameter.
     param = ()
