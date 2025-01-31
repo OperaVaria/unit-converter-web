@@ -48,8 +48,8 @@ document.querySelectorAll(".custom-select").forEach((menu) => {
   menu.addEventListener(
     "choice",
     function (event) {
-      if (event.detail.choice.value) {
-        submitValue(menu.id, event.detail.choice.value);
+      if (event.detail.value) {
+        submitValue(menu.id, event.detail.value);
       }
     },
     false
