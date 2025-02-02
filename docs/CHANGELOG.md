@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Dry volume unit systems: Buda flour, Debrecen.
+
+### Fixed
+
+- Copyright date.
+- Database typos.
+
 ## [1.5.0] - 2025.01.31
 
 ### Added
