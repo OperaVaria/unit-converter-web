@@ -520,6 +520,28 @@
         "cat_eng": "volume (dry)",
         "cat_hun": "szárazmérték",
         "cat_raw": "dry_vol",
+        "info_eng": "Flour measures of the city of Buda. Known from the Buda Law Book, compiled c. 1403-30, and supplemented in 1453.",
+        "info_hun": "Buda város lisztmértékei. Az 1403–30 körül keletkezett, 1453-ban kiegészített budai jogkönyvből ismertek.",
+        "name_eng": "Buda flour volume (15th c.)",
+        "name_hun": "budai lisztmérték (15. sz.)",
+        "name_raw": "buda_flour_vol",
+        "source": "Bogdán 1991, 43."
+    },
+    {
+        "cat_eng": "volume (dry)",
+        "cat_hun": "szárazmérték",
+        "cat_raw": "dry_vol",
+        "info_eng": "Local dry measures of Debrecen. Presumably based on the old Buda (fluid) half-pint.",
+        "info_hun": "Debreceni helyi szárazmértékek. Feltételezhetően a régi budai (híg) iccén alapszik.",
+        "name_eng": "Debrecen (18th c.)",
+        "name_hun": "debreceni (18. sz.)",
+        "name_raw": "debrecen_dry_vol",
+        "source": "Bogdán 1991, 43."
+    },
+    {
+        "cat_eng": "volume (dry)",
+        "cat_hun": "szárazmérték",
+        "cat_raw": "dry_vol",
         "info_eng": "Dry volume measures of the Transylvanian areas until 1823. Developed from the system of Szeben and Kolozsvár.",
         "info_hun": "Az erdélyi területek száraz űrmértékrendszere 1823-ig. A szebeni és a kolozsvári rendszerből alakult ki.",
         "name_eng": "Transylvanian (-1823)",
