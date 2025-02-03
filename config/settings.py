@@ -35,7 +35,7 @@ csp = {
         "'self'",
         "'sha256-StHcb2rwa+JQQMEW05Q1ksZqLW064v3HKGcKpiYMMsc='",
         "'sha256-mNoUSBnIsLtJrvz4HSLr6Zob4ftw0pbk4UzBxZfjr04='",
-        "https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js",
+        "https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js",
     ],
     "style-src": ["'self'"],
     "img-src": ["'self'"],
