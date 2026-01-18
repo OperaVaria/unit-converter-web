@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Dry volume unit systems: Buda flour, Debrecen.
 
+### Changed
+
+- Updated requirements.txt.
+
 ### Fixed
 
 - Final fix for Choices.js issues by returning to version 10.2.0.
