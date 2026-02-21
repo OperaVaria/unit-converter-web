@@ -33,8 +33,8 @@ csp = {
     "connect-src": ["'self'"],
     "script-src": [
         "'self'",
-        "'sha256-StHcb2rwa+JQQMEW05Q1ksZqLW064v3HKGcKpiYMMsc='",
-        "'sha256-mNoUSBnIsLtJrvz4HSLr6Zob4ftw0pbk4UzBxZfjr04='",
+        "'sha256-Uppi5p7bmgQcEgcfEPHCfP4+wkmdkxN+QW97YhqLCLg='",
+        "'sha256-DT917/zkO5yQFiP1UxA/Wnp/9raa5kroImO6U+vr5Ok='",
         "https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js",
     ],
     "style-src": ["'self'"],

@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Final fix for Choices.js issues by returning to version 10.2.0.
 - Database typos.
+- Out-of-date script hashes.
 
 ### Removed
 
