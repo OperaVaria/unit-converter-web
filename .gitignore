@@ -1,7 +1,7 @@
 **/__pycache__/
-.venv/
 .vscode/
 .temp/
 config/secretKey.json
 flask_session/*
 messages.pot
+.venv
